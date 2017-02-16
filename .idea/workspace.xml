@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="tools_to_remember" targetName="simple_path" />
+      <config projectName="tools_to_remember" targetName="tree_nodes_within_distance" />
+      <config projectName="tools_to_remember" targetName="nth_substring" />
+      <config projectName="tools_to_remember" targetName="text_wrap" />
+      <config projectName="tools_to_remember" targetName="tabs_to_spaces" />
+      <config projectName="tools_to_remember" targetName="topological" />
+      <config projectName="tools_to_remember" targetName="list_reverse" />
+      <config projectName="tools_to_remember" targetName="case_find" />
+      <config projectName="tools_to_remember" targetName="quicksort" />
+      <config projectName="tools_to_remember" targetName="binary_search" />
+      <config projectName="tools_to_remember" targetName="pad_string" />
+      <config projectName="tools_to_remember" targetName="test_levenshtein" />
+      <config projectName="tools_to_remember" targetName="stream_read_string" />
+      <config projectName="tools_to_remember" targetName="graph_dfs" />
+      <config projectName="tools_to_remember" targetName="split_string" />
+      <config projectName="tools_to_remember" targetName="graph_bfs" />
+      <config projectName="tools_to_remember" targetName="from_matt" />
+      <config projectName="tools_to_remember" targetName="remove_substrings" />
+      <config projectName="tools_to_remember" targetName="cycle" />
+      <config projectName="tools_to_remember" targetName="join_strings" />
+      <config projectName="tools_to_remember" targetName="tokenize_string" />
+      <config projectName="tools_to_remember" targetName="main" />
+      <config projectName="tools_to_remember" targetName="graph_print" />
+      <config projectName="tools_to_remember" targetName="trim_string" />
+      <config projectName="tools_to_remember" targetName="gcd" />
+      <config projectName="tools_to_remember" targetName="topological_acpp" />
+      <config projectName="tools_to_remember" targetName="levenshtein_distance" />
+      <config projectName="tools_to_remember" targetName="directed_cycle" />
+      <config projectName="tools_to_remember" targetName="tools_to_remember" />
+      <config projectName="tools_to_remember" targetName="file_word_count" />
+      <config projectName="tools_to_remember" targetName="file_manip_todo" />
+      <config projectName="tools_to_remember" targetName="knapsack" />
+      <config projectName="tools_to_remember" targetName="count_unique" />
+      <config projectName="tools_to_remember" targetName="tree_traversal" />
+      <config projectName="tools_to_remember" targetName="deadlock_cycle" />
+      <config projectName="tools_to_remember" targetName="lexicographical_compare" />
+      <config projectName="tools_to_remember" targetName="margins_and_justify" />
+      <config projectName="tools_to_remember" targetName="tree_print" />
+      <config projectName="tools_to_remember" targetName="binary_search_bst" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b84f83c2-a220-4f29-9cd3-2c7a7dd6a245" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="stream_read_string.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stream_read_string.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cycle.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cycle.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directed_cycle.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/directed_cycle.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_manip_todo.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file_manip_todo.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_word_count.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file_word_count.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gcd.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gcd.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="levenshtein_distance.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/levenshtein_distance.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="96" lean-forward="false" selection-start-line="46" selection-start-column="96" selection-end-line="46" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_wrap.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text_wrap.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="knapsack.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/knapsack.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>NULL</find>
+      <find>ltrimws</find>
+      <find>collection</find>
+      <find>front</find>
+      <find>pop</find>
+      <find>boolean</find>
+      <find>(\w*)\.cpp</find>
+      <find>postorder_i</find>
+      <find>visit</find>
+      <find>\(\*</find>
+      <find>void (* visit)(Tree_node&lt;Item_type&gt;*)</find>
+      <find>\(\*\s</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$1std::ifstream</replace>
+      <replace>Tree_node&lt;Item_type&gt;</replace>
+      <replace>bool</replace>
+      <replace>add_executable($1 $1.cpp)</replace>
+      <replace>Visitor_type visit</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/from_matt.cpp" />
+        <option value="$PROJECT_DIR$/tree_nodes_within_distance.cpp" />
+        <option value="$PROJECT_DIR$/to_remember.cpp" />
+        <option value="$PROJECT_DIR$/list_reverse.cpp" />
+        <option value="$PROJECT_DIR$/must_know.cpp" />
+        <option value="$PROJECT_DIR$/file_manip_todo.cpp" />
+        <option value="$PROJECT_DIR$/graph_print.cpp" />
+        <option value="$PROJECT_DIR$/margins_and_justify.cpp" />
+        <option value="$PROJECT_DIR$/nth_substring.cpp" />
+        <option value="$PROJECT_DIR$/pad_string.cpp" />
+        <option value="$PROJECT_DIR$/quicksort.cpp" />
+        <option value="$PROJECT_DIR$/remove_substrings.cpp" />
+        <option value="$PROJECT_DIR$/simple_path.cpp" />
+        <option value="$PROJECT_DIR$/tabs_to_spaces.cpp" />
+        <option value="$PROJECT_DIR$/text_wrap.cpp" />
+        <option value="$PROJECT_DIR$/tree_print.cpp" />
+        <option value="$PROJECT_DIR$/topological_acpp.cpp" />
+        <option value="$PROJECT_DIR$/todos.md" />
+        <option value="$PROJECT_DIR$/binary_search.cpp" />
+        <option value="$PROJECT_DIR$/binary_search_bst.cpp" />
+        <option value="$PROJECT_DIR$/case_find.cpp" />
+        <option value="$PROJECT_DIR$/directed_cycle.cpp" />
+        <option value="$PROJECT_DIR$/file_word_count.cpp" />
+        <option value="$PROJECT_DIR$/graph_bfs.cpp" />
+        <option value="$PROJECT_DIR$/join_strings.cpp" />
+        <option value="$PROJECT_DIR$/lexicographical_compare.cpp" />
+        <option value="$PROJECT_DIR$/stream_read_string.cpp" />
+        <option value="$PROJECT_DIR$/tokenize_string.cpp" />
+        <option value="$PROJECT_DIR$/topological.cpp" />
+        <option value="$PROJECT_DIR$/todos_and_notes.md" />
+        <option value="$PROJECT_DIR$/postorder_recursive_calls.json" />
+        <option value="$PROJECT_DIR$/inorder_recursive_calls.json" />
+        <option value="$PROJECT_DIR$/preorder_recursive_calls.json" />
+        <option value="$PROJECT_DIR$/tree_traversal.cpp" />
+        <option value="$PROJECT_DIR$/count_unique.cpp" />
+        <option value="$PROJECT_DIR$/graph_dfs.cpp" />
+        <option value="$PROJECT_DIR$/cycle.cpp" />
+        <option value="$PROJECT_DIR$/deadlock_cycle.cpp" />
+        <option value="$PROJECT_DIR$/trim_string.cpp" />
+        <option value="$PROJECT_DIR$/split_string.cpp" />
+        <option value="$PROJECT_DIR$/gcd.cpp" />
+        <option value="$PROJECT_DIR$/knapsack.cpp" />
+        <option value="$PROJECT_DIR$/test_levenshtein.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/levenshtein_distance.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1023" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="false" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools_to_remember" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools_to_remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.5.0/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.5.0/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.test_levenshtein">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tools_to_remember" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tools_to_remember" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tools_to_remember" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tools_to_remember" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tools_to_remember" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="tools_to_remember">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="main">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="from_matt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="from_matt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="from_matt">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="cycle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="cycle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="cycle">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="directed_cycle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="directed_cycle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="directed_cycle">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="topological" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="topological" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="topological">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="deadlock_cycle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="deadlock_cycle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="deadlock_cycle">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="list_reverse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="list_reverse" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="list_reverse">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tree_nodes_within_distance" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tree_nodes_within_distance" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="tree_nodes_within_distance">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="binary_search" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="binary_search" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="binary_search">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="binary_search_bst" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="binary_search_bst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="binary_search_bst">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="case_find" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="case_find" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="case_find">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="count_unique" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="count_unique" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="count_unique">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="file_manip_todo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="file_manip_todo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="file_manip_todo">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph_bfs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph_bfs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="graph_bfs">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph_dfs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph_dfs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="graph_dfs">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph_print" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph_print" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="graph_print">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="join_strings" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="join_strings" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="join_strings">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="nth_substring" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="nth_substring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="nth_substring">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pad_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="pad_string" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="pad_string">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="quicksort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="quicksort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="quicksort">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="remove_substrings" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="remove_substrings" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="remove_substrings">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="simple_path" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="simple_path" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="simple_path">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="split_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="split_string" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="split_string">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="stream_read_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="stream_read_string" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="stream_read_string">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tokenize_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tokenize_string" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="tokenize_string">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="topological_acpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="topological_acpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="topological_acpp">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tree_print" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tree_print" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="tree_print">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tree_traversal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tree_traversal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="tree_traversal">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="trim_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="trim_string" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="trim_string">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lexicographical_compare" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="lexicographical_compare" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="lexicographical_compare">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="file_word_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="file_word_count" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="file_word_count">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="margins_and_justify" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="margins_and_justify" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="margins_and_justify">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tabs_to_spaces" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="tabs_to_spaces" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="tabs_to_spaces">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="text_wrap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="text_wrap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="text_wrap">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gcd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="gcd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="gcd">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="levenshtein_distance" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="levenshtein_distance" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="levenshtein_distance">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="knapsack" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="knapsack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="knapsack">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_levenshtein" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="test_levenshtein" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="test_levenshtein">
+      <envs />
+      <method />
+    </configuration>
+    <list size="40">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.tools_to_remember" />
+      <item index="2" class="java.lang.String" itemvalue="Application.main" />
+      <item index="3" class="java.lang.String" itemvalue="Application.from_matt" />
+      <item index="4" class="java.lang.String" itemvalue="Application.cycle" />
+      <item index="5" class="java.lang.String" itemvalue="Application.directed_cycle" />
+      <item index="6" class="java.lang.String" itemvalue="Application.topological" />
+      <item index="7" class="java.lang.String" itemvalue="Application.deadlock_cycle" />
+      <item index="8" class="java.lang.String" itemvalue="Application.list_reverse" />
+      <item index="9" class="java.lang.String" itemvalue="Application.tree_nodes_within_distance" />
+      <item index="10" class="java.lang.String" itemvalue="Application.binary_search" />
+      <item index="11" class="java.lang.String" itemvalue="Application.binary_search_bst" />
+      <item index="12" class="java.lang.String" itemvalue="Application.case_find" />
+      <item index="13" class="java.lang.String" itemvalue="Application.count_unique" />
+      <item index="14" class="java.lang.String" itemvalue="Application.file_manip_todo" />
+      <item index="15" class="java.lang.String" itemvalue="Application.graph_bfs" />
+      <item index="16" class="java.lang.String" itemvalue="Application.graph_dfs" />
+      <item index="17" class="java.lang.String" itemvalue="Application.graph_print" />
+      <item index="18" class="java.lang.String" itemvalue="Application.join_strings" />
+      <item index="19" class="java.lang.String" itemvalue="Application.nth_substring" />
+      <item index="20" class="java.lang.String" itemvalue="Application.pad_string" />
+      <item index="21" class="java.lang.String" itemvalue="Application.quicksort" />
+      <item index="22" class="java.lang.String" itemvalue="Application.remove_substrings" />
+      <item index="23" class="java.lang.String" itemvalue="Application.simple_path" />
+      <item index="24" class="java.lang.String" itemvalue="Application.split_string" />
+      <item index="25" class="java.lang.String" itemvalue="Application.stream_read_string" />
+      <item index="26" class="java.lang.String" itemvalue="Application.tokenize_string" />
+      <item index="27" class="java.lang.String" itemvalue="Application.topological_acpp" />
+      <item index="28" class="java.lang.String" itemvalue="Application.tree_print" />
+      <item index="29" class="java.lang.String" itemvalue="Application.tree_traversal" />
+      <item index="30" class="java.lang.String" itemvalue="Application.trim_string" />
+      <item index="31" class="java.lang.String" itemvalue="Application.lexicographical_compare" />
+      <item index="32" class="java.lang.String" itemvalue="Application.file_word_count" />
+      <item index="33" class="java.lang.String" itemvalue="Application.margins_and_justify" />
+      <item index="34" class="java.lang.String" itemvalue="Application.tabs_to_spaces" />
+      <item index="35" class="java.lang.String" itemvalue="Application.text_wrap" />
+      <item index="36" class="java.lang.String" itemvalue="Application.gcd" />
+      <item index="37" class="java.lang.String" itemvalue="Application.levenshtein_distance" />
+      <item index="38" class="java.lang.String" itemvalue="Application.knapsack" />
+      <item index="39" class="java.lang.String" itemvalue="Application.test_levenshtein" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b84f83c2-a220-4f29-9cd3-2c7a7dd6a245" name="Default" comment="" />
+      <created>1486259455342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486259455342</updated>
+      <workItem from="1486259456844" duration="1011000" />
+      <workItem from="1486316827745" duration="5908000" />
+      <workItem from="1486325833958" duration="294000" />
+      <workItem from="1486340789837" duration="632000" />
+      <workItem from="1486489002767" duration="8776000" />
+      <workItem from="1486516181641" duration="7845000" />
+      <workItem from="1486563414479" duration="2614000" />
+      <workItem from="1486575325229" duration="6556000" />
+      <workItem from="1486599787013" duration="3381000" />
+      <workItem from="1486608767084" duration="2940000" />
+      <workItem from="1486646091472" duration="3127000" />
+      <workItem from="1486652045217" duration="3041000" />
+      <workItem from="1486661824720" duration="1267000" />
+      <workItem from="1486677328549" duration="1637000" />
+      <workItem from="1486690978904" duration="2388000" />
+      <workItem from="1486748989825" duration="965000" />
+      <workItem from="1486770873228" duration="3000" />
+      <workItem from="1486839651657" duration="805000" />
+      <workItem from="1487094513139" duration="27000" />
+      <workItem from="1487094873209" duration="829000" />
+      <workItem from="1487168858021" duration="862000" />
+      <workItem from="1487193619870" duration="521000" />
+      <workItem from="1487194291790" duration="2153000" />
+      <workItem from="1487209234971" duration="5661000" />
+      <workItem from="1487251893707" duration="6875000" />
+      <workItem from="1487264053825" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70138000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120238096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996004" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_manip_todo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7230">
+          <caret line="482" column="4" lean-forward="false" selection-start-line="482" selection-start-column="4" selection-end-line="482" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from_matt.cpp" />
+    <entry file="file://$PROJECT_DIR$/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/must_know.cpp" />
+    <entry file="file://$PROJECT_DIR$/text_wrap.h" />
+    <entry file="file:///usr/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/join_strings.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lexicographical_compare.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="51" lean-forward="false" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_reverse.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/margins_and_justify.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nth_substring.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pad_string.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remove_substrings.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs_to_spaces.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tokenize_string.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topological.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="97" lean-forward="false" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53850">
+          <caret line="3590" column="43" lean-forward="false" selection-start-line="3590" selection-start-column="43" selection-end-line="3590" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_bfs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/count_unique.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="81" lean-forward="false" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_dfs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="101" column="11" lean-forward="false" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todos_and_notes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="80" lean-forward="false" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inorder_recursive_calls.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preorder_recursive_calls.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postorder_recursive_calls.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topological_acpp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deadlock_cycle.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_print.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_print.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_nodes_within_distance.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_search.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quicksort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_find.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="93" lean-forward="false" selection-start-line="46" selection-start-column="93" selection-end-line="46" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_search_bst.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_traversal.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="105" column="22" lean-forward="false" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trim_string.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="3" lean-forward="false" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_path.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/split_string.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stream_read_string.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cycle.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directed_cycle.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_manip_todo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_word_count.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knapsack.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_levenshtein.cpp" />
+    <entry file="file://$PROJECT_DIR$/text_wrap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/levenshtein_distance.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="96" lean-forward="false" selection-start-line="46" selection-start-column="96" selection-end-line="46" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcd.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

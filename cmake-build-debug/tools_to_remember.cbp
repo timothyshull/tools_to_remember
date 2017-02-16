@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tools_to_remember"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trim_string">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/trim_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 trim_string"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trim_string/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/trim_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 trim_string/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_traversal">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tree_traversal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_traversal"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_traversal/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tree_traversal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_traversal/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_nodes_within_distance">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tree_nodes_within_distance" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_nodes_within_distance"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_nodes_within_distance/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tree_nodes_within_distance" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_nodes_within_distance/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="topological">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/topological" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 topological"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="topological/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/topological" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 topological/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tokenize_string">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tokenize_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tokenize_string"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tokenize_string/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tokenize_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tokenize_string/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="text_wrap">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/text_wrap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 text_wrap"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="text_wrap/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/text_wrap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 text_wrap/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tabs_to_spaces">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tabs_to_spaces" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tabs_to_spaces"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tabs_to_spaces/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tabs_to_spaces" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tabs_to_spaces/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stream_read_string">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/stream_read_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 stream_read_string"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stream_read_string/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/stream_read_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 stream_read_string/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="split_string">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/split_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 split_string"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="split_string/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/split_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 split_string/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="topological_acpp">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/topological_acpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 topological_acpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="topological_acpp/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/topological_acpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 topological_acpp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_path">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/simple_path" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_path"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_path/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/simple_path" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_path/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_reverse">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/list_reverse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_reverse"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_reverse/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/list_reverse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_reverse/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pad_string">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/pad_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 pad_string"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pad_string/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/pad_string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 pad_string/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="remove_substrings">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/remove_substrings" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 remove_substrings"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="remove_substrings/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/remove_substrings" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 remove_substrings/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nth_substring">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/nth_substring" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 nth_substring"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nth_substring/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/nth_substring" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 nth_substring/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/binary_search" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/binary_search" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="margins_and_justify">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/margins_and_justify" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 margins_and_justify"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="margins_and_justify/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/margins_and_justify" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 margins_and_justify/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_print">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/graph_print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph_print"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_print/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/graph_print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph_print/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="knapsack">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/knapsack" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 knapsack"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="knapsack/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/knapsack" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 knapsack/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_print">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tree_print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_print"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree_print/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/tree_print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree_print/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="join_strings">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/join_strings" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 join_strings"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="join_strings/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/join_strings" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 join_strings/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="levenshtein_distance">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/levenshtein_distance" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 levenshtein_distance"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="levenshtein_distance/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/levenshtein_distance" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 levenshtein_distance/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gcd">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/gcd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 gcd"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gcd/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/gcd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 gcd/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_bfs">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/graph_bfs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph_bfs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_bfs/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/graph_bfs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph_bfs/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="count_unique">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/count_unique" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 count_unique"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="count_unique/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/count_unique" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 count_unique/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cycle">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/cycle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 cycle"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cycle/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/cycle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 cycle/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="directed_cycle">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/directed_cycle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 directed_cycle"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="directed_cycle/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/directed_cycle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 directed_cycle/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quicksort">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/quicksort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 quicksort"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quicksort/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/quicksort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 quicksort/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_dfs">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/graph_dfs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph_dfs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="graph_dfs/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/graph_dfs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 graph_dfs/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="deadlock_cycle">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/deadlock_cycle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 deadlock_cycle"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="deadlock_cycle/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/deadlock_cycle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 deadlock_cycle/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lexicographical_compare">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/lexicographical_compare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 lexicographical_compare"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lexicographical_compare/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/lexicographical_compare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 lexicographical_compare/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search_bst">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/binary_search_bst" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search_bst"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary_search_bst/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/binary_search_bst" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_search_bst/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="file_manip_todo">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/file_manip_todo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 file_manip_todo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="file_manip_todo/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/file_manip_todo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 file_manip_todo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="file_word_count">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/file_word_count" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 file_word_count"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="file_word_count/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/file_word_count" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 file_word_count/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="case_find">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/case_find" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 case_find"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="case_find/fast">
+				<Option output="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/case_find" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 case_find/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/skull/Programming/Cpp/tools_to_remember/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/binary_search.cpp">
+			<Option target="binary_search"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/binary_search_bst.cpp">
+			<Option target="binary_search_bst"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/case_find.cpp">
+			<Option target="case_find"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/count_unique.cpp">
+			<Option target="count_unique"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/cycle.cpp">
+			<Option target="cycle"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/deadlock_cycle.cpp">
+			<Option target="deadlock_cycle"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/directed_cycle.cpp">
+			<Option target="directed_cycle"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/file_manip_todo.cpp">
+			<Option target="file_manip_todo"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/file_word_count.cpp">
+			<Option target="file_word_count"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/gcd.cpp">
+			<Option target="gcd"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/graph_bfs.cpp">
+			<Option target="graph_bfs"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/graph_dfs.cpp">
+			<Option target="graph_dfs"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/graph_print.cpp">
+			<Option target="graph_print"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/join_strings.cpp">
+			<Option target="join_strings"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/knapsack.cpp">
+			<Option target="knapsack"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/levenshtein_distance.cpp">
+			<Option target="levenshtein_distance"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/lexicographical_compare.cpp">
+			<Option target="lexicographical_compare"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/list_reverse.cpp">
+			<Option target="list_reverse"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/margins_and_justify.cpp">
+			<Option target="margins_and_justify"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/nth_substring.cpp">
+			<Option target="nth_substring"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/pad_string.cpp">
+			<Option target="pad_string"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/quicksort.cpp">
+			<Option target="quicksort"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/remove_substrings.cpp">
+			<Option target="remove_substrings"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/simple_path.cpp">
+			<Option target="simple_path"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/split_string.cpp">
+			<Option target="split_string"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/stream_read_string.cpp">
+			<Option target="stream_read_string"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/tabs_to_spaces.cpp">
+			<Option target="tabs_to_spaces"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/text_wrap.cpp">
+			<Option target="text_wrap"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/tokenize_string.cpp">
+			<Option target="tokenize_string"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/topological.cpp">
+			<Option target="topological"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/topological_acpp.cpp">
+			<Option target="topological_acpp"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/tree_nodes_within_distance.cpp">
+			<Option target="tree_nodes_within_distance"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/tree_print.cpp">
+			<Option target="tree_print"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/tree_traversal.cpp">
+			<Option target="tree_traversal"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/trim_string.cpp">
+			<Option target="trim_string"/>
+		</Unit>
+		<Unit filename="/Users/skull/Programming/Cpp/tools_to_remember/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

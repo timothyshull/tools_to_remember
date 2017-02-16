@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/stream_read_string.dir/stream_read_string.cpp.o  -o stream_read_string 
