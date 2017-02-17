@@ -3,18 +3,6 @@
 #include <iostream>
 #include <random>
 
-std::vector<int> rand_vector(int len)
-{
-    std::vector<int> ret;
-    std::random_device rd;
-    std::default_random_engine gen{rd()};
-    std::uniform_int_distribution<int> dis{0, 99};
-    while (--len) {
-        ret.emplace_back(dis(gen));
-    }
-    return ret;
-}
-
 struct Item;
 
 int optimum_subject_to_item_capacity(const std::vector<Item>&, int, int, std::vector<std::vector<int>>&);
@@ -38,16 +26,14 @@ int optimum_subject_to_capacity(const std::vector<Item>& items, int capacity)
 // capacity of available_capacity.
 int optimum_subject_to_item_capacity(const std::vector<Item>& items, int k, int available_capacity, std::vector<std::vector<int>>& v)
 {
-    if (k < 0) {
-        // No items can be chosen.
-        return 0;
-    }
+    if (k < 0) { return 0; }
 
     if (v[k][available_capacity] == -1) {
         int without_curr_item{optimum_subject_to_item_capacity(items, k - 1, available_capacity, v)};
-        int with_curr_item{available_capacity < items[k].weight ?
-                           0 :
-                           items[k].value + optimum_subject_to_item_capacity(items, k - 1, available_capacity - items[k].weight, v)};
+        int with_curr_item{0};
+        if (available_capacity >= items[k].weight) {
+            with_curr_item = items[k].value + optimum_subject_to_item_capacity(items, k - 1, available_capacity - items[k].weight, v);
+        }
         v[k][available_capacity] = std::max(without_curr_item, with_curr_item);
     }
     return v[k][available_capacity];

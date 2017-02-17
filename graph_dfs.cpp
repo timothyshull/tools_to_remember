@@ -63,7 +63,7 @@ private:
             else { _show(" cross", x); }
         }
         _postorder[w] = _count_p++;
-        ++_depth;
+        --_depth;
     }
 };
 

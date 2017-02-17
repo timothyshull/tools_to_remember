@@ -1,89 +1,89 @@
 {
-  "left": {
     "left": {
-      "left": {
         "left": {
-          "left": null,
-          "visit": 1,
-          "right": null
+            "left": {
+                "left": {
+                    "left": null,
+                    "visit": 1,
+                    "right": null
+                },
+                "visit": 2,
+                "right": null
+            },
+            "visit": 3,
+            "right": {
+                "left": null,
+                "visit": 4,
+                "right": {
+                    "left": null,
+                    "visit": 5,
+                    "right": null
+                }
+            }
         },
-        "visit": 2,
-        "right": null
-      },
-      "visit": 3,
-      "right": {
-        "left": null,
-        "visit": 4,
+        "visit": 6,
         "right": {
-          "left": null,
-          "visit": 5,
-          "right": null
+            "left": {
+                "left": null,
+                "visit": 7,
+                "right": {
+                    "left": null,
+                    "visit": 8,
+                    "right": null
+                }
+            },
+            "visit": 9,
+            "right": {
+                "left": null,
+                "visit": 10,
+                "right": null
+            }
         }
-      }
     },
-    "visit": 6,
+    "visit": 11,
     "right": {
-      "left": {
-        "left": null,
-        "visit": 7,
-        "right": {
-          "left": null,
-          "visit": 8,
-          "right": null
-        }
-      },
-      "visit": 9,
-      "right": {
-        "left": null,
-        "visit": 10,
-        "right": null
-      }
-    }
-  },
-  "visit": 11,
-  "right": {
-    "left": {
-      "left": {
         "left": {
-          "left": null,
-          "visit": 12,
-          "right": null
+            "left": {
+                "left": {
+                    "left": null,
+                    "visit": 12,
+                    "right": null
+                },
+                "visit": 13,
+                "right": {
+                    "left": null,
+                    "visit": 14,
+                    "right": null
+                }
+            },
+            "visit": 15,
+            "right": {
+                "left": null,
+                "visit": 16,
+                "right": null
+            }
         },
-        "visit": 13,
+        "visit": 17,
         "right": {
-          "left": null,
-          "visit": 14,
-          "right": null
+            "left": {
+                "left": {
+                    "left": null,
+                    "visit": 18,
+                    "right": null
+                },
+                "visit": 19,
+                "right": null
+            },
+            "visit": 20,
+            "right": {
+                "left": null,
+                "visit": 21,
+                "right": {
+                    "left": null,
+                    "visit": 12,
+                    "right": null
+                }
+            }
         }
-      },
-      "visit": 15,
-      "right": {
-        "left": null,
-        "visit": 16,
-        "right": null
-      }
-    },
-    "visit": 17,
-    "right": {
-      "left": {
-        "left": {
-          "left": null,
-          "visit": 18,
-          "right": null
-        },
-        "visit": 19,
-        "right": null
-      },
-      "visit": 20,
-      "right": {
-        "left": null,
-        "visit": 21,
-        "right": {
-          "left": null,
-          "visit": 12,
-          "right": null
-        }
-      }
     }
-  }
 }
