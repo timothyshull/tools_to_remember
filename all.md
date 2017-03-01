@@ -1,0 +1,76 @@
+- binary search - array and BST
+- quicksort
+- topological sort
+- cycles - need more here
+    - directed
+    - undirected
+- traversal
+    - recursive
+        - preorder
+        - inorder
+        - postorder
+    - iterative
+        - preorder
+        - inorder
+        - postorder
+- level order tree printing
+
+
+
+- divide-and-conquer
+    - maximum subarray
+    - Strassen matrix multiplication
+- permutations
+- combinations
+- partitions
+- backtracking
+- basic linear programming
+    - shortest paths
+    - maxflow
+    - mincost flow
+    - Simplex algorithm
+- basic dynamic programming
+    - rod cutting
+    - longest common subsequence
+- basic greedy programming
+    - Huffman codes
+- Horner's algorithm
+
+- cheatsheet
+    - sort
+        - selection
+        - insertion
+        - bubble
+        - shellsort
+        - mergesort
+        - quicksort
+        - heapsort
+        - counting sort *
+        - radix sort * -> TODO: 3-way radix quicksort
+        - bucket sort *
+    - priority queues
+        - array
+        - binary heap
+    - symbol tables
+        - sequential search (unordered array)
+        - binary search (binary search)
+        - binary search tree
+        - red-black BST
+        - hash table (separate-chaining)
+        - hash table (linear-probing)
+     - graphs
+        - path
+        - cycle
+        - directed cycle
+        - bipartiteness/odd cycle
+        - connected components
+        - strong components
+        - Eulerian cycle
+        - directed Eulerian cycle
+        - transitive closure
+        - minimum spanning tree - Kruskal, Prim, Boruvka
+        - shortest paths - unit, nonegative, negative
+        - all-pairs shortest paths
+        - maxflow-mincut
+        - bipartite matching
+        - assignment problem

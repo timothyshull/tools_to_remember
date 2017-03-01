@@ -1,184 +1,114 @@
-// ch 7 - ACPP
-//template<class Item_type>
-//int partition(std::vector<Item_type>& collection, int l_bound, int r_bound)
-//{
-//    int i{l_bound - 1};
-//    int j{r_bound};
-//
-//    Item_type v{collection[r_bound]};
-//    for (;;) {
-//        while (collection[++i] < v) {}
-//        while (v < collection[--j]) { if (j == l_bound) { break; }}
-//        if (i >= j) { break; }
-//        std::swap(collection[i], collection[j]);
-//    }
-//    std::swap(collection[i], collection[r_bound]);
-//    return i;
-//}
+#include <random>
 
-#include <vector>
-#include <stack>
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
-// from AJ -> similar in approach to the Dutch national flag problem
+using namespace testing;
+
 template<typename Item_type>
-int partition(std::vector<Item_type>& collection, int l_bound, int r_bound)
+int partition(std::vector<Item_type>& a, int lo, int hi)
 {
-    int i{l_bound};
-    int j{r_bound + 1};
+    auto i = lo;
+    auto j = hi + 1;
 
-    Item_type v{collection[l_bound]};
+    Item_type v{a[lo]};
     while (true) {
-        while (collection[++i] < v) { if (i == r_bound) { break; }}
-        while (v < collection[--j]) { if (j == l_bound) { break; }}
+        while (a[++i] < v) { if (i == hi) { break; }}
+        while (v < a[--j]) { if (j == lo) { break; }}
         if (i >= j) { break; }
-        std::swap(collection[i], collection[j]);
+        std::swap(a[i], a[j]);
     }
-    std::swap(collection[l_bound], collection[j]);
+    std::swap(a[lo], a[j]);
     return j;
 }
 
-template<class Item_type>
-void quicksort(std::vector<Item_type>& collection, int l_bound, int r_bound)
+template<typename Item_type>
+void quicksort(std::vector<Item_type>& a, int lo, int hi)
 {
-    if (r_bound <= l_bound) { return; }
-    int i{partition(collection, l_bound, r_bound)};
-    quicksort(collection, l_bound, i - 1);
-    quicksort(collection, i + 1, r_bound);
+    if (hi <= lo) { return; }
+    auto j = partition(a, lo, hi);
+    quicksort(a, lo, j - 1);
+    quicksort(a, j + 1, hi);
 }
-
-template<class Item_type>
-inline void quicksort(std::vector<Item_type>& collection) { quicksort(collection, 0, static_cast<int>(collection.size() - 1)); }
-
-// -----
-
-// -----
-inline void push2(std::stack<int>& s, int a, int b)
-{
-    s.push(b);
-    s.push(a);
-}
-
-template<class Item_type>
-void quicksort_iterative(std::vector<Item_type>& collection, int l_bound, int r_bound)
-{
-    std::stack<int> s;
-    push2(s, l_bound, r_bound);
-    int i;
-    while (!s.empty()) {
-        l_bound = s.top();
-        s.pop();
-        r_bound = s.top();
-        s.pop();
-
-        if (r_bound <= l_bound) { continue; }
-        i = partition(collection, l_bound, r_bound);
-        if (i - l_bound > r_bound - i) {
-            push2(s, l_bound, i - 1);
-            push2(s, i + 1, r_bound);
-        } else {
-            push2(s, i + 1, r_bound);
-            push2(s, l_bound, i - 1);
-        }
-    }
-}
-
-// sort utilities
-// template<class Item>
-//void exch(Item& A, Item& B) {
-//    Item t = A;
-//    A = B;
-//    B = t;
-//}
-
-//template<class Item>
-//void compexch(Item& A, Item& B) { if (B < A) { exch(A, B); }}
 
 template<typename Item_type>
-void comp_exch(std::vector<Item_type>& collection, int index_a, int index_b) { if (collection[index_b] < collection[index_a]) { std::swap(collection[index_a], collection[index_b]); }}
-
-// ---- insertion
-template<class Item_type>
-void insertion_sort(std::vector<Item_type>& collection, int l_bound, int r_bound)
+void quicksort(std::vector<Item_type>& a)
 {
-    int i;
-    for (i = r_bound; i > l_bound; --i) {
-        comp_exch(collection, i - 1, i);
+    // std::shuffle(a.begin(), a.end()); -> eliminate dependence on input per Sedgeweick
+    quicksort<Item_type>(a, 0, static_cast<int>(a.size() - 1)); // narrow_cast
+}
+
+template<typename Item_type>
+void quicksort_3_way(std::vector<Item_type>& a, int lo, int hi)
+{
+    if (hi <= lo) { return; }
+    auto lt = lo;
+    auto i = lo + 1;
+    auto gt = hi;
+
+    Item_type v{a[lo]};
+    while (i <= gt) {
+        if (a[i] < v) { std::swap(a[lt++], a[i++]); }
+        else if (v < a[i]) { std::swap(a[i], a[gt--]); }
+        else { ++i; }
     }
-
-    int j;
-    for (i = l_bound + 2; i <= r_bound; ++i) {
-        j = i;
-        Item_type v{collection[i]};
-        while (v < collection[j - 1]) {
-            collection[j] = collection[j - 1];
-            --j;
-        }
-        collection[j] = v;
-    }
+    quicksort_3_way<Item_type>(a, lo, lt - 1);
+    quicksort_3_way<Item_type>(a, gt + 1, hi);
 }
 
-
-// -----
-
-
-template<class Item_type>
-void quicksort_m3(std::vector<Item_type>& collection, int l_bound, int r_bound)
+template<typename Item_type>
+void quicksort_3_way(std::vector<Item_type>& a)
 {
-    static const int cutoff{10};
-    if (r_bound - l_bound <= cutoff) { return; }
-    std::swap(collection[(l_bound + r_bound) / 2], collection[r_bound - 1]);
-    comp_exch(collection, l_bound, r_bound - 1);
-    comp_exch(collection, l_bound, r_bound);
-    comp_exch(collection, r_bound - 1, r_bound);
-
-    int i{partition(collection, l_bound + 1, r_bound - 1)};
-    quicksort_m3(collection, l_bound, i - 1);
-    quicksort_m3(collection, i + 1, r_bound);
+    quicksort_3_way<Item_type>(a, 0, static_cast<int>(a.size() - 1)); // narrow_cast
 }
 
-template<class Item_type>
-void hybridsort(std::vector<Item_type>& collection, int l_bound, int r_bound)
+// begin tests
+
+TEST(quicksort, sort)
 {
-    quicksort_m3(collection, l_bound, r_bound);
-    insertion_sort(collection, l_bound, r_bound);
+    std::vector<int> v{2, 1, 3, 5, 6, 4};
+    quicksort(v);
+    ASSERT_THAT(v, Eq(std::vector<int>{1, 2, 3, 4, 5, 6}));
 }
 
-// -----
-template<class Item_type>
-void quicksort_3_way(std::vector<Item_type>& collection, int l_bound, int r_bound)
+TEST(quicksort, sort_3_way)
 {
-    int k;
-    Item_type v{collection[r_bound]};
-    if (r_bound <= l_bound) { return; }
-
-    int i{l_bound - 1};
-    int j{r_bound};
-    int p{l_bound - 1};
-    int q{r_bound};
-
-    for (;;) {
-        while (collection[++i] < v) {}
-        while (v < collection[--j]) { if (j == l_bound) { break; }}
-        if (i >= j) { break; }
-
-        std::swap(collection[i], collection[j]);
-        if (collection[i] == v) {
-            ++p;
-            std::swap(collection[p], collection[i]);
-        }
-        if (v == collection[j]) {
-            --q;
-            std::swap(collection[q], collection[j]);
-        }
-    }
-
-    std::swap(collection[i], collection[r_bound]);
-
-    j = i - 1;
-    i = i + 1;
-    for (k = l_bound; k <= p; ++k, --j) { std::swap(collection[k], collection[j]); }
-    for (k = r_bound - 1; k >= q; --k, ++i) { std::swap(collection[k], collection[i]); }
-
-    quicksort_3_way(collection, l_bound, j);
-    quicksort_3_way(collection, i, r_bound);
+    std::vector<int> v{2, 1, 3, 5, 6, 4};
+    quicksort_3_way(v);
+    ASSERT_THAT(v, Eq(std::vector<int>{1, 2, 3, 4, 5, 6}));
 }
+
+TEST(quicksort, sort_1000_rand)
+{
+    std::size_t num_elems = 1000;
+    std::vector<int> v(num_elems);
+
+    std::random_device rd;
+    std::default_random_engine gen{rd()};
+    std::uniform_int_distribution<> dis{0, std::numeric_limits<int>::max()};
+
+    for (auto i = 0; i < num_elems; ++i) { v.emplace_back(dis(gen)); }
+
+    auto tmp = v;
+    quicksort(v);
+    std::sort(tmp.begin(), tmp.end());
+    ASSERT_THAT(v, Eq(tmp));
+}
+
+TEST(quicksort, sort_1000_rand_3_way)
+{
+    std::size_t num_elems = 1000;
+    std::vector<int> v(num_elems);
+
+    std::random_device rd;
+    std::default_random_engine gen{rd()};
+    std::uniform_int_distribution<> dis{0, std::numeric_limits<int>::max()};
+
+    for (auto i = 0; i < num_elems; ++i) { v[i] = dis(gen); }
+
+    auto tmp = v;
+    quicksort_3_way(v);
+    std::sort(tmp.begin(), tmp.end());
+    ASSERT_THAT(v, Eq(tmp));
+}
+

@@ -3,38 +3,58 @@ project(tools_to_remember)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(binary_search binary_search.cpp)
-add_executable(binary_search_bst binary_search_bst.cpp)
-add_executable(case_find case_find.cpp)
-add_executable(count_unique count_unique.cpp)
-add_executable(cycle cycle.cpp)
-add_executable(deadlock_cycle deadlock_cycle.cpp)
-add_executable(directed_cycle directed_cycle.cpp)
-add_executable(file_manip_todo file_manip_todo.cpp)
-add_executable(file_word_count file_word_count.cpp)
-add_executable(gcd gcd.cpp)
-add_executable(graph_bfs graph_bfs.cpp)
-add_executable(graph_dfs graph_dfs.cpp)
-add_executable(graph_print graph_print.cpp)
-add_executable(join_strings join_strings.cpp)
-add_executable(knapsack knapsack.cpp)
-add_executable(lexicographical_compare lexicographical_compare.cpp)
-add_executable(levenshtein_distance levenshtein_distance.cpp)
-add_executable(list_reverse list_reverse.cpp)
-add_executable(margins_and_justify margins_and_justify.cpp)
-add_executable(nth_substring nth_substring.cpp)
-add_executable(pad_string pad_string.cpp)
+enable_testing()
+
+add_subdirectory(googletest)
+
+include_directories(googletest/googletest/include)
+include_directories(googletest/googlemock/include)
+
+add_subdirectory(old)
+
+# all tests
+set(ALL_TESTS
+        bubble_sort.cpp
+        bucket_sort.cpp
+        counting_sort.cpp
+        heapsort.cpp
+        insertion_sort.cpp
+        mergesort.cpp
+        quicksort.cpp
+        radix_sort.cpp
+        selection_sort.cpp
+        shellsort.cpp)
+
+add_executable(test_all test_all.cpp ${ALL_TESTS})
+target_link_libraries(test_all gtest gmock)
+
+# sorting
+add_executable(selection_sort selection_sort.cpp)
+target_link_libraries(selection_sort gtest gmock gtest_main)
+
+add_executable(insertion_sort insertion_sort.cpp)
+target_link_libraries(insertion_sort gtest gmock gtest_main)
+
+add_executable(bubble_sort bubble_sort.cpp)
+target_link_libraries(bubble_sort gtest gmock gtest_main)
+
+add_executable(shellsort shellsort.cpp)
+target_link_libraries(shellsort gtest gmock gtest_main)
+
+add_executable(mergesort mergesort.cpp)
+target_link_libraries(mergesort gtest gmock gtest_main)
+
 add_executable(quicksort quicksort.cpp)
-add_executable(remove_substrings remove_substrings.cpp)
-add_executable(simple_path simple_path.cpp)
-add_executable(split_string split_string.cpp)
-add_executable(stream_read_string stream_read_string.cpp)
-add_executable(tabs_to_spaces tabs_to_spaces.cpp)
-add_executable(text_wrap text_wrap.cpp)
-add_executable(tokenize_string tokenize_string.cpp)
-add_executable(topological topological.cpp)
-add_executable(topological_acpp topological_acpp.cpp)
-add_executable(tree_nodes_within_distance tree_nodes_within_distance.cpp)
-add_executable(tree_print tree_print.cpp)
-add_executable(tree_traversal tree_traversal.cpp)
-add_executable(trim_string trim_string.cpp)
+target_link_libraries(quicksort gtest gmock gtest_main)
+
+add_executable(heapsort heapsort.cpp)
+target_link_libraries(heapsort gtest gmock gtest_main)
+
+add_executable(counting_sort counting_sort.cpp)
+target_link_libraries(counting_sort gtest gmock gtest_main)
+
+add_executable(radix_sort radix_sort.cpp)
+target_link_libraries(radix_sort gtest gmock gtest_main)
+
+add_executable(bucket_sort bucket_sort.cpp)
+target_link_libraries(bucket_sort gtest gmock gtest_main)
