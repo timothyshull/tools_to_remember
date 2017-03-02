@@ -38,21 +38,22 @@
 
 - cheatsheet
     - sort
-        - selection
-        - insertion
-        - bubble
-        - shellsort
-        - mergesort
-        - quicksort
-        - heapsort
-        - counting sort *
+        - selection - X
+        - insertion - X
+        - bubble - X
+        - shellsort - X
+        - mergesort - X
+        - quicksort - X
+        - heapsort - X
+        - counting sort * - X
         - radix sort * -> TODO: 3-way radix quicksort
-        - bucket sort *
+        - bucket sort * - X
     - priority queues
-        - array
-        - binary heap
+        - array - X
+        - binary heap - X
+        - TODO: consider more?
     - symbol tables
-        - sequential search (unordered array)
+        - sequential search (unordered array) - ignore
         - binary search (binary search)
         - binary search tree
         - red-black BST

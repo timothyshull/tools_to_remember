@@ -1,9 +1,7 @@
 project(old)
 
-add_executable(binary_search binary_search.cpp)
 add_executable(binary_search_bst binary_search_bst.cpp)
 add_executable(case_find case_find.cpp)
-add_executable(count_unique count_unique.cpp)
 add_executable(cycle cycle.cpp)
 add_executable(deadlock_cycle deadlock_cycle.cpp)
 add_executable(directed_cycle directed_cycle.cpp)

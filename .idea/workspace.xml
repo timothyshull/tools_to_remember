@@ -2,63 +2,71 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="tools_to_remember" targetName="knapsack" />
-      <config projectName="tools_to_remember" targetName="topological" />
-      <config projectName="tools_to_remember" targetName="join_strings" />
+      <config projectName="tools_to_remember" targetName="gmock_main" />
+      <config projectName="tools_to_remember" targetName="bucket_sort" />
+      <config projectName="tools_to_remember" targetName="graph_test" />
+      <config projectName="tools_to_remember" targetName="text_wrap" />
       <config projectName="tools_to_remember" targetName="list_reverse" />
       <config projectName="tools_to_remember" targetName="mergesort_top_down" />
-      <config projectName="tools_to_remember" targetName="binary_search" />
-      <config projectName="tools_to_remember" targetName="text_wrap" />
-      <config projectName="tools_to_remember" targetName="simple_path" />
       <config projectName="tools_to_remember" targetName="case_find" />
-      <config projectName="tools_to_remember" targetName="partition_gen" />
-      <config projectName="tools_to_remember" targetName="lexicographical_compare" />
-      <config projectName="tools_to_remember" targetName="count_unique" />
-      <config projectName="tools_to_remember" targetName="file_manip_todo" />
+      <config projectName="tools_to_remember" targetName="quicksort" />
       <config projectName="tools_to_remember" targetName="insertion_sort" />
-      <config projectName="tools_to_remember" targetName="remove_substrings" />
-      <config projectName="tools_to_remember" targetName="binary_search_bst" />
       <config projectName="tools_to_remember" targetName="stream_read_string" />
       <config projectName="tools_to_remember" targetName="pad_string" />
-      <config projectName="tools_to_remember" targetName="margins_and_justify" />
-      <config projectName="tools_to_remember" targetName="main" />
-      <config projectName="tools_to_remember" targetName="directed_cycle" />
-      <config projectName="tools_to_remember" targetName="bucket_sort" />
-      <config projectName="tools_to_remember" targetName="mergesort_bottom_up" />
-      <config projectName="tools_to_remember" targetName="trim_string" />
-      <config projectName="tools_to_remember" targetName="radix_sort" />
-      <config projectName="tools_to_remember" targetName="graph_bfs" />
-      <config projectName="tools_to_remember" targetName="topological_acpp" />
-      <config projectName="tools_to_remember" targetName="tree_print" />
-      <config projectName="tools_to_remember" targetName="heapsort" />
-      <config projectName="tools_to_remember" targetName="tabs_to_spaces" />
-      <config projectName="tools_to_remember" targetName="file_word_count" />
-      <config projectName="tools_to_remember" targetName="shellsort" />
-      <config projectName="tools_to_remember" targetName="nth_substring" />
-      <config projectName="tools_to_remember" targetName="gmock_main" />
-      <config projectName="tools_to_remember" targetName="gtest" />
-      <config projectName="tools_to_remember" targetName="bubble_sort" />
-      <config projectName="tools_to_remember" targetName="levenshtein_distance" />
-      <config projectName="tools_to_remember" targetName="quicksort" />
-      <config projectName="tools_to_remember" targetName="gtest_main" />
-      <config projectName="tools_to_remember" targetName="cycle" />
-      <config projectName="tools_to_remember" targetName="graph_dfs" />
-      <config projectName="tools_to_remember" targetName="graph_print" />
-      <config projectName="tools_to_remember" targetName="mergesort" />
-      <config projectName="tools_to_remember" targetName="selection_sort" />
-      <config projectName="tools_to_remember" targetName="quicksort_old" />
-      <config projectName="tools_to_remember" targetName="split_string" />
       <config projectName="tools_to_remember" targetName="test_levenshtein" />
-      <config projectName="tools_to_remember" targetName="deadlock_cycle" />
-      <config projectName="tools_to_remember" targetName="gmock" />
-      <config projectName="tools_to_remember" targetName="counting_sort" />
-      <config projectName="tools_to_remember" targetName="tree_nodes_within_distance" />
+      <config projectName="tools_to_remember" targetName="binary_search_st" />
+      <config projectName="tools_to_remember" targetName="shellsort" />
+      <config projectName="tools_to_remember" targetName="remove_substrings" />
+      <config projectName="tools_to_remember" targetName="main" />
+      <config projectName="tools_to_remember" targetName="quicksort_old" />
+      <config projectName="tools_to_remember" targetName="trim_string" />
+      <config projectName="tools_to_remember" targetName="partition_gen" />
+      <config projectName="tools_to_remember" targetName="max_subarray" />
       <config projectName="tools_to_remember" targetName="gcd" />
-      <config projectName="tools_to_remember" targetName="test_all" />
-      <config projectName="tools_to_remember" targetName="tree_traversal" />
+      <config projectName="tools_to_remember" targetName="directed_cycle" />
+      <config projectName="tools_to_remember" targetName="mergesort" />
+      <config projectName="tools_to_remember" targetName="graph_spec" />
+      <config projectName="tools_to_remember" targetName="index_min_pq" />
       <config projectName="tools_to_remember" targetName="tools_to_remember" />
+      <config projectName="tools_to_remember" targetName="bubble_sort" />
+      <config projectName="tools_to_remember" targetName="index_min_priority_queue" />
+      <config projectName="tools_to_remember" targetName="knapsack" />
+      <config projectName="tools_to_remember" targetName="file_manip_todo" />
+      <config projectName="tools_to_remember" targetName="deadlock_cycle" />
+      <config projectName="tools_to_remember" targetName="tree_traversal" />
+      <config projectName="tools_to_remember" targetName="priority_queue_array" />
+      <config projectName="tools_to_remember" targetName="gtest_main" />
+      <config projectName="tools_to_remember" targetName="simple_path" />
+      <config projectName="tools_to_remember" targetName="tree_nodes_within_distance" />
+      <config projectName="tools_to_remember" targetName="nth_substring" />
+      <config projectName="tools_to_remember" targetName="mergesort_bottom_up" />
+      <config projectName="tools_to_remember" targetName="tabs_to_spaces" />
+      <config projectName="tools_to_remember" targetName="topological" />
+      <config projectName="tools_to_remember" targetName="gtest" />
+      <config projectName="tools_to_remember" targetName="binary_search" />
+      <config projectName="tools_to_remember" targetName="split_string" />
+      <config projectName="tools_to_remember" targetName="graph_dfs" />
+      <config projectName="tools_to_remember" targetName="graph_bfs" />
       <config projectName="tools_to_remember" targetName="from_matt" />
+      <config projectName="tools_to_remember" targetName="gmock" />
+      <config projectName="tools_to_remember" targetName="cycle" />
+      <config projectName="tools_to_remember" targetName="join_strings" />
       <config projectName="tools_to_remember" targetName="tokenize_string" />
+      <config projectName="tools_to_remember" targetName="test_all" />
+      <config projectName="tools_to_remember" targetName="graph_print" />
+      <config projectName="tools_to_remember" targetName="topological_acpp" />
+      <config projectName="tools_to_remember" targetName="levenshtein_distance" />
+      <config projectName="tools_to_remember" targetName="heapsort" />
+      <config projectName="tools_to_remember" targetName="file_word_count" />
+      <config projectName="tools_to_remember" targetName="count_unique" />
+      <config projectName="tools_to_remember" targetName="graph" />
+      <config projectName="tools_to_remember" targetName="lexicographical_compare" />
+      <config projectName="tools_to_remember" targetName="radix_sort" />
+      <config projectName="tools_to_remember" targetName="margins_and_justify" />
+      <config projectName="tools_to_remember" targetName="tree_print" />
+      <config projectName="tools_to_remember" targetName="selection_sort" />
+      <config projectName="tools_to_remember" targetName="binary_search_bst" />
+      <config projectName="tools_to_remember" targetName="counting_sort" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -68,313 +76,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b84f83c2-a220-4f29-9cd3-2c7a7dd6a245" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/binary_search_bst.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/case_find.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/count_unique.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cycle.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/deadlock_cycle.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/directed_cycle.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_manip_todo.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/file_word_count.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gcd.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_bfs.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_dfs.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graph_print.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/join_strings.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/knapsack.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/levenshtein_distance.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lexicographical_compare.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_reverse.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/margins_and_justify.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/nth_substring.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pad_string.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/remove_substrings.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/simple_path.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/split_string.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/stream_read_string.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tabs_to_spaces.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/CXX.includecache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/depend.internal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test_levenshtein.dir/test_levenshtein.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/text_wrap.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tokenize_string.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/topological_acpp.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_nodes_within_distance.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_print.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tree_traversal.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trim_string.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/from_matt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/main" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/test_levenshtein" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/binary_search.cpp" afterPath="$PROJECT_DIR$/old/binary_search.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/binary_search_bst.cpp" afterPath="$PROJECT_DIR$/old/binary_search_bst.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/case_find.cpp" afterPath="$PROJECT_DIR$/old/case_find.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/count_unique.cpp" afterPath="$PROJECT_DIR$/old/count_unique.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cycle.cpp" afterPath="$PROJECT_DIR$/old/cycle.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/deadlock_cycle.cpp" afterPath="$PROJECT_DIR$/old/deadlock_cycle.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/directed_cycle.cpp" afterPath="$PROJECT_DIR$/old/directed_cycle.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file_manip_todo.cpp" afterPath="$PROJECT_DIR$/old/file_manip_todo.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file_word_count.cpp" afterPath="$PROJECT_DIR$/old/file_word_count.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gcd.cpp" afterPath="$PROJECT_DIR$/old/gcd.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/graph_bfs.cpp" afterPath="$PROJECT_DIR$/old/graph_bfs.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/graph_dfs.cpp" afterPath="$PROJECT_DIR$/old/graph_dfs.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/graph_print.cpp" afterPath="$PROJECT_DIR$/old/graph_print.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/inorder_recursive_calls.json" afterPath="$PROJECT_DIR$/old/inorder_recursive_calls.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/join_strings.cpp" afterPath="$PROJECT_DIR$/old/join_strings.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/knapsack.cpp" afterPath="$PROJECT_DIR$/old/knapsack.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/levenshtein_distance.cpp" afterPath="$PROJECT_DIR$/old/levenshtein_distance.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lexicographical_compare.cpp" afterPath="$PROJECT_DIR$/old/lexicographical_compare.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/list_reverse.cpp" afterPath="$PROJECT_DIR$/old/list_reverse.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/margins_and_justify.cpp" afterPath="$PROJECT_DIR$/old/margins_and_justify.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nth_substring.cpp" afterPath="$PROJECT_DIR$/old/nth_substring.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pad_string.cpp" afterPath="$PROJECT_DIR$/old/pad_string.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/postorder_recursive_calls.json" afterPath="$PROJECT_DIR$/old/postorder_recursive_calls.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/preorder_recursive_calls.json" afterPath="$PROJECT_DIR$/old/preorder_recursive_calls.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quicksort.cpp" afterPath="$PROJECT_DIR$/old/quicksort.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/remove_substrings.cpp" afterPath="$PROJECT_DIR$/old/remove_substrings.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/simple_path.cpp" afterPath="$PROJECT_DIR$/old/simple_path.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/split_string.cpp" afterPath="$PROJECT_DIR$/old/split_string.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/stream_read_string.cpp" afterPath="$PROJECT_DIR$/old/stream_read_string.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tabs_to_spaces.cpp" afterPath="$PROJECT_DIR$/old/tabs_to_spaces.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/text_wrap.cpp" afterPath="$PROJECT_DIR$/old/text_wrap.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/todos_and_notes.md" afterPath="$PROJECT_DIR$/old/todos_and_notes.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tokenize_string.cpp" afterPath="$PROJECT_DIR$/old/tokenize_string.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/topological.cpp" afterPath="$PROJECT_DIR$/old/topological.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/topological_acpp.cpp" afterPath="$PROJECT_DIR$/old/topological_acpp.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tree_nodes_within_distance.cpp" afterPath="$PROJECT_DIR$/old/tree_nodes_within_distance.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tree_print.cpp" afterPath="$PROJECT_DIR$/old/tree_print.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tree_traversal.cpp" afterPath="$PROJECT_DIR$/old/tree_traversal.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trim_string.cpp" afterPath="$PROJECT_DIR$/old/trim_string.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/old/binary_search.cpp" afterPath="$PROJECT_DIR$/binary_search.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/old/count_unique.cpp" afterPath="$PROJECT_DIR$/count_unique.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/quicksort.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tools_to_remember.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/tools_to_remember.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all.md" afterPath="$PROJECT_DIR$/all.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/old/CMakeLists.txt" afterPath="$PROJECT_DIR$/old/CMakeLists.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -390,22 +97,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="counting_sort.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/counting_sort.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="all.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/all.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="720">
-                <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+              <first_editor relative-caret-position="-503">
+                <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -415,52 +112,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bubble_sort.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bubble_sort.cpp">
+      <file leaf-file-name="Graph.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Graph.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="radix_sort.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/radix_sort.cpp">
+      <file leaf-file-name="Graph.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Graph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bucket_sort.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bucket_sort.cpp">
+      <file leaf-file-name="vector" pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="639" column="14" lean-forward="false" selection-start-line="639" selection-start-column="14" selection-end-line="639" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="count_unique.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/count_unique.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memory" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26085">
-              <caret line="1739" column="0" lean-forward="false" selection-start-line="1739" selection-start-column="0" selection-end-line="1739" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <marker date="1488430313000" expanded="true" signature="491:602" ph="{...}" />
+                <marker date="1488430313000" expanded="true" signature="638:710" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -468,8 +158,53 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="57" lean-forward="false" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+            <state relative-caret-position="403">
+              <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graph_spec.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph_spec.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_min_pq.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_min_pq.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="max_subarray.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/max_subarray.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="170" column="15" lean-forward="false" selection-start-line="170" selection-start-column="15" selection-end-line="170" selection-end-column="15" />
+              <folding>
+                <marker date="1488430213000" expanded="true" signature="221:425" ph="{...}" />
+                <marker date="1488430213000" expanded="true" signature="506:772" ph="{...}" />
+                <marker date="1488430213000" expanded="true" signature="855:1089" ph="{...}" />
+                <marker date="1488430213000" expanded="true" signature="1185:1396" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heapsort.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heapsort.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -501,6 +236,8 @@
       <find>bubble_sort</find>
       <find>counting_sort</find>
       <find>bubble</find>
+      <find>Priority_queue_a</find>
+      <find>max_subarray</find>
     </findStrings>
     <replaceStrings>
       <replace>$1std::ifstream</replace>
@@ -519,6 +256,9 @@
       <replace>counting_sort</replace>
       <replace>shellsort</replace>
       <replace>bucket_sort</replace>
+      <replace>Binary_search_st</replace>
+      <replace>Index_min_pq</replace>
+      <replace>max_subarray_kadane</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -530,16 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tabs_to_spaces.cpp" />
-        <option value="$PROJECT_DIR$/text_wrap.cpp" />
-        <option value="$PROJECT_DIR$/tree_print.cpp" />
-        <option value="$PROJECT_DIR$/topological_acpp.cpp" />
-        <option value="$PROJECT_DIR$/todos.md" />
-        <option value="$PROJECT_DIR$/binary_search.cpp" />
-        <option value="$PROJECT_DIR$/binary_search_bst.cpp" />
-        <option value="$PROJECT_DIR$/case_find.cpp" />
-        <option value="$PROJECT_DIR$/directed_cycle.cpp" />
-        <option value="$PROJECT_DIR$/file_word_count.cpp" />
         <option value="$PROJECT_DIR$/graph_bfs.cpp" />
         <option value="$PROJECT_DIR$/join_strings.cpp" />
         <option value="$PROJECT_DIR$/lexicographical_compare.cpp" />
@@ -549,7 +279,6 @@
         <option value="$PROJECT_DIR$/postorder_recursive_calls.json" />
         <option value="$PROJECT_DIR$/preorder_recursive_calls.json" />
         <option value="$PROJECT_DIR$/tree_traversal.cpp" />
-        <option value="$PROJECT_DIR$/count_unique.cpp" />
         <option value="$PROJECT_DIR$/cycle.cpp" />
         <option value="$PROJECT_DIR$/deadlock_cycle.cpp" />
         <option value="$PROJECT_DIR$/trim_string.cpp" />
@@ -567,7 +296,6 @@
         <option value="$PROJECT_DIR$/test_all.cpp" />
         <option value="$PROJECT_DIR$/mergesort_top_down.cpp" />
         <option value="$PROJECT_DIR$/mergesort_bottom_up.cpp" />
-        <option value="$PROJECT_DIR$/old/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/bubble_sort.cpp" />
         <option value="$PROJECT_DIR$/heapsort.cpp" />
         <option value="$PROJECT_DIR$/insertion_sort.cpp" />
@@ -577,10 +305,22 @@
         <option value="$PROJECT_DIR$/shellsort.cpp" />
         <option value="$PROJECT_DIR$/counting_sort.cpp" />
         <option value="$PROJECT_DIR$/radix_sort.cpp" />
-        <option value="$PROJECT_DIR$/all.md" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/bucket_sort.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/priority_queue_array.cpp" />
+        <option value="$PROJECT_DIR$/index_min_priority_queue.cpp" />
+        <option value="$PROJECT_DIR$/index_min_pq.cpp" />
+        <option value="$PROJECT_DIR$/all.md" />
+        <option value="$PROJECT_DIR$/binary_search_st.cpp" />
+        <option value="$PROJECT_DIR$/old/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/max_sum_subarray.cpp" />
+        <option value="$PROJECT_DIR$/binary_search.cpp" />
+        <option value="$PROJECT_DIR$/max_subarray.cpp" />
+        <option value="$PROJECT_DIR$/count_unique.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/graph_spec.cpp" />
+        <option value="$PROJECT_DIR$/Graph.h" />
+        <option value="$PROJECT_DIR$/Graph.cpp" />
       </list>
     </option>
   </component>
@@ -592,8 +332,9 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="840" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -636,9 +377,11 @@
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.5.0/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.5.0/bin/node" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/old" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -646,7 +389,7 @@
       <recent name="$PROJECT_DIR$/old" />
     </key>
   </component>
-  <component name="RunManager" selected="Google Test.test_all">
+  <component name="RunManager" selected="Google Test.graph">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -997,6 +740,22 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="priority_queue_array" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="priority_queue_array" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="priority_queue_array">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="max_subarray" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="max_subarray" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="max_subarray">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="binary_search" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="binary_search" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="binary_search" TEST_CLASS="binary_search" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="selection_sort" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="selection_sort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="selection_sort" TEST_CLASS="selection_sort" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -1014,6 +773,26 @@
       <method />
     </configuration>
     <configuration default="false" name="test_all" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="test_all" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="test_all" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="count_unique" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="count_unique" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="count_unique" TEST_CLASS="count_unique" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="max_subarray" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="max_subarray" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="max_subarray" TEST_CLASS="max_subarray" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph_spec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="graph_spec" TEST_CLASS="graph" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="priority_queue_array" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="priority_queue_array" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="priority_queue_array" TEST_CLASS="priority_queue_array" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="index_min_pq" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="index_min_pq" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="index_min_pq" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
@@ -1037,7 +816,19 @@
       <envs />
       <method />
     </configuration>
-    <list size="53">
+    <configuration default="false" name="binary_search_st" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="binary_search_st" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="binary_search_st" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="graph_test" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph_spec" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tools_to_remember" TARGET_NAME="graph_spec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tools_to_remember" RUN_TARGET_NAME="graph_spec" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <list size="65">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.cycle" />
       <item index="2" class="java.lang.String" itemvalue="Application.directed_cycle" />
@@ -1081,16 +872,28 @@
       <item index="40" class="java.lang.String" itemvalue="Application.gtest_main" />
       <item index="41" class="java.lang.String" itemvalue="Application.insertion_sort" />
       <item index="42" class="java.lang.String" itemvalue="Application.quicksort_old" />
-      <item index="43" class="java.lang.String" itemvalue="Google Test.selection_sort" />
-      <item index="44" class="java.lang.String" itemvalue="Google Test.insertion_sort" />
-      <item index="45" class="java.lang.String" itemvalue="Google Test.bubble_sort" />
-      <item index="46" class="java.lang.String" itemvalue="Google Test.shellsort" />
-      <item index="47" class="java.lang.String" itemvalue="Google Test.test_all" />
-      <item index="48" class="java.lang.String" itemvalue="Google Test.mergesort" />
-      <item index="49" class="java.lang.String" itemvalue="Google Test.heapsort" />
-      <item index="50" class="java.lang.String" itemvalue="Google Test.counting_sort" />
-      <item index="51" class="java.lang.String" itemvalue="Google Test.radix_sort" />
-      <item index="52" class="java.lang.String" itemvalue="Google Test.bucket_sort" />
+      <item index="43" class="java.lang.String" itemvalue="Application.priority_queue_array" />
+      <item index="44" class="java.lang.String" itemvalue="Application.max_subarray" />
+      <item index="45" class="java.lang.String" itemvalue="Application.graph" />
+      <item index="46" class="java.lang.String" itemvalue="Google Test.binary_search" />
+      <item index="47" class="java.lang.String" itemvalue="Google Test.selection_sort" />
+      <item index="48" class="java.lang.String" itemvalue="Google Test.insertion_sort" />
+      <item index="49" class="java.lang.String" itemvalue="Google Test.bubble_sort" />
+      <item index="50" class="java.lang.String" itemvalue="Google Test.shellsort" />
+      <item index="51" class="java.lang.String" itemvalue="Google Test.test_all" />
+      <item index="52" class="java.lang.String" itemvalue="Google Test.count_unique" />
+      <item index="53" class="java.lang.String" itemvalue="Google Test.max_subarray" />
+      <item index="54" class="java.lang.String" itemvalue="Google Test.graph" />
+      <item index="55" class="java.lang.String" itemvalue="Google Test.priority_queue_array" />
+      <item index="56" class="java.lang.String" itemvalue="Google Test.index_min_pq" />
+      <item index="57" class="java.lang.String" itemvalue="Google Test.mergesort" />
+      <item index="58" class="java.lang.String" itemvalue="Google Test.heapsort" />
+      <item index="59" class="java.lang.String" itemvalue="Google Test.counting_sort" />
+      <item index="60" class="java.lang.String" itemvalue="Google Test.radix_sort" />
+      <item index="61" class="java.lang.String" itemvalue="Google Test.bucket_sort" />
+      <item index="62" class="java.lang.String" itemvalue="Google Test.binary_search_st" />
+      <item index="63" class="java.lang.String" itemvalue="Google Test.graph_test" />
+      <item index="64" class="java.lang.String" itemvalue="Google Test.graph_spec" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -1152,66 +955,70 @@
       <workItem from="1488397083257" duration="214000" />
       <workItem from="1488397309590" duration="1133000" />
       <workItem from="1488398664444" duration="37000" />
+      <workItem from="1488398712845" duration="131000" />
+      <workItem from="1488407949414" duration="8090000" />
+      <workItem from="1488424895289" duration="4092000" />
+      <workItem from="1488429493137" duration="2358000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="bucket_sort - 2017.03.01 at 11h 44m 31s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="binary_search - 2017.03.01 at 19h 39m 34s.xml">
+      <configuration name="binary_search" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="bucket_sort - 2017.03.01 at 11h 45m 02s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="count_unique - 2017.03.01 at 19h 51m 16s.xml">
+      <configuration name="count_unique" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="bucket_sort - 2017.03.01 at 11h 48m 17s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="graph - 2017.03.01 at 21h 18m 26s.xml">
+      <configuration name="graph" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="bucket_sort - 2017.03.01 at 12h 00m 35s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="graph - 2017.03.01 at 21h 19m 13s.xml">
+      <configuration name="graph" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="bucket_sort - 2017.03.01 at 12h 02m 34s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="max_subarray - 2017.03.01 at 20h 33m 28s.xml">
+      <configuration name="max_subarray" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="bucket_sort - 2017.03.01 at 12h 02m 47s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="max_subarray - 2017.03.01 at 20h 40m 22s.xml">
+      <configuration name="max_subarray" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="bucket_sort - 2017.03.01 at 12h 02m 51s.xml">
-      <configuration name="bucket_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="max_subarray - 2017.03.01 at 20h 47m 48s.xml">
+      <configuration name="max_subarray" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="radix_sort - 2017.03.01 at 11h 25m 44s.xml">
-      <configuration name="radix_sort" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="max_subarray - 2017.03.01 at 20h 49m 30s.xml">
+      <configuration name="max_subarray" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_all - 2017.03.01 at 11h 13m 02s.xml">
-      <configuration name="test_all" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="max_subarray - 2017.03.01 at 20h 50m 17s.xml">
+      <configuration name="max_subarray" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_all - 2017.03.01 at 12h 03m 04s.xml">
+    <history-entry file="test_all - 2017.03.01 at 19h 40m 37s.xml">
       <configuration name="test_all" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111813000" />
+    <option name="totallyTimeSpent" value="126484000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
-    <editor active="false" />
+    <frame x="840" y="23" width="840" height="1023" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19761905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24047619" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3996004" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996004" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1225,7 +1032,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="39" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeGoogleTestRunConfigurationType">
@@ -1238,76 +1045,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/old/preorder_recursive_calls.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/postorder_recursive_calls.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/deadlock_cycle.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/graph_print.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/tree_nodes_within_distance.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/case_find.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="93" lean-forward="false" selection-start-line="46" selection-start-column="93" selection-end-line="46" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/trim_string.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="3" lean-forward="false" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/simple_path.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/split_string.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/stream_read_string.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/cycle.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -1348,13 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/binary_search_bst.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1421,20 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/binary_search.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/count_unique.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="81" lean-forward="false" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/inorder_recursive_calls.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1450,20 +1166,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mergesort_bottom_up.cpp" />
-    <entry file="file://$PROJECT_DIR$/old/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_all.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insertion_sort.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1492,20 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shellsort.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="58" lean-forward="false" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heapsort.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/counting_sort.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1522,19 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/all.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="720">
-            <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bubble_sort.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -1547,13 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
           <caret line="105" column="26" lean-forward="false" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="1390" column="0" lean-forward="false" selection-start-line="1390" selection-start-column="0" selection-end-line="1390" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1574,8 +1242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1584,14 +1252,177 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26085">
           <caret line="1739" column="0" lean-forward="false" selection-start-line="1739" selection-start-column="0" selection-end-line="1739" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_all.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/binary_search_bst.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googletest/googlemock/include/gmock/gmock-spec-builders.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27480">
+          <caret line="1832" column="0" lean-forward="false" selection-start-line="1832" selection-start-column="0" selection-end-line="1832" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priority_queue_array.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1082">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_search_st.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shellsort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_search.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1488429129000" expanded="true" signature="214:459" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/case_find.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="46" column="93" lean-forward="false" selection-start-line="46" selection-start-column="93" selection-end-line="46" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googletest/googlemock/include/gmock/gmock-matchers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="3783" column="32" lean-forward="false" selection-start-line="3783" selection-start-column="32" selection-end-line="3783" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/max_subarray.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="170" column="15" lean-forward="false" selection-start-line="170" selection-start-column="15" selection-end-line="170" selection-end-column="15" />
+          <folding>
+            <marker date="1488430213000" expanded="true" signature="221:425" ph="{...}" />
+            <marker date="1488430213000" expanded="true" signature="506:772" ph="{...}" />
+            <marker date="1488430213000" expanded="true" signature="855:1089" ph="{...}" />
+            <marker date="1488430213000" expanded="true" signature="1185:1396" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/count_unique.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <marker date="1488430313000" expanded="true" signature="491:602" ph="{...}" />
+            <marker date="1488430313000" expanded="true" signature="638:710" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-503">
+            <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heapsort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="57" lean-forward="false" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        <state relative-caret-position="403">
+          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="639" column="14" lean-forward="false" selection-start-line="639" selection-start-column="14" selection-end-line="639" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_min_pq.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_spec.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>

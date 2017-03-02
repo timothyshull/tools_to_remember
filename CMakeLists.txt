@@ -14,12 +14,17 @@ add_subdirectory(old)
 
 # all tests
 set(ALL_TESTS
+        binary_search.cpp
+        # binary_search_st.cpp
         bubble_sort.cpp
         bucket_sort.cpp
+        count_unique.cpp
         counting_sort.cpp
         heapsort.cpp
+        index_min_pq.cpp
         insertion_sort.cpp
         mergesort.cpp
+        priority_queue_array.cpp
         quicksort.cpp
         radix_sort.cpp
         selection_sort.cpp
@@ -58,3 +63,32 @@ target_link_libraries(radix_sort gtest gmock gtest_main)
 
 add_executable(bucket_sort bucket_sort.cpp)
 target_link_libraries(bucket_sort gtest gmock gtest_main)
+
+# priority queues
+add_executable(priority_queue_array priority_queue_array.cpp)
+target_link_libraries(priority_queue_array gtest gmock gtest_main)
+
+add_executable(index_min_pq index_min_pq.cpp)
+target_link_libraries(index_min_pq gtest gmock gtest_main)
+
+# search tables
+add_executable(binary_search_st binary_search_st.cpp)
+target_link_libraries(binary_search_st gtest gmock gtest_main)
+
+# general search
+add_executable(binary_search binary_search.cpp)
+target_link_libraries(binary_search gtest gmock gtest_main)
+
+# string ops
+add_executable(count_unique count_unique.cpp)
+target_link_libraries(count_unique gtest gmock gtest_main)
+
+# divide-and-conquer
+add_executable(max_subarray max_subarray.cpp)
+target_link_libraries(max_subarray gtest gmock gtest_main)
+
+# graphs
+add_library(graph Graph.h Graph.cpp)
+add_executable(graph_spec graph_spec.cpp)
+target_link_libraries(graph_spec graph gtest gmock gtest_main)
+
