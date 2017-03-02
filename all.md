@@ -53,7 +53,7 @@
         - binary heap - X
         - TODO: consider more?
     - symbol tables
-        - sequential search (unordered array) - ignore
+        - sequential search (unordered array)
         - binary search (binary search)
         - binary search tree
         - red-black BST

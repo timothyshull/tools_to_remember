@@ -38,3 +38,12 @@ TEST(graph, ctor_10_vertices_10_edges)
     g.add_edge(9, 0);
     ASSERT_THAT(g.num_edges(), Eq(10));
 }
+
+TEST(graph, same_edge_twice)
+{
+    Graph g{10};
+    g.add_edge(0, 1);
+    g.add_edge(0, 1);
+    ASSERT_THAT(g.num_edges(), Eq(1));
+}
+

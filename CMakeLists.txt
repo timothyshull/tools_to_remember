@@ -20,6 +20,8 @@ set(ALL_TESTS
         bucket_sort.cpp
         count_unique.cpp
         counting_sort.cpp
+        dfs_spec.cpp
+        graph_spec.cpp
         heapsort.cpp
         index_min_pq.cpp
         insertion_sort.cpp
@@ -30,8 +32,14 @@ set(ALL_TESTS
         selection_sort.cpp
         shellsort.cpp)
 
+set(ALL_TEST_LIBS
+        gtest
+        gmock
+        graph
+        dfs)
+
 add_executable(test_all test_all.cpp ${ALL_TESTS})
-target_link_libraries(test_all gtest gmock)
+target_link_libraries(test_all ${ALL_TEST_LIBS})
 
 # sorting
 add_executable(selection_sort selection_sort.cpp)
@@ -72,6 +80,19 @@ add_executable(index_min_pq index_min_pq.cpp)
 target_link_libraries(index_min_pq gtest gmock gtest_main)
 
 # search tables
+add_executable(hash_functions hash_functions.cpp)
+target_link_libraries(hash_functions gtest gmock gtest_main)
+
+add_library(sequential_search Sequential_search_st.h)
+set_target_properties(sequential_search PROPERTIES LINKER_LANGUAGE CXX)
+add_executable(sequential_search_spec sequential_search_spec.cpp)
+target_link_libraries(sequential_search_spec sequential_search gtest gmock gtest_main)
+
+add_library(separate_chaining Separate_chaining_hash_st.h)
+set_target_properties(separate_chaining PROPERTIES LINKER_LANGUAGE CXX)
+add_executable(separate_chaining_spec separate_chaining_spec.cpp)
+target_link_libraries(separate_chaining_spec separate_chaining gtest gmock gtest_main)
+
 add_executable(binary_search_st binary_search_st.cpp)
 target_link_libraries(binary_search_st gtest gmock gtest_main)
 
@@ -87,8 +108,20 @@ target_link_libraries(count_unique gtest gmock gtest_main)
 add_executable(max_subarray max_subarray.cpp)
 target_link_libraries(max_subarray gtest gmock gtest_main)
 
+# permutations
+add_executable(permutations permutations.cpp)
+target_link_libraries(permutations gtest gmock gtest_main)
+
+# partitions
+add_executable(partitions partitions.cpp)
+target_link_libraries(partitions gtest gmock gtest_main)
+
 # graphs
 add_library(graph Graph.h Graph.cpp)
 add_executable(graph_spec graph_spec.cpp)
 target_link_libraries(graph_spec graph gtest gmock gtest_main)
+
+add_library(dfs Depth_first_search.cpp Depth_first_search.h)
+add_executable(dfs_spec dfs_spec.cpp)
+target_link_libraries(dfs_spec dfs graph gtest gmock gtest_main)
 

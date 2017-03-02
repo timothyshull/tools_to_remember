@@ -7,7 +7,10 @@ Graph::Graph(std::size_t num_vertices)
 void Graph::add_edge(int v, int w)
 {
     // validate vertices
-    ++_num_edges;
+    if (_adjacency_lists[v].find(w) == _adjacency_lists[v].end()
+        && _adjacency_lists[w].find(v) == _adjacency_lists[w].end()) {
+        ++_num_edges;
+    }
     _adjacency_lists[v].insert(w);
     _adjacency_lists[w].insert(v);
 }
