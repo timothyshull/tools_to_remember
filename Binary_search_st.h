@@ -44,7 +44,7 @@ public:
         if (empty()) { throw std::out_of_range{}; }
         auto i = rank(key);
         if (i < n && keys[i] == key) { return vals[i]; }
-        else { throw std::out_of_range{}; }
+        else { throw std::out_of_range{""}; }
     }
 
     Value_type get(Key_type&& key)
@@ -52,7 +52,7 @@ public:
         if (empty()) { throw std::out_of_range{}; }
         auto i = rank(key);
         if (i < n && keys[i] == key) { return vals[i]; }
-        else { throw std::out_of_range{}; }
+        else { throw std::out_of_range{""}; }
     }
 
     std::size_t rank(Key_type& key)

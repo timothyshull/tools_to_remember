@@ -19,7 +19,7 @@
 
 - divide-and-conquer
     - maximum subarray - X
-    - Strassen matrix multiplication
+    - matrix multiplication (not Strassen) - X
 - permutations
 - combinations
 - partitions
@@ -34,7 +34,7 @@
     - longest common subsequence
 - basic greedy programming
     - Huffman codes
-- Horner's algorithm
+- Horner's method - X
 
 - cheatsheet
     - sort

@@ -18,11 +18,11 @@ set(ALL_TESTS
         # binary_search_st.cpp
         bubble_sort.cpp
         bucket_sort.cpp
-        count_unique.cpp
         counting_sort.cpp
         dfs_spec.cpp
         graph_spec.cpp
         heapsort.cpp
+        horners_method.cpp
         index_min_pq.cpp
         insertion_sort.cpp
         mergesort.cpp
@@ -30,7 +30,8 @@ set(ALL_TESTS
         quicksort.cpp
         radix_sort.cpp
         selection_sort.cpp
-        shellsort.cpp)
+        shellsort.cpp
+        string_ops.cpp)
 
 set(ALL_TEST_LIBS
         gtest
@@ -102,20 +103,22 @@ target_include_directories(linear_probing INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(linear_probing_spec linear_probing_spec.cpp)
 target_link_libraries(linear_probing_spec linear_probing gtest gmock gtest_main)
 
-add_executable(binary_search_st binary_search_st.cpp)
+add_executable(binary_search_st Binary_search_st.h)
 target_link_libraries(binary_search_st gtest gmock gtest_main)
 
 # general search
 add_executable(binary_search binary_search.cpp)
 target_link_libraries(binary_search gtest gmock gtest_main)
 
-# string ops
-add_executable(count_unique count_unique.cpp)
-target_link_libraries(count_unique gtest gmock gtest_main)
+
+# Numerical
 
 # divide-and-conquer
 add_executable(max_subarray max_subarray.cpp)
 target_link_libraries(max_subarray gtest gmock gtest_main)
+
+add_executable(matrix_multiplication matrix_multiplication.cpp)
+target_link_libraries(matrix_multiplication gtest gmock gtest_main)
 
 # permutations
 add_executable(permutations permutations.cpp)
@@ -124,6 +127,12 @@ target_link_libraries(permutations gtest gmock gtest_main)
 # partitions
 add_executable(partitions partitions.cpp)
 target_link_libraries(partitions gtest gmock gtest_main)
+
+# polynomials
+add_executable(horners_method horners_method.cpp)
+target_link_libraries(horners_method gtest gmock gtest_main)
+
+
 
 # graphs
 add_library(graph Graph.h Graph.cpp)
@@ -134,3 +143,7 @@ add_library(dfs Depth_first_search.cpp Depth_first_search.h)
 add_executable(dfs_spec dfs_spec.cpp)
 target_link_libraries(dfs_spec dfs graph gtest gmock gtest_main)
 
+
+# string ops
+add_executable(string_ops string_ops.cpp)
+target_link_libraries(string_ops gtest gmock gtest_main)

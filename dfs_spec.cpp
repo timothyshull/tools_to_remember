@@ -106,7 +106,8 @@ TEST(dfs, graph_5_vertices_2_reachable)
 
 TEST(dfs, graph_randomized)
 {
-    std::size_t max_num_vertices{10000};
+    // std::size_t max_num_vertices{10000};
+    std::size_t max_num_vertices{100};
     std::random_device rd;
     std::default_random_engine gen{rd()};
     std::uniform_int_distribution<std::size_t> dis{0, max_num_vertices};
