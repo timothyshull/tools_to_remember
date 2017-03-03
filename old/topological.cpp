@@ -101,7 +101,7 @@ std::vector<int> topological_sort(Digraph& digraph)
         ++count;
         for (auto w : digraph.adjacent(v)) {
             --indegree[w];
-            if (indegree[w] == 0) queue.push(w);
+            if (indegree[w] == 0) { queue.push(w); }
         }
     }
 

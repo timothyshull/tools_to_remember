@@ -25,7 +25,9 @@ private:
 
         Node() : next{nullptr} {}
 
-        Node(const Node&) = delete;
+        // cannot hand out references to an owning node pointer and copying
+        // requires copying the remaining list or creating a new next with a nullptr
+        Node(const Node& rhs) = delete;
 
         Node(Node&& rhs)
                 : key{rhs.key},
@@ -51,10 +53,10 @@ public:
 
     ~Sequential_search_st() { if (first != nullptr) { delete first; }}
 
-    Value_type get(Key_type key)
+    Value_type get(Key_type key) const
     {
         for (auto t = first; t != nullptr; t = t->next) { if (key == t->key) { return t->value; }}
-        throw std::out_of_range{};
+        throw std::out_of_range{""};
     }
 
     void put(Key_type key, Value_type value)

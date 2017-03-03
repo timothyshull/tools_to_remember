@@ -68,8 +68,8 @@ std::size_t hash<std::string>(std::string s, std::size_t modulo_divisor)
     return h;
 }
 
-int main()
+template<typename Type>
+inline constexpr auto radix() -> decltype(std::numeric_limits<Type>::max() - std::numeric_limits<Type>::min() + 1)
 {
-    std::cout << std::numeric_limits<std::string::value_type>::max() - std::numeric_limits<std::string::value_type>::min() + 1 << "\n";
-    return 0;
+    return std::numeric_limits<Type>::max() - std::numeric_limits<Type>::min() + 1;
 }

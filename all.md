@@ -18,7 +18,7 @@
 
 
 - divide-and-conquer
-    - maximum subarray
+    - maximum subarray - X
     - Strassen matrix multiplication
 - permutations
 - combinations
@@ -53,12 +53,12 @@
         - binary heap - X
         - TODO: consider more?
     - symbol tables
-        - sequential search (unordered array)
+        - sequential search (unordered array) - X
         - binary search (binary search)
         - binary search tree
         - red-black BST
-        - hash table (separate-chaining)
-        - hash table (linear-probing)
+        - hash table (separate-chaining) - X
+        - hash table (linear-probing) - X
      - graphs
         - path
         - cycle

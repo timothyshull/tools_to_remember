@@ -44,8 +44,6 @@ List_node<Item_type>* reverse2(List_node<Item_type>* head)
     return recursive_reverse2<Item_type>(head, nullptr);
 }
 
-
-
 // ****
 template<typename Item_type>
 List_node<Item_type>* reverse(List_node<Item_type>* head)

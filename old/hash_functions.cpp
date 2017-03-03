@@ -7,7 +7,8 @@
 // sign_bits = std::numeric_limits<type>::is_signed
 // exponent_size = sizeof(type) * CHAR_BIT - std::numeric_limits<type>::is_signed - std::numeric_limits<float>::digits
 template<typename Float_type>
-std::size_t hash(Float_type value) {
+std::size_t hash(Float_type value)
+{
     union {
         Float_type f;
         std::size_t s;

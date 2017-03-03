@@ -5,6 +5,8 @@
 
 using namespace testing;
 
+// TODO: see loadword from functional lin libcxx
+
 auto radix = static_cast<std::size_t>(1 << (sizeof(char) * CHAR_BIT));
 
 template<typename Item_type>

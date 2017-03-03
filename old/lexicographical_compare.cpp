@@ -44,7 +44,8 @@ bool string_it_compare(const std::string& str1, const std::string& str2)
     return (begin1 == end1) && (begin2 != end2);
 }
 
-bool string_compare(const std::string& str1, const std::string& str2) {
+bool string_compare(const std::string& str1, const std::string& str2)
+{
     auto size1 = str1.size();
     auto size2 = str2.size();
     auto min_size = std::min(size1, size2);

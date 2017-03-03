@@ -1,89 +1,89 @@
 {
-  "left": {
     "left": {
-      "left": {
         "left": {
-          "left": null,
-          "right": null,
-          "visit": 1
+            "left": {
+                "left": {
+                    "left": null,
+                    "right": null,
+                    "visit": 1
+                },
+                "right": null,
+                "visit": 2
+            },
+            "right": {
+                "left": null,
+                "right": {
+                    "left": null,
+                    "right": null,
+                    "visit": 5
+                },
+                "visit": 4
+            },
+            "visit": 3
         },
-        "right": null,
-        "visit": 2
-      },
-      "right": {
-        "left": null,
         "right": {
-          "left": null,
-          "right": null,
-          "visit": 5
+            "left": {
+                "left": null,
+                "right": {
+                    "left": null,
+                    "right": null,
+                    "visit": 8
+                },
+                "visit": 7
+            },
+            "right": {
+                "left": null,
+                "right": null,
+                "visit": 10
+            },
+            "visit": 9
         },
-        "visit": 4
-      },
-      "visit": 3
+        "visit": 6
     },
     "right": {
-      "left": {
-        "left": null,
-        "right": {
-          "left": null,
-          "right": null,
-          "visit": 8
-        },
-        "visit": 7
-      },
-      "right": {
-        "left": null,
-        "right": null,
-        "visit": 10
-      },
-      "visit": 9
-    },
-    "visit": 6
-  },
-  "right": {
-    "left": {
-      "left": {
         "left": {
-          "left": null,
-          "right": null,
-          "visit": 12
+            "left": {
+                "left": {
+                    "left": null,
+                    "right": null,
+                    "visit": 12
+                },
+                "right": {
+                    "left": null,
+                    "right": null,
+                    "visit": 14
+                },
+                "visit": 13
+            },
+            "right": {
+                "left": null,
+                "right": null,
+                "visit": 16
+            },
+            "visit": 15
         },
         "right": {
-          "left": null,
-          "right": null,
-          "visit": 14
+            "left": {
+                "left": {
+                    "left": null,
+                    "right": null,
+                    "visit": 18
+                },
+                "right": null,
+                "visit": 19
+            },
+            "right": {
+                "left": null,
+                "right": {
+                    "left": null,
+                    "right": null,
+                    "visit": 22
+                },
+                "visit": 21
+            },
+            "visit": 20
         },
-        "visit": 13
-      },
-      "right": {
-        "left": null,
-        "right": null,
-        "visit": 16
-      },
-      "visit": 15
+        "visit": 17
     },
-    "right": {
-      "left": {
-        "left": {
-          "left": null,
-          "right": null,
-          "visit": 18
-        },
-        "right": null,
-        "visit": 19
-      },
-      "right": {
-        "left": null,
-        "right": {
-          "left": null,
-          "right": null,
-          "visit": 22
-        },
-        "visit": 21
-      },
-      "visit": 20
-    },
-    "visit": 17
-  },
-  "visit": 11
+    "visit": 11
 }

@@ -113,7 +113,7 @@ void inorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
             tmp = stack.top();
             stack.pop();
         } else {
-           tmp = nullptr;
+            tmp = nullptr;
         }
     }
 }
@@ -142,7 +142,7 @@ void postorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
             t2 = t1;
 
             if (stack.empty()) { return; }
-            
+
             t1 = stack.top();
             stack.pop();
         }
