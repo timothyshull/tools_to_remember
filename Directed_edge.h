@@ -14,7 +14,7 @@ private:
 public:
     Directed_edge(int v, int w, double weight);
 
-    Directed_edge() = delete;
+    Directed_edge();
 
     ~Directed_edge() = default;
 
@@ -31,6 +31,10 @@ public:
     constexpr int to() const noexcept { return _w; }
 
     constexpr double weight() const noexcept { return _weight; }
+
+    inline bool operator==(const Directed_edge& rhs) const { return _v == rhs._v && _w == rhs._w && _weight == rhs._weight; }
+
+    inline bool operator!=(const Directed_edge& rhs) const { return !(rhs == *this); }
 };
 
 #endif // TOOLS_TO_REMEMBER_DIRECTED_EDGE_H

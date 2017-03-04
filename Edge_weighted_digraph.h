@@ -15,7 +15,7 @@ private:
 public:
     Edge_weighted_digraph(std::size_t num_vertices);
 
-    constexpr std::size_t num_vertices() { return _num_vertices; }
+    constexpr std::size_t num_vertices() const noexcept { return _num_vertices; }
 
     inline std::size_t num_edges() const noexcept { return _num_edges; }
 

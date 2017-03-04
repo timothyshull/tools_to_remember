@@ -1,95 +1,42 @@
 #ifndef TOOLS_TO_REMEMBER_BELLMAN_FORD_H
 #define TOOLS_TO_REMEMBER_BELLMAN_FORD_H
 
+#include <vector>
+#include <deque>
+#include "Directed_edge.h"
+#include "Edge_weighted_digraph.h"
+#include "Edge_weighted_directed_cycle.h"
+
 class Bellman_ford {
-private double[] distTo;
-private DirectedEdge[] edgeTo;
-private boolean[] onQueue;
-private Queue<Integer> queue;
-private int cost;
-private Iterable<DirectedEdge> cycle;
+private:
+    const static double _inf = std::numeric_limits<double>::infinity();
+    const static Directed_edge _default = Directed_edge{};
+    std::vector<double> _dist_to;
+    std::vector<Directed_edge> _edge_to;
+    std::deque<bool> _on_queue;
+    std::deque<int> _queue; // queue
+    int _cost;
+    std::vector<Directed_edge> _cycle;
 
 public:
-    Bellman_ford(EdgeWeightedDigraph G, int s) {
-        distTo = new double[G.V()];
-        edgeTo = new DirectedEdge[G.V()];
-        onQueue = new boolean[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            distTo[v] = Double.POSITIVE_INFINITY;
-        distTo[s] = 0.0;
+    Bellman_ford(const Edge_weighted_digraph& digraph, int s);
 
-        // Bellman-Ford algorithm
-        queue = new Queue<Integer>();
-        queue.enqueue(s);
-        onQueue[s] = true;
-        while (!queue.isEmpty() && !hasNegativeCycle()) {
-            int v = queue.dequeue();
-            onQueue[v] = false;
-            relax(G, v);
-        }
+    ~Bellman_ford() = default;
 
-        assert check(G, s);
-    }
+    inline bool has_negative_cycle() const noexcept { return !_cycle.empty(); }
 
-    // relax vertex v and put other endpoints on queue if changed
-private void relax(EdgeWeightedDigraph G, int v) {
-        for (DirectedEdge e : G.adj(v)) {
-            int w = e.to();
-            if (distTo[w] > distTo[v] + e.weight()) {
-                distTo[w] = distTo[v] + e.weight();
-                edgeTo[w] = e;
-                if (!onQueue[w]) {
-                    queue.enqueue(w);
-                    onQueue[w] = true;
-                }
-            }
-            if (cost++ % G.V() == 0) {
-                findNegativeCycle();
-                if (hasNegativeCycle()) return;  // found a negative cycle
-            }
-        }
-    }
+    inline std::vector<Directed_edge> negative_cycle() const { return _cycle; }
 
-public boolean hasNegativeCycle() {
-        return cycle != null;
-    }
+    double distance_to(int v);
 
-public Iterable<DirectedEdge> negativeCycle() {
-        return cycle;
-    }
+    inline bool has_path_to(int v) const { return _dist_to[v] < _inf; }
 
-private void findNegativeCycle() {
-        int V = edgeTo.length;
-        EdgeWeightedDigraph spt = new EdgeWeightedDigraph(V);
-        for (int v = 0; v < V; v++)
-            if (edgeTo[v] != null)
-                spt.addEdge(edgeTo[v]);
+    std::vector<Directed_edge> path_to(int v);
 
-        EdgeWeightedDirectedCycle finder = new EdgeWeightedDirectedCycle(spt);
-        cycle = finder.cycle();
-    }
+private:
+    void _relax(const Edge_weighted_digraph& digraph, int v);
 
-public double distTo(int v) {
-        if (hasNegativeCycle())
-            throw new UnsupportedOperationException("Negative cost cycle exists");
-        return distTo[v];
-    }
-
-public boolean hasPathTo(int v) {
-        return distTo[v] < Double.POSITIVE_INFINITY;
-    }
-
-
-public Iterable<DirectedEdge> pathTo(int v) {
-        if (hasNegativeCycle())
-            throw new UnsupportedOperationException("Negative cost cycle exists");
-        if (!hasPathTo(v)) return null;
-        Stack<DirectedEdge> path = new Stack<DirectedEdge>();
-        for (DirectedEdge e = edgeTo[v]; e != null; e = edgeTo[e.from()]) {
-            path.push(e);
-        }
-        return path;
-    }
+    void _find_negative_cycle();
 };
 
 #endif // TOOLS_TO_REMEMBER_BELLMAN_FORD_H

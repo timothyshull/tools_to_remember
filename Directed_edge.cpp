@@ -9,3 +9,5 @@ Directed_edge::Directed_edge(int v, int w, double weight)
     if (w < 0) { throw std::out_of_range{"Vertex names must be nonnegative integers"}; }
     if (std::isnan(weight)) { throw std::invalid_argument{"Weight is NaN"}; }
 }
+
+Directed_edge::Directed_edge() : _v{-1}, _w{-1}, _weight{std::numeric_limits<double>::infinity()} {}
