@@ -3,6 +3,9 @@
 - do not use emplace_back with a pre-allocated vector -> assign using index
 - it is possible to pass the size argument for a C-style array and use that argument in the array argument's size
 - always remember to use typename for dependent types in templates
+- if a class is a container give it an initializer_list ctor
+- initialize members and bases in order of their declarations
+- a virtual function cannot be a template member function
 
 
 - remove inout parameters where possible

@@ -7,21 +7,6 @@ struct List_node {
     List_node<Item_type>* next = nullptr;
 };
 
-// incorrect - from Chaojun
-template<typename Item_type>
-List_node<Item_type>* reverse_recursive(List_node<Item_type>* head)
-{
-    if (head == nullptr) { return nullptr; }
-    List_node<Item_type>* node = head->next;
-    head->next = nullptr;
-
-    List_node<Item_type>* final_node{reverse_recursive(node)};
-    // head->next aka node may be null, attempting to access here
-    node->next = head;
-
-    return final_node;
-}
-
 // correct
 template<typename Item_type>
 List_node<Item_type>* recursive_reverse2(List_node<Item_type>* current, List_node<Item_type>* prev)

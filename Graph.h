@@ -25,13 +25,13 @@ public:
 
     Graph& operator=(Graph&&) = default;
 
-    inline std::size_t num_vertices() { return _num_vertices; }
+    inline std::size_t num_vertices() const noexcept { return _num_vertices; }
 
-    inline std::size_t num_edges() { return _num_edges; }
+    inline std::size_t num_edges() const noexcept { return _num_edges; }
 
     void add_edge(int v, int w);
 
-    inline std::vector<int> const adjacent(int v) { return {_adjacency_lists[v].begin(), _adjacency_lists[v].end()}; }
+    inline std::vector<int> const adjacent(int v) const { return {_adjacency_lists[v].begin(), _adjacency_lists[v].end()}; }
 
     inline std::size_t degree(int v) const noexcept { return _adjacency_lists[v].size(); }
 };

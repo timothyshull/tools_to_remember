@@ -83,9 +83,6 @@ add_executable(index_min_pq index_min_pq.cpp)
 target_link_libraries(index_min_pq gtest gmock gtest_main)
 
 # search tables
-add_executable(hash_functions hash_functions.cpp)
-target_link_libraries(hash_functions gtest gmock gtest_main)
-
 add_library(sequential_search INTERFACE)
 target_include_directories(sequential_search INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 # target_sources(sequential_search INTERFACE Sequential_search_st.h)

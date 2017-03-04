@@ -1,0 +1,23 @@
+#ifndef TOOLS_TO_REMEMBER_DEPTH_FIRST_PATHS_H
+#define TOOLS_TO_REMEMBER_DEPTH_FIRST_PATHS_H
+
+#include <deque>
+#include "Graph.h"
+
+class Depth_first_paths {
+private:
+    std::deque<bool> _marked;
+    std::vector<int> _edge_to;
+    int _source;
+public:
+    Depth_first_paths(const Graph& graph, int s);
+
+    inline bool has_path_to(int v) const { return _marked[v]; }
+
+    std::vector<int> path_to(int v) const;
+
+private:
+    void _dfs(const Graph& graph, int v);
+};
+
+#endif // TOOLS_TO_REMEMBER_DEPTH_FIRST_PATHS_H

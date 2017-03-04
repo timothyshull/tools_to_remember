@@ -1,19 +1,19 @@
 - binary search - array and BST
-- quicksort
+- quicksort - X
 - topological sort
-- cycles - need more here
-    - directed
-    - undirected
+- cycles
+    - directed - X
+    - undirected - X
 - traversal
     - recursive
-        - preorder
-        - inorder
-        - postorder
+        - preorder - X
+        - inorder - X
+        - postorder - X
     - iterative
-        - preorder
-        - inorder
-        - postorder
-- level order tree printing
+        - preorder - X
+        - inorder - X
+        - postorder - X
+- level order tree printing - X
 
 
 - general string ops - X
@@ -76,9 +76,19 @@
         - Eulerian cycle
         - directed Eulerian cycle
         - transitive closure
-        - minimum spanning tree - Kruskal, Prim, Boruvka
-        - shortest paths - unit, nonegative, negative
-        - all-pairs shortest paths
-        - maxflow-mincut
-        - bipartite matching
-        - assignment problem
+        - minimum spanning tree
+            - Kruskal
+            - Prim
+            - Boruvka
+        - shortest paths
+            - unit - BFS paths
+            - non-negative - Dijkstra
+            - negative - Bellman-ford
+        - all-pairs shortest paths - Floyd Warshall
+        - maxflow-mincut - Ford-Fulkerson
+
+
+
+
+NOTE:
+should modify usage of comparator and == to remove == and implement as !(comp(a, b) || comp(b, a))
