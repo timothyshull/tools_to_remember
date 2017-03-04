@@ -25,6 +25,7 @@ set(ALL_TESTS
         horners_method.cpp
         index_min_pq.cpp
         insertion_sort.cpp
+        linear_probing_spec.cpp
         mergesort.cpp
         priority_queue_array.cpp
         quicksort.cpp

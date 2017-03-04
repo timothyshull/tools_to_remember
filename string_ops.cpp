@@ -4,6 +4,7 @@
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include "String_tokenizer.h"
 
 using namespace testing;
 
@@ -172,7 +173,7 @@ inline void pad(
 // START remove substring code
 
 template<typename Char_type>
-void remove_substrings(std::basic_string<Char_type>& s, const std::basic_string<Char_type>& p)
+void remove_substr(std::basic_string<Char_type>& s, const std::basic_string<Char_type>& p)
 {
     auto n = p.length();
     for (auto i = s.find(p); i != std::basic_string<Char_type>::npos; i = s.find(p)) { s.erase(i, n); }
@@ -180,6 +181,87 @@ void remove_substrings(std::basic_string<Char_type>& s, const std::basic_string<
 
 // END remove substring code
 
+// START split string code
+
+template<typename Char_type>
+std::vector<std::basic_string<Char_type>> split(const std::basic_string<Char_type>& s, const char c)
+{
+    // previously used str.find -> could potentially use
+    std::vector<std::basic_string<Char_type>> r;
+
+    auto begin = s.begin();
+    while (begin != s.end()) {
+        // while (begin != s.end() && *begin == c) { ++begin; }
+        begin = std::find_if(begin, s.end(), [&c](const Char_type& a) { return a != c; });
+        auto t = std::find(begin, s.end(), c);
+        if (begin != s.end()) { r.emplace_back(begin, t); }
+        begin = t;
+    }
+
+    return r;
+}
+
+template<typename Char_type>
+std::vector<std::basic_string<Char_type>> split(const std::basic_string<Char_type>& s)
+{
+    std::vector<std::basic_string<Char_type>> r;
+    std::unordered_set<Char_type> chars{' ', '\n', '\t', '\b'};
+
+    auto begin = s.begin();
+    while (begin != s.end()) {
+        begin = std::find_if(begin, s.end(), [&chars](const Char_type& a) { return chars.find(a) == chars.end(); });
+        // can also use find_first_of here
+        auto t = std::find_if(begin, s.end(), [&chars](const Char_type& a) { return chars.find(a) != chars.end(); });
+        if (begin != s.end()) { r.emplace_back(begin, t); }
+        begin = t;
+    }
+
+    return r;
+}
+
+// END split string code
+
+// START trim code
+
+// NOTE: can also provide overloads that copy and trim string
+template<typename Char_type, typename Predicate_type>
+void rtrim(std::basic_string<Char_type>& s, Predicate_type pred)
+{
+    if (s.empty()) { return; }
+    auto it = s.rbegin();
+    while (it != s.rend() && pred(*it)) { ++it; }
+    s.erase(it.base(), s.end());
+}
+
+template<typename Char_type>
+inline void rtrim(std::basic_string<Char_type>& s) { rtrim(s, [](const Char_type& c) { return std::isspace(c); }); }
+
+template<>
+inline void rtrim<wchar_t>(std::basic_string<wchar_t>& s) { rtrim(s, [](const wchar_t& c) { return std::iswspace(c); }); }
+
+
+template<typename Char_type, typename Predicate_type>
+void ltrim(std::basic_string<Char_type>& s, Predicate_type pred)
+{
+    if (s.empty()) { return; }
+    auto it = s.begin();
+    while (it != s.end() && pred(*it)) { ++it; }
+    s.erase(s.begin(), it);
+}
+
+template<typename Char_type>
+inline void ltrim(std::basic_string<Char_type>& s) { ltrim(s, [](const Char_type& c) { return std::isspace(c); }); }
+
+template<>
+inline void ltrim<wchar_t>(std::basic_string<wchar_t>& s) { ltrim(s, [](const wchar_t& c) { return std::iswspace(c); }); }
+
+template<typename Char_type>
+inline void trim(std::basic_string<Char_type>& s) {
+    ltrim(s);
+    rtrim(s);
+}
+
+// END trim code
 
 // START count unique tests
 
@@ -376,3 +458,80 @@ TEST(pad_string, smaller_size)
 }
 
 // END pad string tests
+
+// START remove substring tests
+
+TEST(remove_substr, simple_test)
+{
+    std::string s{"aa bb aa bb aa bb"};
+    std::string p{"bb"};
+    remove_substr(s, p);
+    ASSERT_THAT(s, Eq("aa  aa  aa "));
+}
+
+// END remove substring tests
+
+// START split string tests
+
+TEST(split_string, simple_test)
+{
+    std::string s{"aa aa aa aa"};
+    auto v = split(s, ' ');
+    ASSERT_THAT(v, Eq(std::vector<std::string>{"aa", "aa", "aa", "aa"}));
+}
+
+TEST(split_string, simple_test_no_char)
+{
+    std::string s{"aa \b\t\naa\n\b\t aa\t\n\b aa"};
+    auto v = split(s);
+    ASSERT_THAT(v, Eq(std::vector<std::string>{"aa", "aa", "aa", "aa"}));
+}
+
+// END split string tests
+
+// START string tokenizer tests
+
+TEST(string_tokenizer, count_with_default_delims)
+{
+    std::string s{"aa \b\t\naa\n\b\t aa\t\n\b aa"};
+    String_tokenizer<char> st{s};
+    ASSERT_THAT(st.count_tokens(), Eq(4));
+}
+
+TEST(string_tokenizer, five_distinct_tokens)
+{
+    std::string s{"ab \b\t\nac\n\b\t ad\t\n\b ae"};
+    String_tokenizer<char> st{s};
+    std::vector<std::string> v;
+
+    while (st.has_next()) { v.push_back(st.next_token()); }
+
+    ASSERT_THAT(v, Eq(std::vector<std::string>{"ab", "ac", "ad", "ae"}));
+}
+
+// END string tokenizer tests
+
+// START trim tests
+
+TEST(string_rtrim, basic_test)
+{
+    std::string s{"abcde     "};
+    rtrim(s);
+    ASSERT_THAT(s, Eq("abcde"));
+}
+
+TEST(string_ltrim, basic_test)
+{
+    std::string s{"     abcde"};
+    ltrim(s);
+    ASSERT_THAT(s, Eq("abcde"));
+}
+
+TEST(string_trim, basic_test)
+{
+    std::string s{"     abcde     "};
+    trim(s);
+    ASSERT_THAT(s, Eq("abcde"));
+}
+
+// END trim tests

@@ -32,6 +32,9 @@
 - basic dynamic programming
     - rod cutting
     - longest common subsequence
+    - knapsack
+    - subset sum
+    - coin change
 - basic greedy programming
     - Huffman codes
 - Horner's method - X
