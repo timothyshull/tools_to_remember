@@ -32,13 +32,14 @@ set(ALL_TESTS
         radix_sort.cpp
         selection_sort.cpp
         shellsort.cpp
-        string_ops.cpp)
+        string_ops_spec.cpp)
 
 set(ALL_TEST_LIBS
         gtest
         gmock
         graph
-        dfs)
+        dfs
+        string_ops)
 
 add_executable(test_all test_all.cpp ${ALL_TESTS})
 target_link_libraries(test_all ${ALL_TEST_LIBS})
@@ -146,5 +147,6 @@ target_link_libraries(dfs_spec dfs graph gtest gmock gtest_main)
 
 
 # string ops
-add_executable(string_ops string_ops.cpp)
-target_link_libraries(string_ops gtest gmock gtest_main)
+add_library(string_ops string_ops.h string_ops.cpp)
+add_executable(string_ops_spec string_ops_spec.cpp)
+target_link_libraries(string_ops_spec string_ops gtest gmock gtest_main)

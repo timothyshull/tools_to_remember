@@ -16,6 +16,10 @@
 - level order tree printing
 
 
+- general string ops - X
+- general file ops - add tests
+
+
 
 - divide-and-conquer
     - maximum subarray - X
