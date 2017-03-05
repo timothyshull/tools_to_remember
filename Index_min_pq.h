@@ -1,9 +1,10 @@
+#ifndef TOOLS_TO_REMEMBER_INDEX_MIN_PQ_H
+#define TOOLS_TO_REMEMBER_INDEX_MIN_PQ_H
+
+#include <stdexcept>
+#include <limits>
 #include <vector>
-
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
-
-using namespace testing;
+#include <functional>
 
 template<typename Key_type, typename Comparator_type = std::less<Key_type>>
 class Index_min_pq {
@@ -45,7 +46,7 @@ public:
         _qp[i] = _n;
         _pq[_n] = i;
         _keys[i] = key;
-        swim(_n);
+        _swim(_n);
     }
 
     void insert(std::size_t i, Key_type&& key)
@@ -54,7 +55,7 @@ public:
         _qp[i] = _n;
         _pq[_n] = i;
         _keys[i] = key;
-        swim(_n);
+        _swim(_n);
     }
 
     inline Key_type min() const { return _keys[_pq[1]]; }
@@ -62,15 +63,39 @@ public:
     std::size_t pop()
     {
         auto i = _pq[1];
-        swap(1, _n--);
-        sink(1);
+        _swap(1, _n--);
+        _sink(1);
         // keys[pq[n + 1]] = nullptr;
         _qp[_pq[_n + 1]] = std::numeric_limits<std::size_t>::max();
         return i;
     }
 
+    // used in Dijkstra
+    std::size_t delete_min()
+    {
+        if (_n == 0) { throw std::out_of_range{"Priority queue underflow"}; }
+        auto min = _pq[1];
+        _swap(1, _n--);
+        _sink(1);
+        _qp[min] = std::numeric_limits<std::size_t>::max();
+        // keys[min] = null;
+        _pq[_n + 1] = std::numeric_limits<std::size_t>::max();
+        return min;
+    }
+
+    // used in Dijkstra
+    void decrease_key(std::size_t i, Key_type key)
+    {
+        if (!contains(i)) { throw std::out_of_range{"index is not in the priority queue"}; }
+        if (_comp(_keys[i], key) || _keys[i] == key) {
+            throw std::invalid_argument{"Calling decreaseKey() with given argument would not strictly decrease the key"};
+        }
+        _keys[i] = key;
+        _swim(_qp[i]);
+    }
+
 private:
-    void swap(std::size_t i, std::size_t j)
+    void _swap(std::size_t i, std::size_t j)
     {
         auto t = _pq[i];
         _pq[i] = _pq[j];
@@ -79,92 +104,24 @@ private:
         _qp[_pq[j]] = j;
     }
 
-    void swim(std::size_t k)
+    void _swim(std::size_t k)
     {
         while (k > 1 && _comp(k / 2, k)) {
-            swap(k, k / 2);
+            _swap(k, k / 2);
             k = k / 2;
         }
     }
 
-    void sink(std::size_t k)
+    void _sink(std::size_t k)
     {
         while (2 * k <= _n) {
             auto j = 2 * k;
             if (j < _n && _comp(j, j + 1)) { ++j; }
             if (!_comp(k, j)) { break; }
-            swap(k, j);
+            _swap(k, j);
             k = j;
         }
     }
 };
 
-TEST(index_min_pq, default_size)
-{
-    Index_min_pq<int> a;
-    ASSERT_THAT(a.size(), Eq(0));
-}
-
-TEST(index_min_pq, test_10_max_empty)
-{
-    Index_min_pq<int> a{10};
-    ASSERT_TRUE(a.empty());
-}
-
-TEST(index_min_pq, test_non_empty)
-{
-    Index_min_pq<int> a{1};
-    a.insert(1, 1);
-    ASSERT_FALSE(a.empty());
-}
-
-//TEST(index_min_pq, test_3_elems)
-//{
-//    Index_min_pq<int> a{3};
-//    a.push(1);
-//    a.push(2);
-//    a.push(3);
-//    ASSERT_THAT(a.pop(), Eq(3));
-//}
-//
-//TEST(index_min_pq, test_10_max_3_size)
-//{
-//    Index_min_pq<int> a{10};
-//    a.push(1);
-//    a.push(2);
-//    a.push(3);
-//    ASSERT_THAT(a.size(), Eq(3));
-//}
-//
-//TEST(index_min_pq, test_3_lvalue)
-//{
-//    Index_min_pq<int> a{10};
-//    auto b = 1;
-//    auto c = 2;
-//    auto d = 3;
-//    a.push(b);
-//    a.push(c);
-//    a.push(d);
-//    ASSERT_THAT(a.pop(), Eq(3));
-//}
-//
-//TEST(index_min_pq, test_3_then_empty)
-//{
-//    Index_min_pq<int> a{10};
-//    a.push(1);
-//    a.push(2);
-//    a.push(3);
-//    a.pop();
-//    a.pop();
-//    a.pop();
-//    ASSERT_TRUE(a.empty());
-//}
-//
-//TEST(index_min_pq, test_comparator)
-//{
-//    Index_min_pq<int, std::greater<int>> a{3};
-//    a.push(3);
-//    a.push(2);
-//    a.push(1);
-//    ASSERT_THAT(a.pop(), Eq(1));
-//}
+#endif // TOOLS_TO_REMEMBER_INDEX_MIN_PQ_H

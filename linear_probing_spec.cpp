@@ -4,18 +4,9 @@
 #include <gmock/gmock.h>
 
 #include "Linear_probing_hash_st.h"
+#include "testing_utility.h"
 
 using namespace testing;
-
-std::string rand_string(std::size_t size)
-{
-    std::random_device rd;
-    std::default_random_engine gen{rd()};
-    std::uniform_int_distribution<char> dis{0, std::numeric_limits<char>::max()};
-    std::string r;
-    for (auto i = 0; i < size; ++i) { r += dis(gen); }
-    return r;
-}
 
 TEST(linear_probing, put_1_string_int)
 {
@@ -80,7 +71,7 @@ TEST(linear_probing, sort_1000_rand_string_int)
     std::string tgt_key{""};
     int tgt_val{0};
     for (auto i = 0; i < num_elems; ++i) {
-        auto ts = rand_string(10);
+        auto ts = testing_utility::rand_string(10);
         auto ti = dis(gen);
         if (i == num_elems / 2) {
             tgt_key = ts;

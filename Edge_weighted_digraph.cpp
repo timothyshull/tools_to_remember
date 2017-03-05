@@ -15,7 +15,7 @@ void Edge_weighted_digraph::add_edge(Directed_edge e)
     ++_num_edges;
 }
 
-std::vector<Directed_edge> Edge_weighted_digraph::edges()
+std::vector<Directed_edge> Edge_weighted_digraph::edges() const
 {
     std::vector<Directed_edge> v(_num_edges);
     for (auto& l : _adjacency_lists) { for (auto& e : l) { v.push_back(e); }}

@@ -37,12 +37,15 @@ set(ALL_TESTS
 set(ALL_TEST_LIBS
         gtest
         gmock
+        testing_utility
         graph
         dfs
         string_ops)
 
 add_executable(test_all test_all.cpp ${ALL_TESTS})
 target_link_libraries(test_all ${ALL_TEST_LIBS})
+
+add_library(testing_utility testing_utility.h testing_utility.cpp)
 
 # sorting
 add_executable(selection_sort selection_sort.cpp)
@@ -144,6 +147,7 @@ target_link_libraries(dfs_spec dfs graph gtest gmock gtest_main)
 
 
 # string ops
-add_library(string_ops string_ops.h string_ops.cpp)
+add_library(string_ops INTERFACE)
+target_include_directories(string_ops INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(string_ops_spec string_ops_spec.cpp)
 target_link_libraries(string_ops_spec string_ops gtest gmock gtest_main)

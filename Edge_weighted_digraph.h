@@ -27,7 +27,7 @@ public:
 
     inline int indegree(int v) const { return _indegree[v]; }
 
-    std::vector<Directed_edge> edges();
+    std::vector<Directed_edge> edges() const;
 };
 
 #endif // TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIGRAPH_H

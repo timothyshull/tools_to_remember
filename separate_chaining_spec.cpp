@@ -4,6 +4,7 @@
 #include <gmock/gmock.h>
 
 #include "Separate_chaining_hash_st.h"
+#include "testing_utility.h"
 
 using namespace testing;
 
@@ -46,6 +47,7 @@ TEST(separate_chaining, get_empty)
 TEST(separate_chaining, sort_1000_rand)
 {
     std::size_t num_elems{1000};
+    std::size_t string_size{10};
 
     std::random_device rd;
     std::default_random_engine gen{rd()};
@@ -56,7 +58,7 @@ TEST(separate_chaining, sort_1000_rand)
     std::string tgt_key{};
     int tgt_val{};
     for (auto i = 0; i < num_elems; ++i) {
-        auto ts = rand_string(10);
+        auto ts = testing_utility::rand_string(string_size);
         auto ti = dis(gen);
         if (i == num_elems / 2) {
             tgt_key = ts;

@@ -5,8 +5,6 @@
 #include <unordered_set>
 #include <vector>
 
-std::string rand_string(std::size_t size);
-
 // START count unique code
 
 //template<typename Char_type>

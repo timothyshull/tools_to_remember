@@ -3,11 +3,15 @@
 Digraph::Digraph(std::size_t num_vertices)
         : _num_vertices{num_vertices},
           _num_edges{0},
-          _adjacency_lists(num_vertices, std::unordered_set<int>{}) {}
+          _adjacency_lists(num_vertices, std::unordered_set<int>{}),
+          _indegree(num_vertices, 0) {}
 
 void Digraph::add_edge(int v, int w)
 {
-    if (_adjacency_lists[v].find(w) == _adjacency_lists[v].end()) { ++_num_edges; }
+    if (_adjacency_lists[v].find(w) == _adjacency_lists[v].end()) {
+        ++_num_edges;
+        ++_indegree[w];
+    }
     _adjacency_lists[v].insert(w);
 }
 

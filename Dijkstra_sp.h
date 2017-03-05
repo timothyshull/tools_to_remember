@@ -1,92 +1,70 @@
 #ifndef TOOLS_TO_REMEMBER_DIJKSTRA_SP_H
 #define TOOLS_TO_REMEMBER_DIJKSTRA_SP_H
 
+#include <queue>
+#include <vector>
+#include <string>
+#include "Directed_edge.h"
+#include "Edge_weighted_digraph.h"
+#include "Index_min_pq.h"
+
+// TODO: check on and fix priority queue usage here -> also usage of double for pq type could just be int with static casts of edge weights
 class Dijkstra_sp {
-private double[] distTo;          // distTo[v] = distance  of shortest s->v path
-private DirectedEdge[] edgeTo;    // edgeTo[v] = last edge on shortest s->v path
-private IndexMinPQ<Double> pq;    // priority queue of vertices
+private:
+    const static double _inf = std::numeric_limits<double>::infinity();
+    const static Directed_edge _default = Directed_edge{};
+    std::vector<double> _dist_to;
+    std::vector<Directed_edge> _edge_to;
+    Index_min_pq<double> _pq;
 
-    /**
-     * Computes a shortest-paths tree from the source vertex <tt>s</tt> to every other
-     * vertex in the edge-weighted digraph <tt>G</tt>.
-     *
-     * @param G the edge-weighted digraph
-     * @param s the source vertex
-     * @throws IllegalArgumentException if an edge weight is negative
-     * @throws IllegalArgumentException unless 0 &le; <tt>s</tt> &le; <tt>V</tt> - 1
-     */
-public DijkstraSP(EdgeWeightedDigraph G, int s) {
-        for (DirectedEdge e : G.edges()) {
-            if (e.weight() < 0)
-                throw new IllegalArgumentException("edge " + e + " has negative weight");
+public:
+    Dijkstra_sp(const Edge_weighted_digraph& digraph, int s)
+            : _dist_to(digraph.num_vertices(), _inf),
+              _edge_to(digraph.num_vertices()),
+              _pq(digraph.num_vertices())
+    {
+        for (auto& e : digraph.edges()) {
+            if (e.weight() < 0) {
+                throw std::invalid_argument{"edge " + std::to_string(e.from()) + "-" + std::to_string(e.to()) + " has negative weight"};
+            }
         }
 
-        distTo = new double[G.V()];
-        edgeTo = new DirectedEdge[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            distTo[v] = Double.POSITIVE_INFINITY;
-        distTo[s] = 0.0;
+        _dist_to[s] = 0.0;
 
-        // relax vertices in order of distance from s
-        pq = new IndexMinPQ<Double>(G.V());
-        pq.insert(s, distTo[s]);
-        while (!pq.isEmpty()) {
-            int v = pq.delMin();
-            for (DirectedEdge e : G.adj(v))
-                relax(e);
-        }
-
-        // check optimality conditions
-        assert check(G, s);
-    }
-
-    // relax edge e and update pq if changed
-private void relax(DirectedEdge e) {
-        int v = e.from(), w = e.to();
-        if (distTo[w] > distTo[v] + e.weight()) {
-            distTo[w] = distTo[v] + e.weight();
-            edgeTo[w] = e;
-            if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-            else pq.insert(w, distTo[w]);
+        _pq.insert(static_cast<std::size_t>(s), _dist_to[s]);
+        while (!_pq.empty()) {
+            auto v = _pq.delete_min();
+            for (auto& e : digraph.adjacent(static_cast<int>(v))) {
+                _relax(e);
+            }
         }
     }
 
-    /**
-     * Returns the length of a shortest path from the source vertex <tt>s</tt> to vertex <tt>v</tt>.
-     *
-     * @param v the destination vertex
-     * @return the length of a shortest path from the source vertex <tt>s</tt> to vertex <tt>v</tt>;
-     * <tt>Double.POSITIVE_INFINITY</tt> if no such path
-     */
-public double distTo(int v) {
-        return distTo[v];
-    }
+    inline double dist_to(int v) const { return _dist_to[v]; }
 
-    /**
-     * Returns true if there is a path from the source vertex <tt>s</tt> to vertex <tt>v</tt>.
-     *
-     * @param v the destination vertex
-     * @return <tt>true</tt> if there is a path from the source vertex
-     * <tt>s</tt> to vertex <tt>v</tt>; <tt>false</tt> otherwise
-     */
-public boolean hasPathTo(int v) {
-        return distTo[v] < Double.POSITIVE_INFINITY;
-    }
+    inline bool has_path_to(int v) const { return _dist_to[v] < _inf; }
 
-    /**
-     * Returns a shortest path from the source vertex <tt>s</tt> to vertex <tt>v</tt>.
-     *
-     * @param v the destination vertex
-     * @return a shortest path from the source vertex <tt>s</tt> to vertex <tt>v</tt>
-     * as an iterable of edges, and <tt>null</tt> if no such path
-     */
-public Iterable<DirectedEdge> pathTo(int v) {
-        if (!hasPathTo(v)) return null;
-        Stack<DirectedEdge> path = new Stack<DirectedEdge>();
-        for (DirectedEdge e = edgeTo[v]; e != null; e = edgeTo[e.from()]) {
-            path.push(e);
+    std::vector<Directed_edge> path_to(int v)
+    {
+        if (!has_path_to(v)) { return {}; }
+        std::vector<Directed_edge> path;
+        for (auto& e = _edge_to[v]; e != _default; e = _edge_to[e.from()]) {
+            path.push_back(e);
         }
         return path;
+    }
+
+private:
+    void _relax(Directed_edge e)
+    {
+        auto v = e.from();
+        auto w = e.to();
+        if (_dist_to[w] > _dist_to[v] + e.weight()) {
+            _dist_to[w] = _dist_to[v] + e.weight();
+            _edge_to[w] = e;
+            if (_pq.contains(w)) { _pq.decrease_key(w, _dist_to[w]); }
+            else { _pq.insert(w, _dist_to[w]); }
+        }
     }
 };
 

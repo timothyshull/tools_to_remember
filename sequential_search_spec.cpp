@@ -4,20 +4,9 @@
 #include <gmock/gmock.h>
 
 #include "Sequential_search_st.h"
+#include "testing_utility.h"
 
 using namespace testing;
-
-std::string rand_string(std::size_t size)
-{
-    std::random_device rd;
-    std::default_random_engine gen{rd()};
-    std::uniform_int_distribution<char> dis{0, std::numeric_limits<char>::max()};
-    std::string r;
-    for (auto i = 0; i < size; ++i) {
-        r += dis(gen);
-    }
-    return r;
-}
 
 TEST(sequential_search, put_1_string_int)
 {
@@ -46,6 +35,7 @@ TEST(sequential_search, get_empty)
 TEST(sequential_search, sort_1000_rand)
 {
     std::size_t num_elems{1000};
+    std::size_t string_size{10};
 
     std::random_device rd;
     std::default_random_engine gen{rd()};
@@ -56,7 +46,7 @@ TEST(sequential_search, sort_1000_rand)
     std::string tgt_key{};
     int tgt_val{};
     for (auto i = 0; i < num_elems; ++i) {
-        auto ts = rand_string(10);
+        auto ts = testing_utility::rand_string(string_size);
         auto ti = dis(gen);
         if (i == num_elems / 2) {
             tgt_key = ts;

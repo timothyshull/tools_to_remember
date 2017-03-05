@@ -5,7 +5,7 @@
 
 #include "string_ops.h"
 #include "String_tokenizer.h"
-
+#include "testing_utility.h"
 
 using namespace testing;
 
@@ -134,7 +134,7 @@ TEST(string_join, random_strings_no_sep)
     std::string s;
     s.reserve(str_size * num_strings);
     for (auto i = 0; i < num_strings; ++i) {
-        auto t = rand_string(str_size);
+        auto t = testing_utility::rand_string(str_size);
         v[i] = t;
         s += t;
     }
@@ -150,7 +150,7 @@ TEST(string_join, random_strings_space_sep)
     std::string sep{" "};
     s.reserve(str_size * num_strings);
     for (auto i = 0; i < num_strings; ++i) {
-        auto t = rand_string(str_size);
+        auto t = testing_utility::rand_string(str_size);
         v[i] = t;
         s += t;
         if (i < num_strings - 1) { s += sep; }

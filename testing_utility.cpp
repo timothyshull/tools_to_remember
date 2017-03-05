@@ -1,8 +1,6 @@
-#include <random>
+#include "testing_utility.h"
 
-#include "string_ops.h"
-
-std::string rand_string(std::size_t size)
+std::string testing_utility::rand_string(std::size_t size)
 {
     std::random_device rd;
     std::default_random_engine gen{rd()};

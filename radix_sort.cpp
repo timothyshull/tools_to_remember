@@ -3,6 +3,8 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+#include "testing_utility.h"
+
 using namespace testing;
 
 // TODO: see loadword from functional lin libcxx
@@ -140,9 +142,7 @@ TEST(lsd_radix_sort, sort_1000_rand_strings)
     std::uniform_int_distribution<char> dis{0, std::numeric_limits<char>::max()};
 
     for (auto i = 0; i < num_elems; ++i) {
-        std::string tmp;
-        for (auto j = 0; j < string_size; ++j) { tmp += dis(gen); }
-        v[i] = tmp;
+        v[i] = testing_utility::rand_string(string_size);
     }
 
     auto tmp = v;
