@@ -7,8 +7,6 @@
 
 using namespace testing;
 
-
-
 TEST(index_min_pq, default_size)
 {
     Index_min_pq<int> a;

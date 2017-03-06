@@ -1,87 +1,80 @@
 #ifndef TOOLS_TO_REMEMBER_PRIM_MST_H
 #define TOOLS_TO_REMEMBER_PRIM_MST_H
 
+#include <limits>
+#include <vector>
+#include <deque>
+#include <queue>
+
+#include "Edge.h"
+#include "Edge_weighted_graph.h"
+#include "Index_min_pq.h"
+
 class Prim_mst {
-private static final double FLOATING_POINT_EPSILON = 1E-12;
+private:
+    const static double _epsilon = std::numeric_limits<double>::epsilon();
+    const static Edge _default = Edge{};
+    const static double _inf = std::numeric_limits<double>::infinity();
+    std::vector<Edge> _edge_to;
+    std::vector<double> _dist_to;
+    std::deque<bool> _marked;
+    Index_min_pq<double, std::greater<double>> _pq;
 
-private Edge[] edgeTo;        // edgeTo[v] = shortest edge from tree vertex to non-tree vertex
-private double[] distTo;      // distTo[v] = weight of shortest such edge
-private boolean[] marked;     // marked[v] = true if v on tree, false otherwise
-private IndexMinPQ<Double> pq;
-
-    /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     *
-     * @param G the edge-weighted graph
-     */
-public PrimMST(EdgeWeightedGraph G) {
-        edgeTo = new Edge[G.V()];
-        distTo = new double[G.V()];
-        marked = new boolean[G.V()];
-        pq = new IndexMinPQ<Double>(G.V());
-        for (int v = 0; v < G.V(); v++)
-            distTo[v] = Double.POSITIVE_INFINITY;
-
-        for (int v = 0; v < G.V(); v++)      // run from each vertex to find
-            if (!marked[v]) prim(G, v);      // minimum spanning forest
-
-        // check optimality conditions
-        assert check(G);
-    }
-
-    // run Prim's algorithm in graph G, starting from vertex s
-private void prim(EdgeWeightedGraph G, int s) {
-        distTo[s] = 0.0;
-        pq.insert(s, distTo[s]);
-        while (!pq.isEmpty()) {
-            int v = pq.delMin();
-            scan(G, v);
+public:
+    Prim_mst(const Edge_weighted_graph& graph)
+            : _edge_to(graph.num_vertices()),
+              _dist_to(graph.num_vertices(), _inf),
+              _marked(graph.num_vertices()),
+              _pq(graph.num_vertices())
+    {
+        for (auto v = 0; v < graph.num_vertices(); ++v) {
+            if (!_marked[v]) { _prim(graph, v); }
         }
     }
 
-    // scan vertex v
-private void scan(EdgeWeightedGraph G, int v) {
-        marked[v] = true;
-        for (Edge e : G.adj(v)) {
-            int w = e.other(v);
-            if (marked[w]) continue;         // v-w is obsolete edge
-            if (e.weight() < distTo[w]) {
-                distTo[w] = e.weight();
-                edgeTo[w] = e;
-                if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-                else pq.insert(w, distTo[w]);
-            }
-        }
-    }
-
-    /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     *
-     * @return the edges in a minimum spanning tree (or forest) as
-     * an iterable of edges
-     */
-public Iterable<Edge> edges() {
-        Queue<Edge> mst = new Queue<Edge>();
-        for (int v = 0; v < edgeTo.length; v++) {
-            Edge e = edgeTo[v];
-            if (e != null) {
-                mst.enqueue(e);
-            }
+    std::vector<Edge> edges()
+    {
+        std::vector<Edge> mst(_edge_to.size());
+        for (auto v = 0; v < _edge_to.size(); ++v) {
+            auto e = _edge_to[v];
+            if (e != _default) { mst.push_back(e); }
         }
         return mst;
     }
 
-    /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     *
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
-     */
-public double weight() {
-        double weight = 0.0;
-        for (Edge e : edges())
-            weight += e.weight();
+    double weight()
+    {
+        auto weight = 0.0;
+        for (auto& e : edges()) { weight += e.weight(); }
         return weight;
     }
+
+private:
+    void _prim(const Edge_weighted_graph& graph, int s)
+    {
+        _dist_to[s] = 0.0;
+        _pq.insert(static_cast<std::size_t>(s), _dist_to[s]);
+        while (!_pq.empty()) {
+            auto v = _pq.delete_min();
+            _scan(graph, static_cast<int>(v));
+        }
+    }
+
+    void _scan(const Edge_weighted_graph& graph, int v)
+    {
+        _marked[v] = true;
+        for (auto& e : graph.adjacent(v)) {
+            std::size_t w = static_cast<std::size_t>(e.other(v));
+            if (_marked[w]) { continue; }
+            if (e.weight() < _dist_to[w]) {
+                _dist_to[w] = e.weight();
+                _edge_to[w] = e;
+                if (_pq.contains(w)) { _pq.decrease_key(w, _dist_to[w]); }
+                else { _pq.insert(w, _dist_to[w]); }
+            }
+        }
+    }
+
 };
 
 #endif // TOOLS_TO_REMEMBER_PRIM_MST_H

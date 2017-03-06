@@ -29,5 +29,4 @@ Boruvka_mst::Boruvka_mst(const Edge_weighted_graph& graph)
             }
         }
     }
-
 }

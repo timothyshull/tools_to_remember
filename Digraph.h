@@ -23,7 +23,7 @@ public:
 
     inline std::vector<int> adjacent(int v) const { return {_adjacency_lists[v].begin(), _adjacency_lists[v].end()}; }
 
-    Digraph reverse();
+    Digraph reverse() const;
 
     // used in Directed_eulerian_cycle
     inline std::size_t outdegree(int v) const { return _adjacency_lists[v].size(); }

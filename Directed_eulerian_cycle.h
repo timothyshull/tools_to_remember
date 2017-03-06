@@ -2,30 +2,28 @@
 #define TOOLS_TO_REMEMBER_DIRECTED_EULERIAN_CYCLE_H
 
 #include <deque>
+#include <vector>
+
 #include "Digraph.h"
 
 class Directed_eulerian_cycle {
 private:
-    std::deque<int> cycle;
+    std::deque<int> _cycle;
 
 public:
     Directed_eulerian_cycle(const Digraph& digraph)
-    : cycle{}
+            : _cycle{}
     {
-
         if (digraph.num_edges() == 0) { return; }
 
         for (auto v = 0; v < digraph.num_vertices(); ++v) {
-            if (digraph.outdegree(v) != digraph.indegree(v)) {
-                return;
-            }
+            if (digraph.outdegree(v) != digraph.indegree(v)) { return; }
         }
 
-//        Iterator<Integer>[]
-//        adj = (Iterator<Integer>[])
-//        new Iterator[digraph.V()];
+        std::vector<std::pair<std::vector<int>::const_iterator, std::vector<int>::const_iterator>> adj(digraph.num_vertices());
         for (auto v = 0; v < digraph.num_vertices(); ++v) {
-            adj[v] = digraph.adjacent(v).iterator();
+            auto t = digraph.adjacent(v);
+            adj[v] = {t.begin(), t.end()};
         }
 
         auto s = _non_isolated_vertex(digraph);
@@ -35,28 +33,26 @@ public:
         while (!stack.empty()) {
             auto v = stack.back();
             stack.pop_back();
-            while (adj[v].hasNext()) {
-                stack.push(v);
-                v = adj[v].next();
+            while (adj[v].first != adj[v].second) {
+                stack.push_back(v);
+                v = *(++adj[v].first);
             }
-            cycle.push_back(v);
+            _cycle.push_back(v);
         }
 
-        if (cycle.size() != digraph.num_edges() + 1) { cycle.clear(); }
+        if (_cycle.size() != digraph.num_edges() + 1) { _cycle.clear(); }
 
     }
 
-    std::vector<int> cycle() { return {cycle.begin(), cycle.end()}; }
+    inline std::vector<int> cycle() const { return {_cycle.begin(), _cycle.end()}; }
 
-    bool has_eulerian_cycle() { return !cycle.empty(); }
+    inline bool has_eulerian_cycle() const noexcept { return !_cycle.empty(); }
 
 private:
     static int _non_isolated_vertex(const Digraph& digraph)
     {
         for (auto v = 0; v < digraph.num_vertices(); ++v) {
-            if (digraph.outdegree(v) > 0) {
-                return v;
-            }
+            if (digraph.outdegree(v) > 0) { return v; }
         }
         return -1;
     }

@@ -1,75 +1,30 @@
 #ifndef TOOLS_TO_REMEMBER_KOSARAJU_SHARIR_SCC_H
 #define TOOLS_TO_REMEMBER_KOSARAJU_SHARIR_SCC_H
 
+#include <deque>
+#include <vector>
+#include "Digraph.h"
+#include "Depth_first_order.h"
+
 class Kosaraju_sharir_scc {
-private boolean[] marked;     // marked[v] = has vertex v been visited?
-private int[] id;             // id[v] = id of strong component containing v
-private int count;            // number of strongly-connected components
+private:
+    std::deque<bool> _marked;
+    std::vector<int> _id;
+    std::size_t _count;
 
-    /**
-     * Computes the strong components of the digraph <tt>G</tt>.
-     *
-     * @param G the digraph
-     */
 public:
-    KosarajuSharirSCC(Digraph G) {
+    Kosaraju_sharir_scc(const Digraph& digraph);
 
-        // compute reverse postorder of reverse graph
-        DepthFirstOrder dfs = new DepthFirstOrder(G.reverse());
+    ~Kosaraju_sharir_scc() = default;
 
-        // run DFS on G, using reverse postorder to guide calculation
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        for (int v : dfs.reversePost()) {
-            if (!marked[v]) {
-                dfs(G, v);
-                count++;
-            }
-        }
+    inline std::size_t count() const noexcept { return _count; }
 
-        // check that id[] gives strong components
-        assert check(G);
-    }
+    inline bool strongly_connected(int v, int w) const { return _id[v] == _id[w]; }
 
-    // DFS on graph G
-private void dfs(Digraph G, int v) {
-        marked[v] = true;
-        id[v] = count;
-        for (int w : G.adj(v)) {
-            if (!marked[w]) dfs(G, w);
-        }
-    }
+    inline int id(int v) const { return _id[v]; }
 
-    /**
-     * Returns the number of strong components.
-     *
-     * @return the number of strong components
-     */
-public int count() {
-        return count;
-    }
-
-    /**
-     * Are vertices <tt>v</tt> and <tt>w</tt> in the same strong component?
-     *
-     * @param v one vertex
-     * @param w the other vertex
-     * @return <tt>true</tt> if vertices <tt>v</tt> and <tt>w</tt> are in the same
-     * strong component, and <tt>false</tt> otherwise
-     */
-public boolean stronglyConnected(int v, int w) {
-        return id[v] == id[w];
-    }
-
-    /**
-     * Returns the component id of the strong component containing vertex <tt>v</tt>.
-     *
-     * @param v the vertex
-     * @return the component id of the strong component containing vertex <tt>v</tt>
-     */
-public int id(int v) {
-        return id[v];
-    }
+private:
+    void _dfs(const Digraph& digraph, int v);
 };
 
 #endif // TOOLS_TO_REMEMBER_KOSARAJU_SHARIR_SCC_H

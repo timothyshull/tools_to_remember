@@ -1,122 +1,86 @@
 #ifndef TOOLS_TO_REMEMBER_EULERIAN_CYCLE_H
 #define TOOLS_TO_REMEMBER_EULERIAN_CYCLE_H
 
+#include <deque>
+#include "Graph.h"
+
 class Eulerian_cycle {
-private Stack<Integer> cycle = new Stack<Integer>();  // Eulerian cycle; null if no such cycle
+private:
+    std::deque<int> _cycle; // stack
 
-    // an undirected edge, with a field to indicate whether the edge has already been used
-private static class Edge {
-    private final int v;
-    private final int w;
-    private boolean isUsed;
+    struct Edge {
+        const int v;
+        const int w;
+        bool is_used;
 
-    public Edge(int v, int w) {
-            this.v = v;
-            this.w = w;
-            isUsed = false;
+        Edge(int v, int w);
+
+        int other(int vertex);
+    };
+
+public:
+    Eulerian_cycle(const Graph& graph)
+            : _cycle{}
+    {
+        if (graph.num_edges() == 0) { return; }
+
+        for (auto v = 0; v < graph.num_vertices(); ++v) {
+            if (graph.degree(v) % 2 != 0) { return; }
         }
 
-        // returns the other vertex of the edge
-    public int other(int vertex) {
-            if (vertex == v) return w;
-            else if (vertex == w) return v;
-            else throw new IllegalArgumentException("Illegal endpoint");
-        }
-    }
+        std::vector<std::deque<Edge>> adj(graph.num_vertices(), std::deque<Edge>{}); // deque as queue
 
-    /**
-     * Computes an Eulerian cycle in the specified graph, if one exists.
-     *
-     * @param G the graph
-     */
-public EulerianCycle(Graph G) {
-
-        // must have at least one edge
-        if (G.E() == 0) return;
-
-        // necessary condition: all vertices have even degree
-        // (this test is needed or it might find an Eulerian path instead of cycle)
-        for (int v = 0; v < G.V(); v++)
-            if (G.degree(v) % 2 != 0)
-                return;
-
-        // create local view of adjacency lists, to iterate one vertex at a time
-        // the helper Edge data type is used to avoid exploring both copies of an edge v-w
-        Queue<Edge>[] adj = (Queue<Edge>[]) new Queue[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            adj[v] = new Queue<Edge>();
-
-        for (int v = 0; v < G.V(); v++) {
-            int selfLoops = 0;
-            for (int w : G.adj(v)) {
+        for (auto v = 0; v < graph.num_vertices(); ++v) {
+            auto self_loops = 0;
+            for (auto w : graph.adjacent(v)) {
                 // careful with self loops
                 if (v == w) {
-                    if (selfLoops % 2 == 0) {
-                        Edge e = new Edge(v, w);
-                        adj[v].enqueue(e);
-                        adj[w].enqueue(e);
+                    if (self_loops % 2 == 0) {
+                        Edge e{v, w};
+                        adj[v].push_back(e);
+                        adj[w].push_back(e);
                     }
-                    selfLoops++;
+                    ++self_loops;
                 } else if (v < w) {
-                    Edge e = new Edge(v, w);
-                    adj[v].enqueue(e);
-                    adj[w].enqueue(e);
+                    Edge e{v, w};
+                    adj[v].push_back(e);
+                    adj[w].push_back(e);
                 }
             }
         }
 
-        // initialize stack with any non-isolated vertex
-        int s = nonIsolatedVertex(G);
-        Stack<Integer> stack = new Stack<Integer>();
-        stack.push(s);
+        auto s = _non_isolated_vertex(graph);
+        std::deque<int> stack; //
+        stack.push_back(s);
 
-        // greedily search through edges in iterative DFS style
-        cycle = new Stack<Integer>();
-        while (!stack.isEmpty()) {
-            int v = stack.pop();
-            while (!adj[v].isEmpty()) {
-                Edge edge = adj[v].dequeue();
-                if (edge.isUsed) continue;
-                edge.isUsed = true;
-                stack.push(v);
+        // dfs
+        while (!stack.empty()) {
+            auto v = stack.back();
+            stack.pop_back();
+            while (!adj[v].empty()) {
+                auto edge = adj[v].front();
+                adj[v].pop_front();
+                if (edge.is_used) { continue; }
+                edge.is_used = true;
+                stack.push_back(v);
                 v = edge.other(v);
             }
-            // push vertex with no more leaving edges to cycle
-            cycle.push(v);
+            _cycle.push_back(v);
         }
 
-        // check if all edges are used
-        if (cycle.size() != G.E() + 1)
-            cycle = null;
-
-        assert certifySolution(G);
+        if (_cycle.size() != graph.num_edges() + 1) { _cycle.clear(); }
     }
 
-    /**
-     * Returns the sequence of vertices on an Eulerian cycle.
-     *
-     * @return the sequence of vertices on an Eulerian cycle;
-     * <tt>null</tt> if no such cycle
-     */
-public Iterable<Integer> cycle() {
-        return cycle;
-    }
+    inline std::vector<int> cycle() const { return {_cycle.begin(), _cycle.end()}; }
 
-    /**
-     * Returns true if the graph has an Eulerian cycle.
-     *
-     * @return <tt>true</tt> if the graph has an Eulerian cycle;
-     * <tt>false</tt> otherwise
-     */
-public boolean hasEulerianCycle() {
-        return cycle != null;
-    }
+    inline bool hash_eulerian_cycle() const noexcept { return !_cycle.empty(); }
 
-    // returns any non-isolated vertex; -1 if no such vertex
-private static int nonIsolatedVertex(Graph G) {
-        for (int v = 0; v < G.V(); v++)
-            if (G.degree(v) > 0)
-                return v;
+private:
+    static int _non_isolated_vertex(const Graph& graph)
+    {
+        for (auto v = 0; v < graph.num_vertices(); ++v) {
+            if (graph.degree(v) > 0) { return v; }
+        }
         return -1;
     }
 };

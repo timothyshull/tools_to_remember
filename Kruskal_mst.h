@@ -1,59 +1,29 @@
 #ifndef TOOLS_TO_REMEMBER_KRUSKAL_MST_H
 #define TOOLS_TO_REMEMBER_KRUSKAL_MST_H
 
+#include <limits>
+#include <deque>
+#include <functional>
+#include <queue>
+
+#include "Edge.h"
+#include "Edge_weighted_graph.h"
+#include "Union_find.h"
+
 class Kruskal_mst {
-private static final double FLOATING_POINT_EPSILON = 1E-12;
+private:
+    const static double _epsilon = std::numeric_limits<double>::epsilon();
+    double _weight;
+    std::deque<Edge> _mst;
 
-private double weight;                        // weight of MST
-private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
+public:
+    Kruskal_mst(const Edge_weighted_graph& graph);
 
-    /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     *
-     * @param G the edge-weighted graph
-     */
-public KruskalMST(EdgeWeightedGraph G) {
-        // more efficient to build heap by passing array of edges
-        MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : G.edges()) {
-            pq.insert(e);
-        }
+    ~Kruskal_mst() = default;
 
-        // run greedy algorithm
-        UF uf = new UF(G.V());
-        while (!pq.isEmpty() && mst.size() < G.V() - 1) {
-            Edge e = pq.delMin();
-            int v = e.either();
-            int w = e.other(v);
-            if (!uf.connected(v, w)) { // v-w does not create a cycle
-                uf.union(v, w);  // merge v and w components
-                mst.enqueue(e);  // add edge e to mst
-                weight += e.weight();
-            }
-        }
+    inline std::vector<Edge> edges() const { return {_mst.begin(), _mst.end()}; }
 
-        // check optimality conditions
-        assert check(G);
-    }
-
-    /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     *
-     * @return the edges in a minimum spanning tree (or forest) as
-     * an iterable of edges
-     */
-public Iterable<Edge> edges() {
-        return mst;
-    }
-
-    /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     *
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
-     */
-public double weight() {
-        return weight;
-    }
+    inline double weight() const noexcept { return _weight; }
 };
 
 #endif // TOOLS_TO_REMEMBER_KRUSKAL_MST_H

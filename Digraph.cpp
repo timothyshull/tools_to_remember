@@ -15,7 +15,7 @@ void Digraph::add_edge(int v, int w)
     _adjacency_lists[v].insert(w);
 }
 
-Digraph Digraph::reverse()
+Digraph Digraph::reverse() const
 {
     Digraph reverse{_num_vertices};
     for (auto v = 0; v < _num_vertices; ++v) {

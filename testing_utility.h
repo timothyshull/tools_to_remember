@@ -4,8 +4,6 @@
 #include <string>
 #include <random>
 
-// TODO: use to replace in linear_probing, radix_sort, separate_chaining, sequential_search, string_ops
-
 namespace testing_utility {
     std::string rand_string(std::size_t size);
 }
