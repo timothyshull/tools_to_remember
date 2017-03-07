@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_BLOOM_FILTER_H
-#define TOOLS_TO_REMEMBER_BLOOM_FILTER_H
+#ifndef BLOOM_FILTER_H
+#define BLOOM_FILTER_H
 
 #include <vector>
 #include <array>
@@ -42,4 +42,4 @@ public:
     }
 };
 
-#endif // TOOLS_TO_REMEMBER_BLOOM_FILTER_H
+#endif // BLOOM_FILTER_H

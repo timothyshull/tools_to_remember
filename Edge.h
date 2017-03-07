@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_EDGE_H
-#define TOOLS_TO_REMEMBER_EDGE_H
+#ifndef EDGE_H
+#define EDGE_H
 
 #include <stdexcept>
 #include <cmath>
@@ -40,4 +40,4 @@ public:
     inline bool operator>=(const Edge& rhs) const noexcept { return !(*this < rhs); }
 };
 
-#endif // TOOLS_TO_REMEMBER_EDGE_H
+#endif // EDGE_H

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DEPTH_FIRST_PATHS_H
-#define TOOLS_TO_REMEMBER_DEPTH_FIRST_PATHS_H
+#ifndef DEPTH_FIRST_PATHS_H
+#define DEPTH_FIRST_PATHS_H
 
 #include <deque>
 #include "Graph.h"
@@ -20,4 +20,4 @@ private:
     void _dfs(const Graph& graph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_DEPTH_FIRST_PATHS_H
+#endif // DEPTH_FIRST_PATHS_H

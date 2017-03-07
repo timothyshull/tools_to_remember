@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DIJKSTRA_SP_H
-#define TOOLS_TO_REMEMBER_DIJKSTRA_SP_H
+#ifndef DIJKSTRA_SP_H
+#define DIJKSTRA_SP_H
 
 #include <queue>
 #include <vector>
@@ -30,4 +30,4 @@ private:
     void _relax(Directed_edge e);
 };
 
-#endif // TOOLS_TO_REMEMBER_DIJKSTRA_SP_H
+#endif // DIJKSTRA_SP_H

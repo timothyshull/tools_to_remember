@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_TRANSITIVE_CLOSURE_H
-#define TOOLS_TO_REMEMBER_TRANSITIVE_CLOSURE_H
+#ifndef TRANSITIVE_CLOSURE_H
+#define TRANSITIVE_CLOSURE_H
 
 #include "Directed_dfs.h"
 
@@ -13,4 +13,4 @@ public:
     inline bool reachable(int v, int w) const { return _tc[v].marked(w); }
 };
 
-#endif // TOOLS_TO_REMEMBER_TRANSITIVE_CLOSURE_H
+#endif // TRANSITIVE_CLOSURE_H

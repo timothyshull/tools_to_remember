@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_TOPOLOGICAL_H
-#define TOOLS_TO_REMEMBER_TOPOLOGICAL_H
+#ifndef TOPOLOGICAL_H
+#define TOPOLOGICAL_H
 
 #include <vector>
 #include "Digraph.h"
@@ -19,4 +19,4 @@ public:
     inline bool has_topological_ordering() const { return !_order.empty(); }
 };
 
-#endif // TOOLS_TO_REMEMBER_TOPOLOGICAL_H
+#endif // TOPOLOGICAL_H

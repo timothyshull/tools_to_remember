@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_KRUSKAL_MST_H
-#define TOOLS_TO_REMEMBER_KRUSKAL_MST_H
+#ifndef KRUSKAL_MST_H
+#define KRUSKAL_MST_H
 
 #include <limits>
 #include <deque>
@@ -26,4 +26,4 @@ public:
     inline double weight() const noexcept { return _weight; }
 };
 
-#endif // TOOLS_TO_REMEMBER_KRUSKAL_MST_H
+#endif // KRUSKAL_MST_H

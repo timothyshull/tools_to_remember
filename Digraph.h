@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DIGRAPH_H
-#define TOOLS_TO_REMEMBER_DIGRAPH_H
+#ifndef DIGRAPH_H
+#define DIGRAPH_H
 
 #include <unordered_set>
 #include <vector>
@@ -31,4 +31,4 @@ public:
     inline std::size_t indegree(int v) const { return _indegree[v]; }
 };
 
-#endif // TOOLS_TO_REMEMBER_DIGRAPH_H
+#endif // DIGRAPH_H

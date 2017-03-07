@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_BIPARTITE_H
-#define TOOLS_TO_REMEMBER_BIPARTITE_H
+#ifndef BIPARTITE_H
+#define BIPARTITE_H
 
 #include <deque>
 #include "Graph.h"
@@ -25,4 +25,4 @@ private:
     void _dfs(const Graph& graph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_BIPARTITE_H
+#endif // BIPARTITE_H

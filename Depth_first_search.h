@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DEPTH_FIRST_SEARCH_H
-#define TOOLS_TO_REMEMBER_DEPTH_FIRST_SEARCH_H
+#ifndef DEPTH_FIRST_SEARCH_H
+#define DEPTH_FIRST_SEARCH_H
 
 #include <deque>
 
@@ -33,4 +33,4 @@ private:
     void _dfs(Graph& graph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_DEPTH_FIRST_SEARCH_H
+#endif // DEPTH_FIRST_SEARCH_H

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_BELLMAN_FORD_H
-#define TOOLS_TO_REMEMBER_BELLMAN_FORD_H
+#ifndef BELLMAN_FORD_H
+#define BELLMAN_FORD_H
 
 #include <vector>
 #include <deque>
@@ -39,4 +39,4 @@ private:
     void _find_negative_cycle();
 };
 
-#endif // TOOLS_TO_REMEMBER_BELLMAN_FORD_H
+#endif // BELLMAN_FORD_H

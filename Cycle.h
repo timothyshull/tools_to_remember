@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_CYCLE_H
-#define TOOLS_TO_REMEMBER_CYCLE_H
+#ifndef CYCLE_H
+#define CYCLE_H
 
 #include <deque>
 #include "Graph.h"
@@ -18,4 +18,4 @@ private:
     void dfs(const Graph& graph, int u, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_CYCLE_H
+#endif // CYCLE_H

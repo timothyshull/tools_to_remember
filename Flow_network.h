@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_FLOW_NETWORK_H
-#define TOOLS_TO_REMEMBER_FLOW_NETWORK_H
+#ifndef FLOW_NETWORK_H
+#define FLOW_NETWORK_H
 
 #include <vector>
 #include "Flow_edge.h"
@@ -25,4 +25,4 @@ public:
     std::vector<Flow_edge> edges();
 };
 
-#endif // TOOLS_TO_REMEMBER_FLOW_NETWORK_H
+#endif // FLOW_NETWORK_H

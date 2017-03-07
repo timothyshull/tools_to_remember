@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_LINEAR_PROBING_HASH_ST_H
-#define TOOLS_TO_REMEMBER_LINEAR_PROBING_HASH_ST_H
+#ifndef LINEAR_PROBING_HASH_ST_H
+#define LINEAR_PROBING_HASH_ST_H
 
 #include <functional>
 #include <vector>
@@ -102,4 +102,4 @@ private:
     }
 };
 
-#endif // TOOLS_TO_REMEMBER_LINEAR_PROBING_HASH_ST_H
+#endif // LINEAR_PROBING_HASH_ST_H

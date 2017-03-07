@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DEPTH_FIRST_ORDER_H
-#define TOOLS_TO_REMEMBER_DEPTH_FIRST_ORDER_H
+#ifndef DEPTH_FIRST_ORDER_H
+#define DEPTH_FIRST_ORDER_H
 
 #include <deque>
 
@@ -32,4 +32,4 @@ private:
     void _dfs(const Digraph& digraph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_DEPTH_FIRST_ORDER_H
+#endif // DEPTH_FIRST_ORDER_H

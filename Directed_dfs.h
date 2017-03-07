@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DIRECTED_DFS_H
-#define TOOLS_TO_REMEMBER_DIRECTED_DFS_H
+#ifndef DIRECTED_DFS_H
+#define DIRECTED_DFS_H
 
 #include <deque>
 #include "Digraph.h"
@@ -21,4 +21,4 @@ private:
     void _dfs(const Digraph& digraph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_DIRECTED_DFS_H
+#endif // DIRECTED_DFS_H

@@ -555,7 +555,7 @@ std::size_t hash(Float_type value)
 //    }
 //};
 
-int main()
+int dynamic_knapsack()
 {
     std::cout << std::numeric_limits<float>::digits << "\n";
     std::cout << std::numeric_limits<float>::max_exponent << "\n";

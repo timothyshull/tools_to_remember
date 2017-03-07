@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_CONNECTED_COMPONENT_H
-#define TOOLS_TO_REMEMBER_CONNECTED_COMPONENT_H
+#ifndef CONNECTED_COMPONENT_H
+#define CONNECTED_COMPONENT_H
 
 #include <deque>
 #include <vector>
@@ -24,4 +24,4 @@ private:
     void _dfs(const Graph& graph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_CONNECTED_COMPONENT_H
+#endif // CONNECTED_COMPONENT_H

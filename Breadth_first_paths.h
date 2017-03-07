@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_BREADTH_FIRST_PATHS_H
-#define TOOLS_TO_REMEMBER_BREADTH_FIRST_PATHS_H
+#ifndef BREADTH_FIRST_PATHS_H
+#define BREADTH_FIRST_PATHS_H
 
 #include <limits>
 #include <deque>
@@ -27,4 +27,4 @@ private:
     void bfs(const Graph& graph, int s);
 };
 
-#endif // TOOLS_TO_REMEMBER_BREADTH_FIRST_PATHS_H
+#endif // BREADTH_FIRST_PATHS_H

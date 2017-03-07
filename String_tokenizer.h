@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_STRING_TOKENIZER_H
-#define TOOLS_TO_REMEMBER_STRING_TOKENIZER_H
+#ifndef STRING_TOKENIZER_H
+#define STRING_TOKENIZER_H
 
 #include <string>
 #include <unordered_set>
@@ -71,4 +71,4 @@ public:
     }
 };
 
-#endif // TOOLS_TO_REMEMBER_STRING_TOKENIZER_H
+#endif // STRING_TOKENIZER_H

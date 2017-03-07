@@ -1,19 +1,12 @@
+#ifndef TREE_TRAVERSAL_H
+#define TREE_TRAVERSAL_H
+
 #include <queue>
 #include <stack>
 
-// TODO: check that the recursive calls can be made without passing template arguments
+#include "Tree_node.h"
 
 // Traversal
-template<typename Item_type>
-struct Tree_node;
-
-template<typename Item_type>
-struct Tree_node {
-    Item_type item;
-    Tree_node<Item_type>* left;
-    Tree_node<Item_type>* right;
-};
-
 // 5.16 level-order/breadth first -> similar to DSSCPP top-down lr tree bfs
 template<typename Item_type, typename Visitor_type>
 void breadth_first(Tree_node<Item_type>* root, Visitor_type& visit)
@@ -151,3 +144,5 @@ void postorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
         t1 = t1->right;
     }
 }
+
+#endif // TREE_TRAVERSAL_H

@@ -76,3 +76,15 @@ TEST(permutations, simple_3_char_string)
             "cba"
     }));
 }
+
+
+
+void permute(vector<int> P, vector<int>& A)
+{
+    for (int j = 0; j < int(P.size()); ++j) {
+        for (int i = 0; i < int(P.size()); ++i) {
+            swap(A[i], A[P[i]]);
+            swap(P[i], P[P[i]]);
+        }
+    }
+}

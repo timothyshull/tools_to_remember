@@ -232,3 +232,48 @@ TEST(knuth_partitions, content_10)
 
 
 
+
+
+
+
+template<typename T>
+vector<T> partition(const vector<T>& A)
+{
+    vector<vector<unordered_set<T>>> table(
+            A.size() + 1, vector<unordered_set<int>>(A.size() + 1));
+    table[0][0].insert(T(0));
+    for (int i = 1; i <= A.size(); ++i) {
+        for (int j = 0; j <= i; ++j) {
+            for (const T& v : table[i - 1][j]) {
+                table[i][j].insert(v);
+            }
+            for (const T& v : table[i - 1][j]) {
+                table[i][j + 1].insert(v + A[i - 1]);
+            }
+        }
+    }
+
+    T sum = accumulate(A.cbegin(), A.cend(), T(0));
+    for (int j = 1; j < A.size(); ++j) {
+        for (const T& v : table[A.size()][j]) {
+            if (v * (A.size() - j) == (sum - v) * j) {
+                vector<T> ret;
+                int i = A.size();
+                T sum = v;
+                while (i > 0) {
+                    if (table[i - 1][j].find(sum) == table[i - 1][j].cend()) {
+                        --j;
+                        sum -= A[i - 1];
+                        ret.push_back(A[i - 1]);
+                    }
+                    --i;
+                }
+                return ret;
+            }
+        }
+    }
+    return vector<int>();
+}
+
+
+

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DIRECTED_CYCLE_H
-#define TOOLS_TO_REMEMBER_DIRECTED_CYCLE_H
+#ifndef DIRECTED_CYCLE_H
+#define DIRECTED_CYCLE_H
 
 #include <deque>
 #include "Digraph.h"
@@ -22,4 +22,4 @@ private:
     void _dfs(const Digraph& digraph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_DIRECTED_CYCLE_H
+#endif // DIRECTED_CYCLE_H

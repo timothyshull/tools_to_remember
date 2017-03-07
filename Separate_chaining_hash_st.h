@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_SEPARATE_CHAINING_HASH_ST_H
-#define TOOLS_TO_REMEMBER_SEPARATE_CHAINING_HASH_ST_H
+#ifndef SEPARATE_CHAINING_HASH_ST_H
+#define SEPARATE_CHAINING_HASH_ST_H
 
 #include <functional>
 #include <vector>
@@ -30,4 +30,4 @@ private:
     inline std::size_t _hash(Key_type key) const noexcept { return (_hasher(key) & 0x7FFFFFFF) % _buckets; }
 };
 
-#endif // TOOLS_TO_REMEMBER_SEPARATE_CHAINING_HASH_ST_H
+#endif // SEPARATE_CHAINING_HASH_ST_H

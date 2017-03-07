@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_GRAPH_H
-#define TOOLS_TO_REMEMBER_GRAPH_H
+#ifndef GRAPH_H
+#define GRAPH_H
 
 #include <vector>
 #include <unordered_set>
@@ -36,4 +36,4 @@ public:
     inline std::size_t degree(int v) const noexcept { return _adjacency_lists[v].size(); }
 };
 
-#endif // TOOLS_TO_REMEMBER_GRAPH_H
+#endif // GRAPH_H

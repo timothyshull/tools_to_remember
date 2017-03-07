@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_DIRECTED_EDGE_H
-#define TOOLS_TO_REMEMBER_DIRECTED_EDGE_H
+#ifndef DIRECTED_EDGE_H
+#define DIRECTED_EDGE_H
 
 #include <cmath>
 #include <stdexcept>
@@ -37,4 +37,4 @@ public:
     inline bool operator!=(const Directed_edge& rhs) const { return !(rhs == *this); }
 };
 
-#endif // TOOLS_TO_REMEMBER_DIRECTED_EDGE_H
+#endif // DIRECTED_EDGE_H

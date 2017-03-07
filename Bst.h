@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_BST_H
-#define TOOLS_TO_REMEMBER_BST_H
+#ifndef BST_H
+#define BST_H
 
 #include <functional>
 #include <stdexcept>
@@ -271,4 +271,4 @@ private:
 
 };
 
-#endif // TOOLS_TO_REMEMBER_BST_H
+#endif // BST_H

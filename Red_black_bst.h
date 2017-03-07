@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_RED_BLACK_BST_H
-#define TOOLS_TO_REMEMBER_RED_BLACK_BST_H
+#ifndef RED_BLACK_BST_H
+#define RED_BLACK_BST_H
 
 #include <functional>
 #include <algorithm>
@@ -379,4 +379,4 @@ private:
 
 };
 
-#endif // TOOLS_TO_REMEMBER_RED_BLACK_BST_H
+#endif // RED_BLACK_BST_H

@@ -23,7 +23,7 @@ set(ALL_TESTS
         graph_spec.cpp
         heapsort.cpp
         horners_method.cpp
-        index_min_pq.cpp
+        index_min_pq_spec.cpp
         insertion_sort.cpp
         linear_probing_spec.cpp
         mergesort.cpp
@@ -38,6 +38,7 @@ set(ALL_TEST_LIBS
         gtest
         gmock
         testing_utility
+        index_min_pq
         graph
         dfs
         string_ops)
@@ -46,6 +47,8 @@ add_executable(test_all test_all.cpp ${ALL_TESTS})
 target_link_libraries(test_all ${ALL_TEST_LIBS})
 
 add_library(testing_utility testing_utility.h testing_utility.cpp)
+
+
 
 # sorting
 add_executable(selection_sort selection_sort.cpp)
@@ -78,12 +81,20 @@ target_link_libraries(radix_sort gtest gmock gtest_main)
 add_executable(bucket_sort bucket_sort.cpp)
 target_link_libraries(bucket_sort gtest gmock gtest_main)
 
+
+
+
 # priority queues
 add_executable(priority_queue_array priority_queue_array.cpp)
 target_link_libraries(priority_queue_array gtest gmock gtest_main)
 
-add_executable(index_min_pq index_min_pq.cpp)
-target_link_libraries(index_min_pq gtest gmock gtest_main)
+add_library(index_min_pq INTERFACE)
+target_include_directories(index_min_pq INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(index_min_pq_spec index_min_pq_spec.cpp Index_min_pq.h)
+target_link_libraries(index_min_pq_spec gtest gmock gtest_main)
+
+
+
 
 # search tables
 add_library(sequential_search INTERFACE)
@@ -122,6 +133,10 @@ target_link_libraries(max_subarray gtest gmock gtest_main)
 add_executable(matrix_multiplication matrix_multiplication.cpp)
 target_link_libraries(matrix_multiplication gtest gmock gtest_main)
 
+# combinations
+add_executable(combinations combinations.cpp)
+target_link_libraries(combinations gtest gmock gtest_main)
+
 # permutations
 add_executable(permutations permutations.cpp)
 target_link_libraries(permutations gtest gmock gtest_main)
@@ -146,8 +161,17 @@ add_executable(dfs_spec dfs_spec.cpp)
 target_link_libraries(dfs_spec dfs graph gtest gmock gtest_main)
 
 
+
 # string ops
 add_library(string_ops INTERFACE)
 target_include_directories(string_ops INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(string_ops_spec string_ops_spec.cpp)
 target_link_libraries(string_ops_spec string_ops gtest gmock gtest_main)
+
+
+
+# tree ops
+add_library(tree_node INTERFACE)
+target_include_directories(tree_node INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(tree_traversal_spec tree_traversal_spec.cpp)
+target_link_libraries(tree_traversal_spec tree_node gtest gmock gtest_main)

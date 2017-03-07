@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIRECTED_CYCLE_H
-#define TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIRECTED_CYCLE_H
+#ifndef EDGE_WEIGHTED_DIRECTED_CYCLE_H
+#define EDGE_WEIGHTED_DIRECTED_CYCLE_H
 
 #include <deque>
 #include <vector>
@@ -24,4 +24,4 @@ private:
     void _dfs(const Edge_weighted_digraph& digraph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIRECTED_CYCLE_H
+#endif // EDGE_WEIGHTED_DIRECTED_CYCLE_H

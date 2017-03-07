@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIGRAPH_H
-#define TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIGRAPH_H
+#ifndef EDGE_WEIGHTED_DIGRAPH_H
+#define EDGE_WEIGHTED_DIGRAPH_H
 
 #include <vector>
 
@@ -30,4 +30,4 @@ public:
     std::vector<Directed_edge> edges() const;
 };
 
-#endif // TOOLS_TO_REMEMBER_EDGE_WEIGHTED_DIGRAPH_H
+#endif // EDGE_WEIGHTED_DIGRAPH_H

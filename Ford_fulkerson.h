@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_FORD_FULKERSON_H
-#define TOOLS_TO_REMEMBER_FORD_FULKERSON_H
+#ifndef FORD_FULKERSON_H
+#define FORD_FULKERSON_H
 
 #include <deque>
 #include <vector>
@@ -35,4 +35,4 @@ private:
     bool _is_feasible(const Flow_network& network, int s, int t);
 };
 
-#endif // TOOLS_TO_REMEMBER_FORD_FULKERSON_H
+#endif // FORD_FULKERSON_H

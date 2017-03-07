@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_PRIM_MST_H
-#define TOOLS_TO_REMEMBER_PRIM_MST_H
+#ifndef PRIM_MST_H
+#define PRIM_MST_H
 
 #include <limits>
 #include <vector>
@@ -77,4 +77,4 @@ private:
 
 };
 
-#endif // TOOLS_TO_REMEMBER_PRIM_MST_H
+#endif // PRIM_MST_H

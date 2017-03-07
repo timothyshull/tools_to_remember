@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_FLOW_EDGE_H
-#define TOOLS_TO_REMEMBER_FLOW_EDGE_H
+#ifndef FLOW_EDGE_H
+#define FLOW_EDGE_H
 
 #include <stdexcept>
 #include <cmath>
@@ -41,4 +41,4 @@ public:
     void add_residual_flow_to(int vertex, double delta);
 };
 
-#endif // TOOLS_TO_REMEMBER_FLOW_EDGE_H
+#endif // FLOW_EDGE_H

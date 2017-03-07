@@ -28,6 +28,10 @@
 - combinations
 - partitions
 - backtracking
+    - n-Queens
+    - traveling salesperson - Hamilton path
+    - convex hull - Graham Scan
+    - sudoku
 - basic linear programming
     - shortest paths
     - maxflow
@@ -88,6 +92,11 @@
         - maxflow-mincut - Ford-Fulkerson
 
 
+
+ADD LATER:
+- subset sum
+- longest common subsequence
+- Simplex algorithm
 
 
 NOTE:

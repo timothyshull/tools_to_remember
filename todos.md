@@ -1,2 +1,1 @@
-- cleanup Directed_eulerian_cycle
 - add euclid_gcd test

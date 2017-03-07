@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_BORUVKA_MST_H
-#define TOOLS_TO_REMEMBER_BORUVKA_MST_H
+#ifndef BORUVKA_MST_H
+#define BORUVKA_MST_H
 
 #include <limits>
 #include <vector>
@@ -25,4 +25,4 @@ public:
     inline double weight() const noexcept { return _weight; }
 };
 
-#endif // TOOLS_TO_REMEMBER_BORUVKA_MST_H
+#endif // BORUVKA_MST_H

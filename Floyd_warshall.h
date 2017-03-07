@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_FLOYD_WARSHALL_H
-#define TOOLS_TO_REMEMBER_FLOYD_WARSHALL_H
+#ifndef FLOYD_WARSHALL_H
+#define FLOYD_WARSHALL_H
 
 #include <vector>
 #include "Directed_edge.h"
@@ -31,4 +31,4 @@ public:
     std::vector<Directed_edge> path(int s, int t);
 };
 
-#endif // TOOLS_TO_REMEMBER_FLOYD_WARSHALL_H
+#endif // FLOYD_WARSHALL_H

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_KOSARAJU_SHARIR_SCC_H
-#define TOOLS_TO_REMEMBER_KOSARAJU_SHARIR_SCC_H
+#ifndef KOSARAJU_SHARIR_SCC_H
+#define KOSARAJU_SHARIR_SCC_H
 
 #include <deque>
 #include <vector>
@@ -27,4 +27,4 @@ private:
     void _dfs(const Digraph& digraph, int v);
 };
 
-#endif // TOOLS_TO_REMEMBER_KOSARAJU_SHARIR_SCC_H
+#endif // KOSARAJU_SHARIR_SCC_H

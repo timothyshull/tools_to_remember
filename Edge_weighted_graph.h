@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_EDGE_WEIGHTED_GRAPH_H
-#define TOOLS_TO_REMEMBER_EDGE_WEIGHTED_GRAPH_H
+#ifndef EDGE_WEIGHTED_GRAPH_H
+#define EDGE_WEIGHTED_GRAPH_H
 
 #include <vector>
 
@@ -27,4 +27,4 @@ public:
     std::vector<Edge> edges() const;
 };
 
-#endif // TOOLS_TO_REMEMBER_EDGE_WEIGHTED_GRAPH_H
+#endif // EDGE_WEIGHTED_GRAPH_H

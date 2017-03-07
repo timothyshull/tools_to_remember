@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_EULERIAN_CYCLE_H
-#define TOOLS_TO_REMEMBER_EULERIAN_CYCLE_H
+#ifndef EULERIAN_CYCLE_H
+#define EULERIAN_CYCLE_H
 
 #include <deque>
 #include "Graph.h"
@@ -85,4 +85,4 @@ private:
     }
 };
 
-#endif // TOOLS_TO_REMEMBER_EULERIAN_CYCLE_H
+#endif // EULERIAN_CYCLE_H

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_STRING_OPS_H
-#define TOOLS_TO_REMEMBER_STRING_OPS_H
+#ifndef STRING_OPS_H
+#define STRING_OPS_H
 
 #include <string>
 #include <unordered_set>
@@ -253,4 +253,4 @@ inline void trim(std::basic_string<Char_type>& s) {
 // END trim code
 
 
-#endif // TOOLS_TO_REMEMBER_STRING_OPS_H
+#endif // STRING_OPS_H

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_INDEX_MIN_PQ_H
-#define TOOLS_TO_REMEMBER_INDEX_MIN_PQ_H
+#ifndef INDEX_MIN_PQ_H
+#define INDEX_MIN_PQ_H
 
 #include <stdexcept>
 #include <limits>
@@ -124,4 +124,4 @@ private:
     }
 };
 
-#endif // TOOLS_TO_REMEMBER_INDEX_MIN_PQ_H
+#endif // INDEX_MIN_PQ_H

@@ -1,5 +1,5 @@
-#ifndef TOOLS_TO_REMEMBER_UNION_FIND_H
-#define TOOLS_TO_REMEMBER_UNION_FIND_H
+#ifndef UNION_FIND_H
+#define UNION_FIND_H
 
 #include <vector>
 #include <numeric>
@@ -24,4 +24,4 @@ public:
     void create_union(int p, int q);
 };
 
-#endif // TOOLS_TO_REMEMBER_UNION_FIND_H
+#endif // UNION_FIND_H
