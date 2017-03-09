@@ -96,7 +96,7 @@
 ADD LATER:
 - subset sum
 - longest common subsequence
-- Simplex algorithm
+- Simplex algorithm (mincost?)
 
 
 NOTE:

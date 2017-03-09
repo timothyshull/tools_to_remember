@@ -1,0 +1,35 @@
+{
+    "partition(n = 5, max = 5, prefix = '')": {
+        "partition(n = 0, max = 5, prefix =  5)": {
+            "partition(n = 1, max = 4, prefix =  4)": {
+                "partition(n = 0, max = 1, prefix =  4 1)": null
+            },
+            "partition(n = 2, max = 3, prefix =  3)": {
+                "partition(n = 0, max = 2, prefix =  3 2)": {
+                    "partition(n = 1, max = 1, prefix =  3 1)": {
+                        "partition(n = 0, max = 1, prefix =  3 1 1)": null
+                    },
+                    "partition(n = 3, max = 2, prefix =  2)": {
+                        "partition(n = 1, max = 2, prefix =  2 2)": {
+                            "partition(n = 0, max = 1, prefix =  2 2 1)": null,
+                            "partition(n = 2, max = 1, prefix =  2 1)": {
+                                "partition(n = 1, max = 1, prefix =  2 1 1)": {
+                                    "partition(n = 0, max = 1, prefix =  2 1 1 1)": null
+                                }
+                            },
+                            "partition(n = 4, max = 1, prefix =  1)": {
+                                "partition(n = 3, max = 1, prefix =  1 1)": {
+                                    "partition(n = 2, max = 1, prefix =  1 1 1)": {
+                                        "partition(n = 1, max = 1, prefix =  1 1 1 1)": {
+                                            "partition(n = 0, max = 1, prefix =  1 1 1 1 1)": null
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

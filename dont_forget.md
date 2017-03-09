@@ -6,6 +6,15 @@
 - if a class is a container give it an initializer_list ctor
 - initialize members and bases in order of their declarations
 - a virtual function cannot be a template member function
+- all static data members must be initialized out-of-line (without static keyword) (see _default for Directed_edge)
+
+
+- erase remove idiom -> review standard lib remove from containers
+    - value
+    - position it
+    - range its [beg, end)
+
+- cannot capture static variables -> check on this (cannot be captured because it does not have automatic storage duration)
 
 
 - remove inout parameters where possible

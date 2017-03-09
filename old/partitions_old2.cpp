@@ -10,6 +10,93 @@
 
 using namespace testing;
 
+// Knuth partitions - Algorithm P, V4
+// returns partitions in reverse lexicographic order
+// previously used a Visitor class to accumulate partitions -> removed to simplify
+// n - value to partition, changes throughout
+// a - current partition
+// m
+// q
+// x
+std::vector<std::vector<int>> knuth_partitions(int n)
+{
+    if (n < 0) { throw std::invalid_argument{"The number to partition, n, should be an integer greater than 0"}; }
+    std::vector<std::vector<int>> partitions;
+    std::vector<int> a(static_cast<std::vector<int>::size_type>(n), 0);
+    // auto n = n - 1;
+    if (n == 0) { return partitions; }
+    // P1
+    a[0] = 0;
+    auto m = 1;
+    while (true) { // P2
+        a[m] = n;
+        auto q = n == 1 ? m - 1 : m;
+        while (true) { // P3
+            partitions.emplace_back(a.begin() + 1, a.begin() + m + 1); // begin + m + 1 is 1 past m so ends at a sub m
+            if (a[q] == 2) { // P4
+                a[q] = 1;
+                --q;
+                ++m;
+                a[m] = 1;
+                continue; // goto P3
+            } else { // P5
+                if (q == 0) { return partitions; }
+                auto x = a[q] - 1;
+                a[q] = x;
+                n = m - q + 1;
+                m = q + 1;
+                while (x < n) { // P6
+                    a[m] = x;
+                    ++m;
+                    n -= x;
+                }
+                break; // goto P2
+            }
+        }
+    }
+}
+
+// TODO: test
+// n = 11 and m = 4
+// 8111, 7211, 6311, 5411, 5321, 4421, 4331, 5222, 4322, 3332
+std::vector<std::vector<int>> knuth_partition_m_parts(int n, int m)
+{
+    if (m < 2 || m > n) { throw std::invalid_argument{"The number of parts, m, should be 2 <= m <= n"}; }
+    std::vector<std::vector<int>> partitions;
+    // H1
+    std::vector<int> a(static_cast<std::vector<int>::size_type>(m + 1), 1);
+    a[0] = n - m + 1;
+    a[m] = -1;
+
+    while (true) {
+        partitions.emplace_back(a.begin(), a.begin() + m + 1);
+        if (a[1] < a[0] - 1) {
+            --a[0];
+            ++a[1];
+        } else { // H4
+            auto j = 2; // 3 in algorithm
+            auto s = a[0] + a[1] - 1;
+            while (a[j] >= a[0] - 1) {
+                s = s + a[j];
+                ++j;
+            }
+            // s = a1 + ... a sub (j - 1) - 1
+            if (j > m) { break; }
+            auto x = a[j] + 1;
+            a[j] = x;
+            // ++a[j];
+            --j;
+            while (j >= 1) { // j > 1 ?
+                a[j] = x;
+                s -= x;
+                --j;
+            }
+            a[0] = s; // inside while loop?
+        }
+    }
+    return partitions;
+}
+
 class Partition_generator {
 private:
     int _x;
@@ -70,7 +157,7 @@ private:
     {
         auto start = _level;
         while (start < _num_summands) {
-            // _print_state();
+            _print_state();
             if (_level >= _num_summands) { break; }
             // carry over and assign remainder and coefficient from previous iteration
             _remainder[_level] = _ri;
@@ -137,7 +224,6 @@ private:
     }
 };
 
-// TODO: reconsider this one
 template<typename Integer_type>
 std::vector<Integer_type> partition(const std::vector<Integer_type>& a)
 {
@@ -172,12 +258,25 @@ std::vector<Integer_type> partition(const std::vector<Integer_type>& a)
     return {};
 }
 
-// http://introcs.cs.princeton.edu/java/23recursion/Partition.java.html
+class Partition {
+public:
+    explicit Partition(int n) { partition(n, n, ""); }
+
+private:
+    void partition(int n, int max, std::string prefix)
+    {
+        if (n == 0) {
+            std::cout << prefix << "\n";
+            return;
+        }
+        for (auto i = std::min(max, n); i >= 1; --i) { partition(n - i, i, prefix + " " + std::to_string(i)); }
+    }
+};
+
 class Partition {
     std::vector<std::vector<int>> _partitions;
 public:
-    explicit Partition(int n)
-    {
+    explicit Partition(int n) {
         std::vector<int> t;
         partition(n, n, t);
     }
@@ -185,107 +284,93 @@ public:
     inline std::vector<std::vector<int>> get_partitions() const { return _partitions; }
 
 private:
-    void partition(int n, int max, std::vector<int>& v)
+    void partition(int n, int max, std::vector<int> v)
     {
         if (n == 0 && !v.empty()) {
             _partitions.emplace_back(v);
+            // std::cout << prefix << "\n";
             return;
         }
         for (auto i = std::min(max, n); i >= 1; --i) {
+            auto t = v;
             v.push_back(i);
-            partition(n - i, i, v);
-            v.pop_back();
+            partition(n - i, i, t);
         }
     }
 };
 
 
-TEST(partitions, simple_3)
+//TEST(partitions, simple_unrestricted)
+//{
+////    Partition_gen<int> pp{3};
+////    std::vector<std::vector<int>> parts;
+////    while (pp.next() < 3) {
+////        parts.push_back(pp.get_partition());
+////    }
+//    auto parts = partitions(3);
+////
+//    ASSERT_THAT(parts.size(), Eq(23));
+//}
+//
+//TEST(knuth_partitions, size_10)
+//{
+//    auto parts = knuth_partitions(9);
+//    ASSERT_THAT(parts.size(), Eq(30));
+//}
+//
+//TEST(knuth_partitions, content_10)
+//{
+//    auto parts = knuth_partitions(9);
+//    ASSERT_THAT(parts, ContainerEq(std::vector<std::vector<int>> {
+//            {9},
+//            {8, 1},
+//            {7, 2},
+//            {7, 1, 1},
+//            {6, 3},
+//            {6, 2, 1},
+//            {6, 1, 1, 1},
+//            {5, 4},
+//            {5, 3, 1},
+//            {5, 2, 2},
+//            {5, 2, 1, 1},
+//            {5, 1, 1, 1, 1},
+//            {4, 4, 1},
+//            {4, 3, 2},
+//            {4, 3, 1, 1},
+//            {4, 2, 2, 1},
+//            {4, 2, 1, 1, 1},
+//            {4, 1, 1, 1, 1, 1},
+//            {3, 3, 3},
+//            {3, 3, 2, 1},
+//            {3, 3, 1, 1, 1},
+//            {3, 2, 2, 2},
+//            {3, 2, 2, 1, 1},
+//            {3, 2, 1, 1, 1, 1},
+//            {3, 1, 1, 1, 1, 1, 1},
+//            {2, 2, 2, 2, 1},
+//            {2, 2, 2, 1, 1, 1},
+//            {2, 2, 1, 1, 1, 1, 1},
+//            {2, 1, 1, 1, 1, 1, 1, 1},
+//            {1, 1, 1, 1, 1, 1, 1, 1, 1}
+//    }));
+//}
+
+
+
+
+int main()
 {
-    Partition p{3};
-    auto parts = p.get_partitions();
-    ASSERT_THAT(parts.size(), Eq(3));
+//    std::cout << "Partition_generator(3);\n";
+//    Partition_generator pg1{3, 2};
+//    std::cout << "Partition_generator(5);\n";
+//    Partition_generator pg2{5, 3, {1, 2, 3}};
+    Partition p2{5};
+    auto t = p2.get_partitions();
+
+    return 0;
 }
 
-TEST(partitions, gen_3)
-{
-    Partition_generator p{3};
-    auto parts = p.get_partitions();
-    ASSERT_THAT(parts.size(), Eq(3));
-}
 
-TEST(partitions, simple_10)
-{
-    Partition p{9};
-    auto parts = p.get_partitions();
-    ASSERT_THAT(parts, ContainerEq(std::vector<std::vector<int>> {
-            {9},
-            {8, 1},
-            {7, 2},
-            {7, 1, 1},
-            {6, 3},
-            {6, 2, 1},
-            {6, 1, 1, 1},
-            {5, 4},
-            {5, 3, 1},
-            {5, 2, 2},
-            {5, 2, 1, 1},
-            {5, 1, 1, 1, 1},
-            {4, 4, 1},
-            {4, 3, 2},
-            {4, 3, 1, 1},
-            {4, 2, 2, 1},
-            {4, 2, 1, 1, 1},
-            {4, 1, 1, 1, 1, 1},
-            {3, 3, 3},
-            {3, 3, 2, 1},
-            {3, 3, 1, 1, 1},
-            {3, 2, 2, 2},
-            {3, 2, 2, 1, 1},
-            {3, 2, 1, 1, 1, 1},
-            {3, 1, 1, 1, 1, 1, 1},
-            {2, 2, 2, 2, 1},
-            {2, 2, 2, 1, 1, 1},
-            {2, 2, 1, 1, 1, 1, 1},
-            {2, 1, 1, 1, 1, 1, 1, 1},
-            {1, 1, 1, 1, 1, 1, 1, 1, 1}
-    }));
-}
 
-TEST(partitions, gen_10)
-{
-    Partition_generator p{9};
-    auto parts = p.get_partitions();
-    ASSERT_THAT(parts, ContainerEq(std::vector<std::vector<int>> {
-            {1, 1, 1, 1, 1, 1, 1, 1, 1},
-            {1, 1, 1, 1, 1, 1, 1, 2},
-            {1, 1, 1, 1, 1, 2, 2},
-            {1, 1, 1, 2, 2, 2},
-            {1, 2, 2, 2, 2},
-            {1, 1, 1, 1, 1, 1, 3},
-            {1, 1, 1, 1, 2, 3},
-            {1, 1, 2, 2, 3},
-            {2, 2, 2, 3},
-            {1, 1, 1, 3, 3},
-            {1, 2, 3, 3},
-            {3, 3, 3},
-            {1, 1, 1, 1, 1, 4},
-            {1, 1, 1, 2, 4},
-            {1, 2, 2, 4},
-            {1, 1, 3, 4},
-            {2, 3, 4},
-            {1, 4, 4},
-            {1, 1, 1, 1, 5},
-            {1, 1, 2, 5},
-            {2, 2, 5},
-            {1, 3, 5},
-            {4, 5},
-            {1, 1, 1, 6},
-            {1, 2, 6},
-            {3, 6},
-            {1, 1, 7},
-            {2, 7},
-            {1, 8},
-            {9}})
-    );
-}
+
+

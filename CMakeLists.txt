@@ -152,6 +152,9 @@ target_link_libraries(horners_method gtest gmock gtest_main)
 
 
 # graphs
+add_library(union_find Union_find.h Union_find.cpp)
+
+
 add_library(graph Graph.h Graph.cpp)
 add_executable(graph_spec graph_spec.cpp)
 target_link_libraries(graph_spec graph gtest gmock gtest_main)
@@ -159,6 +162,10 @@ target_link_libraries(graph_spec graph gtest gmock gtest_main)
 add_library(dfs Depth_first_search.cpp Depth_first_search.h)
 add_executable(dfs_spec dfs_spec.cpp)
 target_link_libraries(dfs_spec dfs graph gtest gmock gtest_main)
+
+add_library(depth_first_paths Depth_first_paths.h Depth_first_paths.cpp)
+add_executable(depth_first_paths_spec depth_first_paths_spec.cpp)
+target_link_libraries(depth_first_paths_spec depth_first_paths graph union_find gtest gmock gtest_main)
 
 
 

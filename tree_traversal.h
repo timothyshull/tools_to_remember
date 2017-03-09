@@ -14,15 +14,15 @@ void breadth_first(Tree_node<Item_type>* root, Visitor_type& visit)
     if (root == nullptr) { return; }
 
     std::queue<Tree_node<Item_type>*> queue;
-    Tree_node<Item_type>* tmp;
+    Tree_node<Item_type>* t;
 
     queue.push(root);
     while (!queue.empty()) {
-        tmp = queue.front();
+        t = queue.front();
         queue.pop();
-        visit(tmp);
-        if (tmp->left != nullptr) { queue.push(tmp->left); }
-        if (tmp->right != nullptr) { queue.push(tmp->right); }
+        visit(t);
+        if (t->left != nullptr) { queue.push(t->left); }
+        if (t->right != nullptr) { queue.push(t->right); }
     }
 }
 
@@ -62,15 +62,15 @@ void preorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
     if (root == nullptr) { return; }
 
     std::stack<Tree_node<Item_type>*> stack;
-    Tree_node<Item_type>* tmp;
+    Tree_node<Item_type>* t;
 
     stack.push(root);
     while (!stack.empty()) {
-        tmp = stack.top();
+        t = stack.top();
         stack.pop();
-        visit(tmp);
-        if (tmp->right != nullptr) { stack.push(tmp->right); }
-        if (tmp->left != nullptr) { stack.push(tmp->left); }
+        visit(t);
+        if (t->right != nullptr) { stack.push(t->right); }
+        if (t->left != nullptr) { stack.push(t->left); }
     }
 }
 
@@ -81,33 +81,28 @@ void inorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
     if (root == nullptr) { return; }
 
     std::stack<Tree_node<Item_type>*> stack;
-    Tree_node<Item_type>* tmp{root};
+    auto t = root;
 
-    while (tmp != nullptr) {
-
-        while (tmp != nullptr) {
-            if (tmp->right) { stack.push(tmp->right); }
-            stack.push(tmp);
-            tmp = tmp->left;
+    while (t != nullptr) {
+        while (t != nullptr) {
+            if (t->right) { stack.push(t->right); }
+            stack.push(t);
+            t = t->left;
         }
 
-        tmp = stack.top();
+        t = stack.top();
         stack.pop();
 
-        while (!stack.empty() && tmp->right == nullptr) {
-            visit(tmp);
-            tmp = stack.top();
+        while (!stack.empty() && t->right == nullptr) {
+            visit(t);
+            t = stack.top();
             stack.pop();
         }
 
-        visit(tmp);
-
-        if (!stack.empty()) {
-            tmp = stack.top();
-            stack.pop();
-        } else {
-            tmp = nullptr;
-        }
+        visit(t);
+        if (stack.empty()) { return; }
+        t = stack.top();
+        stack.pop();
     }
 }
 
@@ -124,18 +119,19 @@ void postorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
     if (root == nullptr) { return; }
 
     std::stack<Tree_node<Item_type>*> stack;
-    Tree_node<Item_type>* t1{root};
-    Tree_node<Item_type>* t2{root};
+    auto t1 = root;
+    auto t2 = root;
 
     while (t1 != nullptr) {
-        for (; t1->left != nullptr; t1 = t1->left) { stack.push(t1); }
+        while (t1->left != nullptr) {
+            stack.push(t1);
+            t1 = t1->left;
+        }
 
         while (t1->right == nullptr || t1->right == t2) {
             visit(t1);
             t2 = t1;
-
             if (stack.empty()) { return; }
-
             t1 = stack.top();
             stack.pop();
         }

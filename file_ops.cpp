@@ -2,9 +2,7 @@
 #include <istream>
 #include <vector>
 #include <fstream>
-#include <regex>
 #include <map>
-#include <system_error>
 #include <unordered_map>
 
 #include "string_ops.h"
@@ -63,18 +61,6 @@ void load_csv(std::istream& in, std::vector<std::vector<std::string>>& data)
         data.push_back(split(tmp, ','));
         tmp.clear();
     }
-}
-
-std::vector<std::string> re_split(std::string& s, std::regex& re)
-{
-    std::sregex_token_iterator it{s.begin(), s.end(), re, -1};
-    std::sregex_token_iterator end;
-    std::vector<std::string> v;
-    while (it != end) {
-        v.emplace_back(*it);
-        ++it;
-    }
-    return v;
 }
 
 std::tuple<int, int, int> count_chars_words_lines(std::istream& in)

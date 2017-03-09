@@ -12,6 +12,8 @@ private:
 public:
     Depth_first_paths(const Graph& graph, int s);
 
+    ~Depth_first_paths() = default;
+
     inline bool has_path_to(int v) const { return _marked[v]; }
 
     std::vector<int> path_to(int v) const;

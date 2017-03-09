@@ -1,6 +1,7 @@
 #include <cstddef>
 #include <functional>
 #include <iostream>
+#include <cassert>
 
 
 // refer to <functional> for hash types
@@ -22,6 +23,23 @@ std::size_t hash(Float_type value)
     // auto mask = ~(~0UL << std::numeric_limits<Float_type>::digits);
     return u.s ^ (u.s >> 32);
 }
+
+// TODO: better to use reinterpret_cast than union
+void tmp()
+{
+    auto val = 0;
+    assert(sizeof(float) == sizeof val);
+    auto t = reinterpret_cast<float&>(val);
+
+    assert(sizeof(float) == sizeof val);
+    auto t2 = *reinterpret_cast<float*>(&val);
+
+    auto f = 0.0;
+    // can also use memcpy
+    assert(sizeof f == sizeof val);
+    memcpy(&f, &val, sizeof f);
+}
+
 
 // Java Double hash function
 //public static int hashCode(double value) {
@@ -74,13 +92,6 @@ inline constexpr auto radix() -> decltype(std::numeric_limits<Type>::max() - std
 {
     return std::numeric_limits<Type>::max() - std::numeric_limits<Type>::min() + 1;
 }
-
-
-
-
-
-
-
 
 // floating point numbers -> sign, exponent, mantissa
 // sign_bits = std::numeric_limits<type>::is_signed
