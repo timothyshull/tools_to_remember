@@ -5,21 +5,41 @@
 
 using namespace testing;
 
+//template<typename Item_type>
+//void counting_sort(std::vector<Item_type>& a)
+//{
+//    if (a.size() <= 1) { return; }
+//    auto min_max = std::minmax_element(a.begin(), a.end());
+//    auto min = *min_max.first;
+//    auto range = *min_max.second - min + 1;
+//
+//    std::vector<std::size_t> count(range, 0);
+//    for (auto e : a) { ++count[e - min + 1]; }
+//    for (auto i = 1; i < count.size(); ++i) { count[i] += count[i - 1]; }
+//
+//    std::vector<Item_type> aux(a.size());
+//    for (auto e : a) { aux[count[e - min]++] = e; }
+//    a = aux;
+//}
+
 template<typename Item_type>
 void counting_sort(std::vector<Item_type>& a)
 {
-    if (a.size() <= 1) { return; } // prefer insertion sort under size of 10
-    auto min_max = std::minmax_element(a.begin(), a.end());
-    auto min = *min_max.first;
-    auto range = *min_max.second - min + 2;
+    if (a.size() <= 10) {
+        std::sort(std::begin(a), std::end(a));
+        return;
+    }
+    const auto min_max = std::minmax_element(a.begin(), a.end());
+    const auto min = *min_max.first;
+    const auto range = *min_max.second - min + 1;
 
     std::vector<std::size_t> count(range, 0);
-    for (auto e : a) { ++count[e - min + 1]; }
-    for (auto i = 1; i < count.size(); ++i) { count[i] += count[i - 1]; }
+    for (const auto& e : a) { ++count[e - min]; }
+    for (auto i = 1; i < range; ++i) { count[i] += count[i - 1]; }
 
     std::vector<Item_type> aux(a.size());
-    for (auto e : a) { aux[count[e - min]++] = e; }
-    a = aux;
+    for (const auto& e : a) { aux[--count[e - min]] = e; }
+    a = std::move(aux);
 }
 
 // begin tests

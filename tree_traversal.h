@@ -14,11 +14,10 @@ void breadth_first(Tree_node<Item_type>* root, Visitor_type& visit)
     if (root == nullptr) { return; }
 
     std::queue<Tree_node<Item_type>*> queue;
-    Tree_node<Item_type>* t;
-
     queue.push(root);
+
     while (!queue.empty()) {
-        t = queue.front();
+        auto t = queue.front();
         queue.pop();
         visit(t);
         if (t->left != nullptr) { queue.push(t->left); }
@@ -62,11 +61,10 @@ void preorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
     if (root == nullptr) { return; }
 
     std::stack<Tree_node<Item_type>*> stack;
-    Tree_node<Item_type>* t;
-
     stack.push(root);
+
     while (!stack.empty()) {
-        t = stack.top();
+        auto t = stack.top();
         stack.pop();
         visit(t);
         if (t->right != nullptr) { stack.push(t->right); }
@@ -85,7 +83,7 @@ void inorder_iterative(Tree_node<Item_type>* root, Visitor_type& visit)
 
     while (t != nullptr) {
         while (t != nullptr) {
-            if (t->right) { stack.push(t->right); }
+            if (t->right != nullptr) { stack.push(t->right); }
             stack.push(t);
             t = t->left;
         }

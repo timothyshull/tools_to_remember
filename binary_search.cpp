@@ -9,14 +9,13 @@ using namespace testing;
 template<typename Item_type>
 int binary_search(const std::vector<Item_type>& a, const Item_type& i)
 {
-    int l{0};
-    int h{static_cast<int>(a.size() - 1)};
+    auto l = 0;
+    auto h = static_cast<int>(a.size() - 1);
 
-    int m;
     while (l <= h) {
-        m = (h + l) / 2;
+        auto m = (h + l) / 2;
         if (i < a[m]) { h = m - 1; }
-        else if (i > a[m]) { l = m + 1; }
+        else if (a[m] < i) { l = m + 1; }
         else { return m; }
     }
     return -1;

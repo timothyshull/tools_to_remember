@@ -4,6 +4,10 @@
 #include <cassert>
 
 
+// #include <memory>
+// std::__murmur2_or_cityhash<>
+
+
 // refer to <functional> for hash types
 // refer to <cfloat> for float value macros including FLT_MANT_DIG
 // all check for 0 and return 0 to avoid 0 vs -0
@@ -68,7 +72,7 @@ struct Hash_example {
 template<>
 std::size_t hash<Hash_example>(Hash_example obj)
 {
-    std::size_t h{17};
+    auto h = static_cast<std::size_t>(17);
     h = 31 * h + std::hash<char>{}(obj.c);
     h = 31 * h + std::hash<short>{}(obj.s);
     h = 31 * h + std::hash<int>{}(obj.i);
@@ -81,8 +85,10 @@ std::size_t hash<Hash_example>(Hash_example obj)
 template<>
 std::size_t hash<std::string>(std::string s, std::size_t modulo_divisor)
 {
-    std::size_t h{0};
-    std::size_t r{static_cast<std::size_t>(std::numeric_limits<std::string::value_type>::max() - std::numeric_limits<std::string::value_type>::min())};
+    auto h = static_cast<std::size_t>(0);
+    auto r = static_cast<std::size_t>(
+            std::numeric_limits<std::string::value_type>::max() - std::numeric_limits<std::string::value_type>::min()
+    );
     for (auto c : s) { h = (r * h + c) % modulo_divisor; };
     return h;
 }

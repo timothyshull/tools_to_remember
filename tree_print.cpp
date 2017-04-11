@@ -1,38 +1,26 @@
 #include <iostream>
 #include <queue>
 
-// tree print
-template<typename Item_type>
-struct Tree_node;
-
-template<typename Item_type>
-struct Tree_node {
-    Item_type item;
-    Tree_node<Item_type>* left;
-    Tree_node<Item_type>* right;
-};
+#include "Tree_node.h"
 
 // tree print -> inorder
 template<typename Item_type>
-void print_node(Item_type& x, int h)
+void print_node_item(Item_type &&x, int h)
 {
-    for (int i = 0; i < h; ++i) { std::cout << "  "; }
+    for (auto i = 0; i < h; ++i) { std::cout << "  "; }
     std::cout << x << "\n";
 }
 
 template<typename Item_type>
-void print_node(Item_type&& x, int h) { print_node(x, h); }
-
-template<typename Item_type>
-void show(Tree_node<Item_type>* node, int h = 0)
+void print_tree(Tree_node<Item_type> *node, int h = 0)
 {
     if (node == nullptr) {
-        print_node<char>('*', h);
+        print_node_item<char>('*', h);
         return;
     }
-    show(node->right, h + 1);
-    print_node(node->item, h);
-    show(node->left, h + 1);
+    print_tree(node->right, h + 1);
+    print_node_item(node->item, h);
+    print_tree(node->left, h + 1);
 }
 
 // level order print -> BFS and newline for each level
