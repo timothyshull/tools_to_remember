@@ -7,7 +7,7 @@
 template<typename Graph_type>
 class Dfs_edge_classification {
 private:
-    const Graph_type& _graph;
+    const Graph_type &_graph;
     int _depth;
     int _count_pre;
     int _count_post;
@@ -15,8 +15,9 @@ private:
     std::vector<int> _postorder;
 
 public:
-    Dfs_edge_classification(const Graph_type& graph)
+    explicit Dfs_edge_classification(const Graph_type &graph)
             : _graph{graph},
+              _depth{0},
               _count_pre{0},
               _count_post{0},
               _preorder(graph.num_vertices(), -1),
@@ -27,23 +28,25 @@ public:
         }
     }
 
+    ~Dfs_edge_classification() = default;
+
 private:
-    void _show(std::string&& s, int source, int dest)
+    void _show(std::string &&edge_type, int source, int dest)
     {
         for (auto i = 0; i < _depth; ++i) { std::cout << "  "; }
-        std::cout << s << "(" << source << ", " << dest << ")" << "\n";
+        std::cout << edge_type << "(" << source << ", " << dest << ")" << "\n";
     }
 
     void _dfs(int v, int w)
     {
-        _show("Tree edge", v, w);
+        _show("Tree_edge", v, w);
         _preorder[w] = _count_pre++;
         ++_depth;
-        for (auto t : _graph.adjacent(w)) {
+        for (const auto t : _graph.adjacent(w)) {
             if (_preorder[t] == -1) { _dfs(w, t); }
-            else if (_postorder[t] == -1) { _show("Back edge", w, t); }
-            else if (_preorder[t] > _preorder[w]) { _show("Down edge", w, t); }
-            else { _show(" cross", w, t); }
+            else if (_postorder[t] == -1) { _show("Back_edge", w, t); }
+            else if (_preorder[w] < _preorder[t]) { _show("Down_edge", w, t); }
+            else { _show("Cross_edge", w, t); }
         }
         _postorder[w] = _count_post++;
         --_depth;

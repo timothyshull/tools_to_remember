@@ -18,15 +18,17 @@ private:
 public:
     Depth_first_order(const Digraph& digraph);
 
-    inline int pre(int v) const { return _pre_num[v]; }
+    ~Depth_first_order() = default;
 
-    inline int post(int v) const { return _post_num[v]; }
+    int pre(int v) const { return _pre_num[v]; }
 
-    inline std::vector<int> post() const { return {_postorder.begin(), _postorder.end()}; }
+    int post(int v) const { return _post_num[v]; }
 
-    inline std::vector<int> pre() const { return {_preorder.begin(), _preorder.end()}; }
+    std::vector<int> post() const { return {_postorder.begin(), _postorder.end()}; }
 
-    inline std::vector<int> reverse_post() const { return {_postorder.rbegin(), _postorder.rend()}; }
+    std::vector<int> pre() const { return {_preorder.begin(), _preorder.end()}; }
+
+    std::vector<int> reverse_post() const { return {_postorder.rbegin(), _postorder.rend()}; }
 
 private:
     void _dfs(const Digraph& digraph, int v);
