@@ -8,47 +8,53 @@ template<typename Graph_type>
 class Dfs_edge_classification {
 private:
     const Graph_type &_graph;
-    int _depth;
-    int _count_pre;
-    int _count_post;
     std::vector<int> _preorder;
     std::vector<int> _postorder;
+    int _depth{0};
+    int _pre_count{0};
+    int _post_count{0};
 
 public:
-    explicit Dfs_edge_classification(const Graph_type &graph)
+    Dfs_edge_classification(const Graph_type &graph)
             : _graph{graph},
-              _depth{0},
-              _count_pre{0},
-              _count_post{0},
               _preorder(graph.num_vertices(), -1),
               _postorder(graph.num_vertices(), -1)
     {
         for (auto v = 0; v < graph.num_vertices(); ++v) {
-            if (_preorder[v] == -1) { _dfs(v, v); }
+            if (_preorder[v] == -1) {
+                _dfs(v, v);
+            }
         }
     }
 
     ~Dfs_edge_classification() = default;
 
 private:
-    void _show(std::string &&edge_type, int source, int dest)
+    void _show(std::string &&edge_type, int v, int w)
     {
-        for (auto i = 0; i < _depth; ++i) { std::cout << "  "; }
-        std::cout << edge_type << "(" << source << ", " << dest << ")" << "\n";
+        for (auto i = 0; i < _depth; ++i) {
+            std::cout << "  ";
+        }
+        std::cout << edge_type << "(" << v << ", " << w << ")\n";
     }
 
     void _dfs(int v, int w)
     {
         _show("Tree_edge", v, w);
-        _preorder[w] = _count_pre++;
+        _preorder[w] = _pre_count++;
         ++_depth;
-        for (const auto t : _graph.adjacent(w)) {
-            if (_preorder[t] == -1) { _dfs(w, t); }
-            else if (_postorder[t] == -1) { _show("Back_edge", w, t); }
-            else if (_preorder[w] < _preorder[t]) { _show("Down_edge", w, t); }
-            else { _show("Cross_edge", w, t); }
+        for (const auto x : _graph.adjacent(w)) {
+            if (_preorder[x] == -1) {
+                _dfs(w, x);
+            } else if (_postorder[x] == -1) {
+                _show("Back_edge", w, x);
+            } else if (_preorder[w] < _preorder[x]) {
+                _show("Down_edge", w, x);
+            } else {
+                _show("Cross_edge", w, x);
+            }
         }
-        _postorder[w] = _count_post++;
+        _postorder[w] = _post_count++;
         --_depth;
     }
 };

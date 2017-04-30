@@ -176,25 +176,21 @@ std::vector<Integer_type> partition(const std::vector<Integer_type>& a)
 class Partition {
     std::vector<std::vector<int>> _partitions;
 public:
-    explicit Partition(int n)
-    {
-        std::vector<int> t;
-        partition(n, n, t);
-    }
+    explicit Partition(int n) { partition(n, n, {}); }
 
     inline std::vector<std::vector<int>> get_partitions() const { return _partitions; }
 
 private:
-    void partition(int n, int max, std::vector<int>& v)
+    void partition(int n, int max, std::vector<int>&& v)
     {
         if (n == 0 && !v.empty()) {
             _partitions.emplace_back(v);
             return;
         }
         for (auto i = std::min(max, n); i >= 1; --i) {
-            v.push_back(i);
-            partition(n - i, i, v);
-            v.pop_back();
+            auto t = v;
+            t.push_back(i);
+            partition(n - i, i, t);
         }
     }
 };
