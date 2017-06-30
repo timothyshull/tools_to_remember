@@ -1,134 +1,117 @@
+#include <string>
 #include <vector>
-#include <numeric>
 #include <iostream>
-#include <random>
 
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
-
-using namespace testing;
-
-// Knuth Vol. 4, algorithm L
-// lexicographic combinations
-// generates combinations of the form c1 ... ct for numbers 0 ... n-1
-// TODO: has bugs, not lexicographical
-std::vector<std::vector<int>> knuth_combinations(int n, int t)
-{
-    if (t > n || t < 0) { throw std::invalid_argument{""};}
-    std::vector<std::vector<int>> combinations;
-    std::vector<int> c(static_cast<std::vector<int>::size_type>(t + 3), 0);
-    for (auto j = 1; j < t + 1; ++j) {
-        c[j] = j - 1;
-    }
-    c[t + 1] = n;
-    c[t + 2] = 0;
-    while (true) {
-        combinations.emplace_back(c.begin() + 1, c.begin() + t + 1);
-        auto j = 1;
-        while (c[j] + 1 == c[j + 1]) {
-            c[j] = j - 1;
-            ++j;
-        }
-        if (j > t) { break; }
-        else { ++c[j]; }
-    }
-    return combinations;
-}
-
-
-//std::vector<std::vector<int>> knuth_combinations_t(int n, int t)
-//{
-//    if (t >= n) { throw std::invalid_argument{"The value t must be less than n"}; }
-//    std::vector<std::vector<int>> combinations;
-//    std::vector<int> c(static_cast<std::vector<int>::size_type>(t + 2));
-//    std::iota(c.begin(), c.end() - 2, 1);
-//    c[t] = n;
-//    c[t + 1] = 0;
-//    auto j = t;
-//    while (true) {
-//        combinations.emplace_back(c.begin(), c.begin() + t + 1);
-//        if (j > 0) {
-//            auto x = j;
-//            c[j] = x;
-//            --j;
-//            continue;
-//        }
-//
-//        if (c[0] + 1 < c[1]) {
-//            ++c[0];
-//            continue;
-//        } else {
-//            j = 2;
-//        }
-//
-//        c[j - 1] = j - 2;
-//        auto x = c[j] + 1;
-//        while (x == c[j + 1]) {
-//            ++j;
-//        }
-//
-//        if (j > t) { break; }
-//    }
-//    return combinations;
-//}
-
-void combinations(
-        int n,
-        int k,
-        int offset,
-        std::vector<int>& partial,
-        std::vector<std::vector<int>>& result
+template<typename Item_type>
+void combinations1(
+        std::vector<Item_type> &&prefix,
+        std::vector<Item_type> &&items,
+        std::vector<std::vector<Item_type>> &out
 )
 {
-    if (partial.size() == k) {
-        result.emplace_back(partial);
-        return;
+    if (items.empty()) { return; }
+    auto t = prefix;
+    t.push_back(items[0]);
+    out.push_back(t);
+    combinations1(std::move(t), {items.begin() + 1, items.end()}, out);
+    combinations1(std::move(prefix), {items.begin() + 1, items.end()}, out);
+}
+
+template<typename Item_type>
+std::vector<std::vector<Item_type>> combinations1(std::vector<Item_type> items)
+{
+    std::vector<std::vector<Item_type>> out;
+    combinations1<Item_type>({}, std::move(items), out);
+    return out;
+}
+
+void combinations1(std::string &&prefix, std::string &&in_string, std::vector<std::string> &out)
+{
+    if (in_string.empty()) { return; }
+    auto t = prefix + in_string[0];
+    out.push_back(t);
+    combinations1(std::move(t), in_string.substr(1, std::string::npos), out);
+    combinations1(std::move(prefix), in_string.substr(1, std::string::npos), out);
+}
+
+std::vector<std::string> combinations1(std::string in_string)
+{
+    std::vector<std::string> out;
+    combinations1("", std::move(in_string), out);
+    return out;
+}
+
+template<typename Item_type>
+void combinations2(
+        std::vector<Item_type> &&prefix,
+        std::vector<Item_type> &&items,
+        std::vector<std::vector<Item_type>> &out
+)
+{
+    out.push_back(prefix); // add check for empty
+    for (auto i = 0; i < items.size(); ++i) {
+        auto t = prefix;
+        t.push_back(items[i]);
+        combinations2(std::move(t), {items.begin() + i + 1, items.end()}, out);
+    }
+}
+
+template<typename Item_type>
+std::vector<std::vector<Item_type>> combinations2(std::vector<Item_type> items)
+{
+    std::vector<std::vector<Item_type>> out;
+    combinations2<Item_type>({}, std::move(items), out);
+    return out;
+}
+
+void combinations2(std::string &&prefix, std::string &&in_string, std::vector<std::string> &out)
+{
+    out.push_back(prefix);
+    for (std::size_t i{0}; i < in_string.size(); ++i) {
+        combinations2(prefix + in_string[i], in_string.substr(i + 1, std::string::npos), out);
+    }
+}
+
+std::vector<std::string> combinations2(std::string in_string)
+{
+    std::vector<std::string> out;
+    combinations2("", std::move(in_string), out);
+    return out;
+}
+
+int main()
+{
+    auto out = combinations1("abc");
+    for (const auto &s : out) {
+        std::cout << s << "\n";
     }
 
-    const auto num_remaining = k - partial.size();
-    for (auto i = offset; i <= n && num_remaining <= n - i + 1; ++i) {
-        partial.emplace_back(i);
-        combinations(n, k, i + 1, partial, result);
-        partial.pop_back();
+    std::cout << "\n";
+
+    auto out2 = combinations2("abcd");
+    for (const auto &s : out2) {
+        std::cout << s << "\n";
     }
-}
 
-std::vector<std::vector<int>> combinations(int n, int k)
-{
-    std::vector<std::vector<int>> result;
-    std::vector<int> t;
-    combinations(n, k, 1, t, result);
-    return result;
-}
+    std::cout << "\n";
 
-TEST(combinations, epi_combos_simple)
-{
-    auto result = combinations(4, 2);
-    std::vector<std::vector<int>> expected{
-            {1, 2},
-            {1, 3},
-            {1, 4},
-            {2, 3},
-            {2, 4},
-            {3, 4}
-    };
-    ASSERT_THAT(result, ContainerEq(expected));
-}
+    auto t = std::vector<int>({1, 2, 3});
+    auto out3 = combinations1(t);
+    for (const auto &v : out3) {
+        for (const auto &i : v) {
+            std::cout << i << " ";
+        }
+        std::cout << "\n";
+    }
 
-TEST(combinations, alg_l_simple)
-{
-    auto result = knuth_combinations(5, 3);
-    std::vector<std::vector<int>> expected{
-            {0, 1, 2},
-            {0, 1, 3},
-            {0, 2, 3},
-            {1, 2, 3},
-            {0, 1, 4},
-            {0, 2, 4},
-            {1, 2, 4},
-            {0, 3, 4},
-            {1, 3, 4},
-            {2, 3, 4}
-    };
-    ASSERT_THAT(result, ContainerEq(expected));
+    std::cout << "\n";
+
+    auto out4 = combinations2(t);
+    for (const auto &v : out4) {
+        for (const auto &i : v) {
+            std::cout << i << " ";
+        }
+        std::cout << "\n";
+    }
+    return 0;
 }

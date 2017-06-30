@@ -65,5 +65,5 @@ void Bellman_ford::_find_negative_cycle()
     }
 
     Edge_weighted_directed_cycle finder{spt};
-    _cycle = finder._cycle();
+    _cycle = finder.cycle();
 }

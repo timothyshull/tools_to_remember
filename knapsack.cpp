@@ -1,63 +1,37 @@
 #include <vector>
-#include <>
+#include <deque>
 
-int dynamic_knapsack() {
-    //auto n1 = std::stoul(argv[0]);
-    //auto max_weight = std::stoul(argv[1]);
-    std::size_t n1 = 10;
-    std::size_t max_weight = 20;
+// TODO: come back to this and test
+template<typename Item_type>
+std::pair<Item_type, std::vector<Item_type>> knapsack(
+        const std::vector<Item_type> &profits,
+        const std::vector<Item_type> &weights,
+        const Item_type &max_weight
+)
+{
+    auto n = profits.size();
+    auto w = weights.size();
+    std::vector<std::vector<Item_type>> options(n + 1, std::vector<Item_type>(max_weight + 1));
+    std::vector<std::deque<bool>> solution(n + 1, std::deque<bool>(max_weight + 1));
 
-    std::vector<int> profit(n1 + 1);
-    std::vector<int> weight(n1 + 1);
+    for (auto i = 1; i <= n; ++i) {
+        for (auto j = 1; j <= max_weight; ++j) {
+            auto option1 = options[i - 1][j];
 
-    std::random_device rd;
-    std::default_random_engine gen{rd()};
-    std::uniform_int_distribution<> dis1(1, 1000);
-    std::uniform_int_distribution<> dis2(1, static_cast<int>(max_weight)); // narrow_cast
-    for (int n{1}; n <= n1; ++n) {
-        profit[n] = dis1(gen);
-        weight[n] = dis2(gen);
-    }
-
-    // opt[n][w] = max profit of packing items 1..n with weight limit w
-    // sol[n][w] = does opt solution to pack items 1..n with weight limit w include item n?
-    std::vector<std::vector<int>> options(n1 + 1, std::vector<int>(max_weight + 1));
-    std::vector<std::deque<bool>> sol(n1 + 1, std::deque<bool>(max_weight + 1));
-
-    int option1;
-    int option2;
-    for (int n{1}; n <= n1; ++n) {
-        for (int w{1}; w <= max_weight; ++w) {
-            option1 = options[n - 1][w];
-
-            option2 = std::numeric_limits<int>::min();
-            if (weight[n] <= w) { option2 = profit[n] + options[n - 1][w - weight[n]]; }
-
-            options[n][w] = std::max(option1, option2);
-            sol[n][w] = (option2 > option1);
+            auto option2 = weights[i] <= j ?
+                           profits[i] + options[i - 1][j - weights[i]] :
+                           std::numeric_limits<Item_type>::max();
+            options[i][j] = std::max(option1, option2);
+            solution[n][w] = option1 < option2;
         }
     }
 
-    // determine which items to take
-    std::deque<bool> take(n1 + 1);
-    for (auto n = n1, w = max_weight; n > 0; --n) {
-        if (sol[n][w]) {
-            take[n] = true;
-            w = w - weight[n];
-        } else {
-            take[n] = false;
+    std::vector<Item_type> to_take;
+    for (auto i = n, j = w; n > 0; --n) {
+        if (solution[i][j]) {
+            to_take.push_back(n);
+            j = j - weights[i];
         }
     }
-
-    // print results
-    std::cout << "item"
-              << std::setw(8) << "profit"
-              << std::setw(8) << "weight"
-              << std::setw(8) << "take\n";
-    for (int n{1}; n <= n1; ++n) {
-        std::cout << std::setw(2) << n
-                  << std::setw(8) << profit[n]
-                  << std::setw(8) << weight[n]
-                  << std::setw(8) << take[n] << "\n";
-    }
+    return {options[n][max_weight], to_take};
 }
