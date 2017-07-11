@@ -195,13 +195,15 @@ std::vector<std::basic_string<Char_type>> split(const std::basic_string<Char_typ
     std::vector<std::basic_string<Char_type>> r;
     std::unordered_set<Char_type> chars{' ', '\n', '\t', '\b'};
 
-    auto begin = s.begin();
-    while (begin != s.end()) {
-        begin = std::find_if(begin, s.end(), [&chars](const Char_type& a) { return chars.find(a) == chars.end(); });
-        // can also use find_first_of here
-        auto t = std::find_if(begin, s.end(), [&chars](const Char_type& a) { return chars.find(a) != chars.end(); });
-        if (begin != s.end()) { r.emplace_back(begin, t); }
-        begin = t;
+    // TODO: fix this
+    auto i = std::size_t{0};
+    while (i < s.size()) {
+        i = s.find_first_of(" \n\t\b", i);
+        auto t = s.find_first_not_of(" \n\t\b", i);
+        if (i != std::basic_string<Char_type>::npos) {
+            r.emplace_back(s.substr(i, t - t));
+        }
+        i = t;
     }
 
     return r;
