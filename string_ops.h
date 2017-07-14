@@ -22,7 +22,7 @@ template<typename Char_type>
 std::size_t count_unique(const std::basic_string<Char_type>& s)
 {
     std::unordered_set<Char_type> chars;
-    for (auto c : s) { chars.insert(c); }
+    for (const auto c : s) { chars.insert(c); }
     return chars.size();
 }
 
@@ -31,9 +31,9 @@ std::size_t count_unique_manual(const std::basic_string<Char_type>& s)
 {
     auto min_val = std::numeric_limits<Char_type>::min();
     std::vector<std::size_t> counts(static_cast<std::vector<std::size_t>::size_type>(std::numeric_limits<Char_type>::max() - min_val + 1), 0);
-    for (auto e : s) { ++counts[e - min_val]; }
+    for (const auto e : s) { ++counts[e - min_val]; }
     std::size_t count{0};
-    for (auto e : counts) { if (e) { ++count; }}
+    for (const auto e : counts) { if (e) { ++count; }}
     return count;
 }
 

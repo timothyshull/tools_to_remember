@@ -10,11 +10,11 @@ using namespace testing;
 template<typename Item_type>
 int max_subarray_kadane(const std::vector<Item_type>& a)
 {
-    Item_type max{0};
-    Item_type max_here{0};
+    auto max = Item_type{0};
+    auto local_max = Item_type{0};
     for (auto e : a) {
-        max_here = std::max<Item_type>(0, max_here + e);
-        max = std::max<Item_type>(max, max_here);
+        local_max = std::max<Item_type>(0, local_max + e);
+        max = std::max<Item_type>(max, local_max);
     }
     return max;
 }

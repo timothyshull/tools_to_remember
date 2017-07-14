@@ -12,8 +12,10 @@ using namespace testing;
 template<typename Number_type>
 Number_type horners_method(Number_type x, std::vector<Number_type>& coeff)
 {
-    Number_type result{0};
-    for (int i{static_cast<int>(coeff.size() - 1)}; i >= 0; --i) { result = result * x + coeff[i]; }
+    auto result = Number_type{0};
+    for (auto  i = static_cast<int>(coeff.size() - 1); i >= 0; --i) {
+        result = result * x + coeff[i];
+    }
     return result;
 }
 

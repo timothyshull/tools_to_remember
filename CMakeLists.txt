@@ -10,8 +10,6 @@ add_subdirectory(googletest)
 include_directories(googletest/googletest/include)
 include_directories(googletest/googlemock/include)
 
-add_subdirectory(old)
-
 # all tests
 set(ALL_TESTS
         binary_search.cpp
@@ -125,6 +123,9 @@ target_link_libraries(binary_search gtest gmock gtest_main)
 
 
 # Numerical
+
+# dynamic
+add_executable(knapsack knapsack.cpp)
 
 # divide-and-conquer
 add_executable(max_subarray max_subarray.cpp)

@@ -3,6 +3,7 @@
 #include <numeric>
 #include <random>
 
+// TODO: convert to class to simplify and rename
 int prefix_distance(
         const std::string &a,
         int a_idx,
@@ -34,7 +35,6 @@ int prefix_distance(
     if (b_idx < 0) {
         return a_idx + 1;
     }
-
     if (prefix_distances[a_idx][b_idx] == -1) {
         if (a[a_idx] == b[b_idx]) {
             prefix_distances[a_idx][b_idx] = prefix_distance(prefix_distances, a, a_idx - 1, b, b_idx - 1);

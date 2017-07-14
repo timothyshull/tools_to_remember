@@ -7,14 +7,14 @@ void permutations1(std::string &&prefix, std::string &&in_string, std::vector<st
     auto n = in_string.size();
     if (n == 0) {
         out.emplace_back(prefix);
-    } else {
-        for (auto i = std::size_t{0}; i < n; ++i) {
-            permutations1(
-                    prefix + in_string[i],
-                    in_string.substr(0, i) + in_string.substr(i + 1, std::string::npos),
-                    out
-            );
-        }
+        return;
+    }
+    for (auto i = std::size_t{0}; i < n; ++i) {
+        permutations1(
+                prefix + in_string[i],
+                in_string.substr(0, i) + in_string.substr(i + 1, std::string::npos),
+                out
+        );
     }
 }
 
@@ -54,7 +54,7 @@ std::vector<std::vector<Item_type>> permutations1(std::vector<Item_type> items)
     return out;
 }
 
-void permutations2(std::string &&a, std::size_t n, std::vector<std::string>& out)
+void permutations2(std::string &&a, std::size_t n, std::vector<std::string> &out)
 {
     if (n == 1) {
         out.emplace_back(a);
